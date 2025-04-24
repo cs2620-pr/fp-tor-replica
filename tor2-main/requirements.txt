@@ -1,0 +1,5 @@
+cryptography>=3.4.7
+grpcio>=1.41.1
+grpcio-tools>=1.41.1
+protobuf>=3.19.0
+requests>=2.26.0

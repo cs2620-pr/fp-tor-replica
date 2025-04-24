@@ -1,0 +1,105 @@
+syntax = "proto3";
+
+package tor;
+
+// Service for clients
+service Client {
+    // listen for incoming messages
+    rpc ReceiveMessage (ProcessMessageRequest) returns (Empty) {}
+}
+
+// Service for relay nodes
+service Relay {
+    
+    rpc ForwardMessage (ProcessMessageRequest) returns (ProcessMessageResponse) {}
+    rpc BackwardMessage (ProcessMessageRequest) returns (ProcessMessageResponse) {}
+    rpc ExchangeKeys (ExchangeKeyRequest) returns (ExchangeKeyResponse) {}
+    rpc Ping (Empty) returns (Empty) {}
+}
+
+// Empty
+message Empty {}
+
+
+// Service for the directory server
+service DirectoryServer {
+    rpc GetRelayNodes (GetRelayNodesRequest) returns (GetRelayNodesResponse) {}
+    rpc RelayRegister (RelayNode) returns (Empty) {}
+}
+
+
+message ExchangeKeyRequest {
+    string session_id = 1;
+    string public_key = 2;
+}
+
+message ExchangeKeyResponse {
+    string public_key = 1;
+}
+
+// Messages for clients
+message RequestCircuitRequest {}
+
+message RelayRegisterResponse {
+    string response = 1;
+}
+
+message RequestCircuitResponse {
+    repeated RelayNode relay_nodes = 1;
+}
+
+message SendMessageRequest {
+    string message = 1;                     // encrypted onion
+}
+
+message SendMessageResponse {
+    string response = 1;
+}
+
+// Messages for relay nodes
+message ProcessMessageRequest {
+    bytes encrypted_message = 1;      
+    bytes encrypted_key = 2;
+    bytes session_id = 3;
+    bytes iv = 4;
+    string return_address = 5;
+}
+
+message ProcessMessageResponse {
+    string encrypted_message = 1;
+}
+
+message AcceptKeyRequest {
+    string key = 1;
+    KeyType key_type = 2;
+}
+
+enum KeyType {
+    NONKEY = 0;
+    PUBLIC = 1;
+    PRIVATE = 2;
+}
+
+message AcceptKeyResponse {
+    string response = 1;
+}
+
+// Messages for the directory server
+message GetRelayNodesRequest {}
+
+message GetRelayNodesResponse {
+    repeated RelayNode relay_nodes = 1;
+}
+
+// RelayNode message
+message RelayNode {
+    string address = 1;
+    NodeType node_type = 2;
+}
+
+enum NodeType {
+    NONNODE = 0;
+    ENTRY = 1;
+    MIDDLE = 2;
+    EXIT = 3;
+}
