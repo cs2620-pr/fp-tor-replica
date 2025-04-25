@@ -1,0 +1,31 @@
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay 2] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 53165), thread=6194491392, relay_port=9102
+[Relay 2] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "xA+aTb8TFwAL/RX8vU8SzYJJA4yF0ZaiS1sAIQK3t5n9fPXBlWsnNV/3RpHT/KH4b4qXmgYhUqYu768qhtr2vcIVI714HmYJLEgc9DSpjZhQfXoFY3bbHlCmrlfocnTengrY3duDKs2mXKexYfxua8kehZlpw+hVs6hFGHLx7tg9CYcVNZ2XYryW/M9EXacW0Rvee95EWmcari7qDAgc6Y2d8NcFD2y4m+/qDI6T6RV2AxSvousitubf2JDOi/6qvKR7O0Lrlv80te3j7d8TRXCVEG+eN1HnIWjNc5IOUvP/kDADMFVPdlD1w/tK8sj/SPmcUceZrCV7ewKnDmv5EQ==", "payload": "/Pxtdh8E50Mo9Jmdb4lx+7N8YNM1U0wBWrqh9N549ERGYadz5vX4rw=="}'
+[Relay 2] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] Received session_key (base64): xA+aTb8TFwAL/RX8vU8SzYJJA4yF0ZaiS1sAIQK3t5n9fPXBlWsnNV/3RpHT/KH4b4qXmgYhUqYu768qhtr2vcIVI714HmYJLEgc9DSpjZhQfXoFY3bbHlCmrlfocnTengrY3duDKs2mXKexYfxua8kehZlpw+hVs6hFGHLx7tg9CYcVNZ2XYryW/M9EXacW0Rvee95EWmcari7qDAgc6Y2d8NcFD2y4m+/qDI6T6RV2AxSvousitubf2JDOi/6qvKR7O0Lrlv80te3j7d8TRXCVEG+eN1HnIWjNc5IOUvP/kDADMFVPdlD1w/tK8sj/SPmcUceZrCV7ewKnDmv5EQ==
+[Relay 2] [Relay] Decoded session_key_enc (hex): c40f9a4dbf1317000bfd15fcbd4f12cd8249038c85d196a24b5b002102b7b799fd7cf5c1956b27355ff74691d3fca1f86f8a979a062152a62eefaf2a86daf6bdc21523bd781e66092c481cf434a98d98507d7a056376db1e50a6ae57e87274de9e0ad8dddb832acda65ca7b161fc6e6bc91e859969c3e855b3a8451872f1eed83d098715359d9762bc96fccf445da716d11bde7bde445a671aae2eea0c081ce98d9df0d7050f6cb89befea0c8e93e915760314afa2eb22b6e6dfd890ce8bfeaabca47b3b42eb96ff34b5ede3eddf13457095106f9e3751e72168cd73920e52f3ff90300330554f7650f5c3fb4af2c8ff48f99c51c799ac257b7b02a70e6bf911
+[Relay 2] [Relay] Decrypting session key with fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] Decrypted session_key (hex): 9d38da5da4519e5205256cd5fbeb1a8ec499944fb88ca23ee3a196ad38d878dd
+[Relay 2] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 2] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=40, preview=b'\xfc\xfcmv\x1f\x04\xe7C(\xf4\x99\x9do\x89q\xfb\xb3|`\xd35SL\x01Z\xba\xa1\xf4\xdex\xf4DFa\xa7s\xe6\xf5\xf8\xaf'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226d7367223a202248656c6c6f2c20776f726c6421227d
+[Relay 2] [Relay] [DEBUG] Next hop JSON keys: ['msg']
+[Relay 2] [Relay] [DEBUG] Payload is not JSON, assuming last hop. Error: 'next_ip'
+[Relay 2] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=24, type=<class 'bytes'>
+[Relay 2] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 2] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 2] [Relay] [Last Hop] Response from dest decoded as UTF-8: '{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 2] [Relay] [Last Hop] Response from dest (hex): 7b22726573756c74223a20224f4b222c20226563686f223a207b226d7367223a202248656c6c6f2c20776f726c6421227d7d
+[Relay 2] [Relay] [Last Hop] About to AES-encrypt response: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 2] [Relay] [Last Hop] AES-encrypted response (hex): 87eac55fe7e0a05e58d670484fd7e90bc25211a5d7a8362b35375e0b14d0c407f2a17889e8c355301af3a252d587aff0d93ee55fb019a5cbffae3548
+[Relay 2] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=88, preview=b'h+rFX+fgoF5Y1nBIT9fpC8JSEaXXqDYrNTdeCxTQxAfyoXiJ6MNVMBrzolLV'
+[Relay 2] [Relay] [Last Hop] Sent response to ('10.250.120.196', 53165): b'h+rFX+fgoF5Y1nBIT9fpC8JSEaXXqDYrNTdeCxTQxAfyoXiJ6MNVMBrzolLV'... (len=88)
+[Relay 2] [Relay] [handle_message END] addr=('10.250.120.196', 53165), thread=6194491392

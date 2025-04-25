@@ -1,0 +1,758 @@
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Generated and saved new RSA keypair to relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Generated and saved new RSA keypair to relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Generated and saved new RSA keypair to relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 1] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 51063), thread=6125842432, relay_port=9101
+[Relay 1] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "dIJQZc9MYpat5f8TEs0pYu/b9WET6CiFEVct6P1Pu1QtUmXsq2kB0CWyutYTC4l/3nQ2apTygHf9n3lCjJ1+Gq7azrwra4rjQbn7+scUtK/Q80xeoDpVUJDI17dnmIAfbY59IKO6jCgZgDkTarSdYaKzM8WXgFMcCG8PlCbQNUPQQ9W8HbXQsu0JnhlEqC7mD44qDS5GZZ72XsN0lkH46mB+MYfFTF0YcCEBBdgVNwubeOXBbh2FtXDOLM0F3Bb8WtsAODN9B/UIDDUv+WzSVYTJfzbWxdFPDAs/oWMTX+dv2tzNSnalZtPtZna9v56x/1Us8u1EQz+YYMNfh5SbBQ==", "payload": "wPEFlPduBZupzCY9ZNGgWTHkYdX5CefdEV1fDBEb14caLPdG8o7NDc+oTZH2fZjIkqhnd+7YyI1XCxxIldE9KD/aETwV2xr/YED/41KcPkFbkNkfjwGF9AqXLPBFKzEJw9Ce7XB9/5XhfDf6EhlnK8Ar64AmRxD0mWomy18R1nS7e9WjwlGiZErPoE3Akig3+Wb5ETnesVMJ8ZLPAbVJpBGHawBgcClTzw29zvh+XHNKWQn/Ck1wPflRPsf6YnvuaE5wfwYDjIs78jgTasOy9WXBR4uxsAIREezyofgXx9BsEufWL9Fot83KbA17LsGtcSeXrG68gFIZosaYJwB7bLn51fgAFfDF9WaANkkq4S0UqUizNc79OYBtWys6jr0gkAE7d+f8U9laxmQPM3r4SxySObYuFuZwlFmwvjtuHsse9J+cPOunqyGaymKVNsONsD19QmhJh+Yi0UU++BPDyBggCFgODZixj1CHRaKuCRJa6K5GrvvseHx1W3oVY4Hn+37mEs+vsHOW304yYfemsVlRevOAiDBG3exqyjFMe0VL9ZvYa7dW/e39Saa9c+5QEWIMx+EmbVejEGf+Jx6buREjX8hOfFdYRdOXhlV2DAnAUR0GcRb9TsJweTWgf96CTQX/gem88tjmbQ1TwWhKV+UBM8sLlUXkklXG8xh6dxWS1L/Bj6Ni2NwSHpXGz25ndZEdru3M6hhZVs6az6y+RlaDHKELakQPbUHKW0yXDxDaM84FZtbD06rlMtE3CjZr3k2quIHRMpTUbS0XD7QyZECX3vgwidIQJIfpBBNvWZmDTxeDGFvjudWm0IM5q2bale+S0QRY/JQd4ulKC8G8e+5/rm9vzRksjGTMun/iAZfLQ1nx/pzWrF3T//fEtTEJG8rnRfvsPq63MiHzDtliu8I9LsEQNNXOPQ49yl9gg0UkNNeFShFDWwq15kBPxSJ03eX3uu5iP+GmFA36pkor9ENho/zalzNdwFxaV3NbTNtOsa5AMoeovIurT4YucKr+eh1Gc1l9Sfw4NCruvmM7vZsUSzHnFJ+S6HU1mS0JGNllRXJR/KZOdyMqd43aCxUk84Q8H7uvJLypbCzhJNLSOcspaKBCp7aEscge84CDRYyoyOjmjNXtHM7EQfIPruah1F/fKvv9Nda2A4hsO97nXIKH8+M+GJxdB6rt1Bga0dX/x3eDLbTcnQBpGGxz0QFZcf1ZLzwQYQAwWq54QP7A1w0U2HuO+egYNL0/cprMXUlTUG2f4UXY5t79wrGDDW+Wa2mmz9eA0Sj2S2YzqflKih90pDxxvM61vd+I6u7MR1jXW/yRwwNtan0AYQEVdqs3Fd47zyaC9YMOMirBOmlIba6hrD6kFJvgAE6P1quul5P0bASaX9jPo+pvzpEQ8BAZlm5//SdkJA+KsayxU2EnB9FDTqljhQD7gtA2pd6+g4AL9tza4zVndfYmr8ARZsLdM2s="}'
+[Relay 1] [Relay] [DEBUG] Data before JSON parse: type=<class 'bytes'>, value=b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "dIJQZc9MYpat5f8TEs0pYu/b9WET6CiFEVct6P1Pu1QtUmXsq2kB0
+[Relay 1] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] Received session_key (base64): dIJQZc9MYpat5f8TEs0pYu/b9WET6CiFEVct6P1Pu1QtUmXsq2kB0CWyutYTC4l/3nQ2apTygHf9n3lCjJ1+Gq7azrwra4rjQbn7+scUtK/Q80xeoDpVUJDI17dnmIAfbY59IKO6jCgZgDkTarSdYaKzM8WXgFMcCG8PlCbQNUPQQ9W8HbXQsu0JnhlEqC7mD44qDS5GZZ72XsN0lkH46mB+MYfFTF0YcCEBBdgVNwubeOXBbh2FtXDOLM0F3Bb8WtsAODN9B/UIDDUv+WzSVYTJfzbWxdFPDAs/oWMTX+dv2tzNSnalZtPtZna9v56x/1Us8u1EQz+YYMNfh5SbBQ==
+[Relay 1] [Relay] Decoded session_key_enc (hex): 74825065cf4c6296ade5ff1312cd2962efdbf56113e8288511572de8fd4fbb542d5265ecab6901d025b2bad6130b897fde74366a94f28077fd9f79428c9d7e1aaedacebc2b6b8ae341b9fbfac714b4afd0f34c5ea03a555090c8d7b76798801f6d8e7d20a3ba8c28198039136ab49d61a2b333c59780531c086f0f9426d03543d043d5bc1db5d0b2ed099e1944a82ee60f8e2a0d2e46659ef65ec3749641f8ea607e3187c54c5d1870210105d815370b9b78e5c16e1d85b570ce2ccd05dc16fc5adb0038337d07f5080c352ff96cd25584c97f36d6c5d14f0c0b3fa163135fe76fdadccd4a76a566d3ed6676bdbf9eb1ff552cf2ed44433f9860c35f87949b05
+[Relay 1] [Relay] Decrypting session key with fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] Decrypted session_key (hex): 92beed5947e3fa2f5c40f0d9f415d98d5e4b928cc5f8759e6bad700c73fe94e9
+[Relay 1] [Relay] Extracted session_key: <class 'str'>, len=344
+[Relay 1] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 1] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b'\xc0\xf1\x05\x94\xf7n\x05\x9b\xa9\xcc&=d\xd1\xa0Y1\xe4a\xd
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_
+[Relay 1] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=1090, type=<class 'bytes'>
+[Relay 1] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_key": "AwwiVr8YdXY1+
+[Relay 1] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=1488, preview=b'eyJyZXN1bHQiOiAiT0siLCAiZWNobyI6IHsibmV4dF9pcCI6ICIxMC4yNTAu'
+[Relay 1] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=2008, preview=b'U0jpxgtWxYjkkNyOolqihHXnv1J5yypD1cj4up/OwXUkljRaQIGbhgIXlVGt'
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 1] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 52288), thread=6135623680, relay_port=9101
+[Relay 1] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "HN8/Ug3zfRW5zmDEC16Gx1wZ4TkBc4DwoYDn11hDu9I42nlAVEmm8cfyCLA5gO2xeIuDjQgmFCDT0jLcu1sJXJGQ8767s/jk5wJG94MZaJ7jGWX9Hb0elYh3NigJTxAuRLDpas4PYL6+1oTJW9RmYdb21c3xH7mkxWtjSc6lAkIIeZWU2eNd6J8R10cebsT0BTrpNe8xNQAhIAMlaZk2zv54sXGw1UyTE9JJU2ODSoBNlLT+33GB0IL7hbS2d6xNnfv98OGtgqs8dG3SlZhj2a2UuJjNu3vEMS1dZl2HS4+xZ1GRW5vEMuoNJc3jSEf7K3h35UZcwi3LRqB4kciyZA==", "payload": "hLc5w1AB/FiOOTkxXmw0O+xGb24upKZ9+LOlJPMTk1O513nMkuZugIsSWLxya8l6FFiI/E7sdgxUeYAUavmh4vdJBUP9al6ztF69dJKrAFYyHSWzh+V9uP/Ls4elqmQd8FFcMIyPwYm1SIFmakIpq6veEPr7++ULa4vVkax39p9nsXpTBkp6mdJ1qy7EhooGbNMQPv4vrYEYWjP/XLmm5c//BY+tpvFe3cPJPGwfMEGNCS0EdhpDzpOtDGGWd2E7ip300ooqoOC6Jyiqz4gNyAeM+cAQodynZ4hHXxezwZ/qM6JhpVDaLK5JHk58Cuh7942bqZ4v2gZ7LKxq8x+/kVR9CXU3PKX7Jb5BvGrdjQv+WK8ZhsH7xPYuUsITr7ml5ABxnQ94TD9w7KwCPlJpkvErL4OH7KEmLW/f4EvTfiGBDfEgl96WDjgB00OyeDetuFiQMuYA+XD0JSStvhSkzOuHTJdFjCRzPNNnmJ6aMKLFIibZbIjazyTUM8zKT4lfGGuKFguWuxwh6rFYixtUP+OJuFKg/WlA5VxVbAek1/pmyv1eep9E3PApX/gV8CWrMIn/j5D7Zh2Ngcu2WzFsS3xIW166UndYX2dJSRDLG3HeN05Kq+mRf7sKayU417Lfd6XBtI6jekVIGR8tv7+rw6YX55VQ8B826NwkqrvR+6WfzC3U4pIpitapkBlzgwPHcLYwAqJSiAEKDMcdEj8/3+j/zDJVbBSlQxxwPlIkFYT9wJv14jOVC3dceqCW2Rd0H3BtMxSfkodOZBKzWlv/GI6/CyknS0cCiz90+5SLKWSBbHT/+PMRLqJA08YfE3UjQcUg4dwykv0aa8/nvCP+UEYLNawYaoF/+1hvir6eZaIP6f/UeiSO+Cyx9XGGDlB9GMzm3imsP5MfdfbPIlbyC5iu+YfWg+Ved20j2sR+RXrEBSWylEJxgJO1Maq0DeMZntiUUGFbELPwK9Gd/YPMjCLGds726bTRjTKLyr6rb0ukMlJjB2WGkAJBqqLdx5l1o+VZX256IPMFjNLgoJJKzdMO1RUjk6i8A+zacijq1sMJh5BTVbskDdO9Ef1dh6JuT5W3ZTjv0amSJMSb1eACDzV9Xc3hpepjIYcP63pSmpZkcsrlrS/fiIc58eVPNCsW5r5xddIFY9065jhZzMvfk9h372uPzzvh1QNVG8QQWyDzhxjXNyItsaBRUIVL2U85wQfPUdckhebwHv6LfmSK5uweOQ1ZvvK/w//cj68+U9krO+MyDX/rJEHqKFJMHmFQIgCk74BRIAOMVPKbnFRAcqC4m3tgcvPdYZSS2NzHcxTMcF8dK1Po21ukPr1tsjOCSui2UlQKrXkcc/HmTI1vwN+TFqah4IoQkMh5BX2RS9fzHUmCdktq0uQ1q8ibm6QLZpksMQGM20Pp+gLAzMfMHvv3ePfres1egH+nRABIV3Wr9CC+N3QktvuHlXgC86UPyds="}'
+[Relay 1] [Relay] [DEBUG] Data before JSON parse: type=<class 'bytes'>, value=b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "HN8/Ug3zfRW5zmDEC16Gx1wZ4TkBc4DwoYDn11hDu9I42nlAVEmm8
+[Relay 1] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] Received session_key (base64): HN8/Ug3zfRW5zmDEC16Gx1wZ4TkBc4DwoYDn11hDu9I42nlAVEmm8cfyCLA5gO2xeIuDjQgmFCDT0jLcu1sJXJGQ8767s/jk5wJG94MZaJ7jGWX9Hb0elYh3NigJTxAuRLDpas4PYL6+1oTJW9RmYdb21c3xH7mkxWtjSc6lAkIIeZWU2eNd6J8R10cebsT0BTrpNe8xNQAhIAMlaZk2zv54sXGw1UyTE9JJU2ODSoBNlLT+33GB0IL7hbS2d6xNnfv98OGtgqs8dG3SlZhj2a2UuJjNu3vEMS1dZl2HS4+xZ1GRW5vEMuoNJc3jSEf7K3h35UZcwi3LRqB4kciyZA==
+[Relay 1] [Relay] Decoded session_key_enc (hex): 1cdf3f520df37d15b9ce60c40b5e86c75c19e139017380f0a180e7d75843bbd238da79405449a6f1c7f208b03980edb1788b838d08261420d3d232dcbb5b095c9190f3bebbb3f8e4e70246f78319689ee31965fd1dbd1e9588773628094f102e44b0e96ace0f60bebed684c95bd46661d6f6d5cdf11fb9a4c56b6349cea5024208799594d9e35de89f11d7471e6ec4f4053ae935ef31350021200325699936cefe78b171b0d54c9313d2495363834a804d94b4fedf7181d082fb85b4b677ac4d9dfbfdf0e1ad82ab3c746dd2959863d9ad94b898cdbb7bc4312d5d665d874b8fb16751915b9bc432ea0d25cde34847fb2b7877e5465cc22dcb46a07891c8b264
+[Relay 1] [Relay] Decrypting session key with fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] Decrypted session_key (hex): d784ea74ec6d155408c29a94c667184b9037788d0cad987642cf9e12f353a78d
+[Relay 1] [Relay] Extracted session_key: <class 'str'>, len=344
+[Relay 1] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 1] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b'\x84\xb79\xc3P\x01\xfcX\x8e991^l4;\xecFon.\xa4\xa6}\xf8\xb
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_
+[Relay 1] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=1090, type=<class 'bytes'>
+[Relay 1] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_key": "dpkIeqhg6cKj9
+[Relay 1] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=1488, preview=b'eyJyZXN1bHQiOiAiT0siLCAiZWNobyI6IHsibmV4dF9pcCI6ICIxMC4yNTAu'
+[Relay 1] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=2008, preview=b'K6txmVP//HUdST4w1brfc/g6ab2vjhRU4j5+ov9UiWnjhXqmBeicJxgLVVYc'
+[Relay 1] [Relay] [Last Hop] Sent response to ('10.250.120.196', 52288): b'K6txmVP//HUdST4w1brfc/g6ab2vjhRU4j5+ov9UiWnjhXqmBeicJxgLVVYc'... (len=2008)
+[Relay 1] [Relay] [handle_message END] addr=('10.250.120.196', 52288), thread=6135623680
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 1] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 53089), thread=6156644352, relay_port=9101
+[Relay 1] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "fMgUBdeUO9c/GfKe8DSdyzpvHZWJEfQcAStX+0kqxHrKcj7D2NEPHh1KFDMIVcNoEtIbTfNrpThzodfZoWQ/vsZiDyirzducbklQxDhV5DO27pw/Q4urt7VftGuBx46OijWe8f7G3sAU80N/Zhw5OLZkhTp/TiRztyrsE2aDu5zoAIUgJpqPTJCZN7IRaSLplatspRviX8BuTjV0no3VbhXPCGa57KXMHt5oklJ59YP84hDZ1v1fCUt/l3vRzVeJa4vgjR88+xdvpEZj95p4riPRiYwTbrKU6knpJ5mO/vnSr9LIYGsSAMNE0TrwApBUpFsI9a5oJz3xhsu/E7we9g==", "payload": "bC5lYOSNcdRiMopSQ1/hlM0M8rdC0Usy83e3UzEZZjo/skT4y5RO8umrClPRXLy9O2pf8LrHXIgwTuOTdAygoQchCqWNjtAnJjj40fMaBRQ2tC7DYdsX9lomSy9s+cYVCf8CMigl7mod5iHXKPXSLriuJXZd+nOKSE4Y5J2aAIOUJAXescsWckv3iXRwP8sgl48KL0l48AnHoMRTCHQmjqj5U/2jv5xkwxii1QDeMWTKqKV5yrN/Z62Q94MezsEaCm3JXCPGMwJeOPuW+nRmD5Y1iPprKH/HG7puep+VBQx+o1Mc428IcKKmCB2CtNpWolY8zXXniCkRtiJzsfOOREUcPJPbd8fzoFWBBk39GPedzWDQA4ZVGzPnwHeeZD1KAEKDAFOpZex/BMmtLg7k1y10x1hLafNzQSsFRTH79Ajq7cAAXmi30SuY3ti++OfGZImpWCFVGekqxNgz6+0VaySFXN5l1OrKdVpbggvtB7Fs0xK/Nnf0yUK7VSYx+NGbqZNFrg1IE+yniSvd9pW2ySL1dEnqoBLGtJet5i5ZpUYjPcJ3Q109+pUloefvhyiTfCbvK/OSsgO0PH0kNTRdTh3JOd351BfvE8kE5+71wpbvvT6fbONeFeK9CASt/Hde1dgAKaydWV3eQhOSmgUXsezYhauZgtJ5uDsLni9Y3LmQVFAWoe20hwf4tYI8yXl2wwnTePAZLuv0RFyvU+Y8GYbAaQ/KtyUSW51PM1mMgJpuyeVjZ4pvd66ESFy1KgfTHAbVSTP2nVuZjNqvVtwrlLaObxcDa0+MTQCZdaHG+fk7l4JQTMvvc1DrvHvog6eotvAjpoESGBPeRXiRuS6IhlqCKFj10nzVu9/Q2SypA+AHRrVVucHBSJDw7Ng9Mbcr0cD9A45Hme6jKtMdF5CIs1a3OF1OmYU94CUtr/NwSVupWSyc9lzPzZ/uSdjkAIuQ8DfgHFjkPEeSRGGPFyYh+hjTOklwXfd7v9qEjlXwcm64AbRfbRcZl2cd57NCr5wpgnJP517vcbh2QkkKCrCulDToZfLi8tq9VYhs0OBhVg6GocXICP98n+J4Atb4f1srphi6jNts5EbGbUpm2HoHU+5jja9h3NSjxXszYk1Wb9uiPA7VynheNFHIYFjluCJPCNqKTn1edcK/plWYq7bFkcK5s9EzPb69EznlcSaXNwno5CXQJiotI85G8pq9z7Myrx2TrbLe1i17WJprYzgcxziaiac9801McGzlXM7EmYZe82FZnBLyD9sSA2ND0hCIFwzvroWryIA5AR8BoIEBhvv1NRaThgzgVKlQno1I7b3Q9n8x+j3AH/96vEBhbTC1eCbPqDnZ0kpobFGec1yxbsUfFvqUwOBSEN2AEzQUGC1rlD/fHzGkt+Z9snIO6T3Jk70Mu2/gbOSC8SJ2mxJ9Bvw7BUhuKQyjEzKz4lV6+fEJik/NRaC7moKQt6ZIRtauW3o="}'
+[Relay 1] [Relay] [DEBUG] Data before JSON parse: type=<class 'bytes'>, value=b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "fMgUBdeUO9c/GfKe8DSdyzpvHZWJEfQcAStX+0kqxHrKcj7D2NEPH
+[Relay 1] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] Received session_key (base64): fMgUBdeUO9c/GfKe8DSdyzpvHZWJEfQcAStX+0kqxHrKcj7D2NEPHh1KFDMIVcNoEtIbTfNrpThzodfZoWQ/vsZiDyirzducbklQxDhV5DO27pw/Q4urt7VftGuBx46OijWe8f7G3sAU80N/Zhw5OLZkhTp/TiRztyrsE2aDu5zoAIUgJpqPTJCZN7IRaSLplatspRviX8BuTjV0no3VbhXPCGa57KXMHt5oklJ59YP84hDZ1v1fCUt/l3vRzVeJa4vgjR88+xdvpEZj95p4riPRiYwTbrKU6knpJ5mO/vnSr9LIYGsSAMNE0TrwApBUpFsI9a5oJz3xhsu/E7we9g==
+[Relay 1] [Relay] Decoded session_key_enc (hex): 7cc81405d7943bd73f19f29ef0349dcb3a6f1d958911f41c012b57fb492ac47aca723ec3d8d10f1e1d4a14330855c36812d21b4df36ba53873a1d7d9a1643fbec6620f28abcddb9c6e4950c43855e433b6ee9c3f438babb7b55fb46b81c78e8e8a359ef1fec6dec014f3437f661c3938b664853a7f4e2473b72aec136683bb9ce8008520269a8f4c909937b2116922e995ab6ca51be25fc06e4e35749e8dd56e15cf0866b9eca5cc1ede68925279f583fce210d9d6fd5f094b7f977bd1cd57896b8be08d1f3cfb176fa44663f79a78ae23d1898c136eb294ea49e927998efef9d2afd2c8606b1200c344d13af0029054a45b08f5ae68273df186cbbf13bc1ef6
+[Relay 1] [Relay] Decrypting session key with fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] Decrypted session_key (hex): 5d9d6e82204df340dfc7857b50dcc2dc0fe6b3e7ce5916c77ff828c6244395b8
+[Relay 1] [Relay] Extracted session_key: <class 'str'>, len=344
+[Relay 1] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 1] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b'l.e`\xe4\x8dq\xd4b2\x8aRC_\xe1\x94\xcd\x0c\xf2\xb7B\xd1K2\
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_
+[Relay 1] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=1090, type=<class 'bytes'>
+[Relay 1] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "2s98yuK5d2pkY
+[Relay 1] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=1116, preview=b'{"result": "OK", "echo": {"next_ip": "10.250.120.196", "next'
+[Relay 1] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=1512, preview=b'IUmwd94IVywjKpi8ucxRNB/usA2FDRyucYV+S6g6FNk6sJ5/XxykjtgbkLEe'
+[Relay 1] [Relay] [Last Hop] Sent response to ('10.250.120.196', 53089): b'IUmwd94IVywjKpi8ucxRNB/usA2FDRyucYV+S6g6FNk6sJ5/XxykjtgbkLEe'... (len=1512)
+[Relay 1] [Relay] [handle_message END] addr=('10.250.120.196', 53089), thread=6156644352
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 2] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 53843), thread=6138097664, relay_port=9102
+[Relay 2] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "bwtobWFKHQglmeIqQ/rfbo02qV/Au7jdUnYS9hn+j7jFfVixubG3M+kcb2uKSetfOwo8WibewasueYlugs0JPRgYxzEbwLpTFw74GeI8wxMzXp938NazNcZGwJCzHdjwYYfk11kOIIdJHUSdYlPqw0OldZEvxagSNOfeAEntNPuZywCUR7G4SR838RUCh4eTEGVRgVAWcnoiIa1M2nyfiAiaou4YD5Ydl6C807eqGigYY+qVg9S4W06UG1jRDIB06fWsqvlp1kD1d3vyc2fkM5mkTzIVa1G3543t1o9DYvNF4CMDqpf+e/kjznjKGlFj6Zf3NVSG7ucSQm/KyLwhdg==", "payload": "l9AQtVY1wEHvU2129z14/eLlmHb5DG8nT7xqTK4RRKzDfzallyrrjSlzScEMq302ivCENGeCDJ9AAsOQ6GZGeYVzh4IC/g9eYYXnQqEukjIrI95BFfv4WsDK0tG3ZhESeItygVRP/s++azQSFEnQx/QGww/i8d/LWwhjRedQCvio+Uzpo3/B+aH9wN8As8hls46zKct26tn6JoyekhvI0FU2LKYmoo8VhA9AeZElRFVmvZcI+OVYV+XKG5SmigFCD3mvwzSn5UMs3E/3cLgeTMcLdVNbkPILcz9nCDwQAo5F3TodpqJrKgKFZAZhtySw/iS1d9Q2/vbFY8cVOfncmxLT3OIAUbrVeLc+avUQol9bcHFYyq+a9QSGQwAfzBYsvlgfymUn5iT9LU0mu8eO5Dhxgp32xlGOOANlrBgH1luAoFR1lC2lgD5shvzuThgcsDMFm/56czak+1vLUku/K1cdF/wvaeBhGdN0LHkkv8/a2MoQIHOH/E41QBhYJ5GQKrRmK1C/3cCztgntuJAuKD0hRXhHBcCx6A+qfROu5X96eFW2yldQMX0npOPl1EIBczNvr/Zda3bJ7uu+VFoFHNfn9Sem+2nMGu8UGbA8W5wDqJ7Dmqvdup8Tr/unqDsMDEJYHhM6XwDMEo1XAJof2bn1n5RlV1nhBWthg90RmW8eg0QqDZNAjwMWBAHIxd3Vf03Trw4O+pLCx+AeoYCkB4Ncw2c7a9Lyq3P7kMmFcVPrzeP0eytmz/HBspPIo6oXcBb5Jc9sdtK93qcAcz+x+DISAzF9cHRLfr8+3d7xZxMB9e2/hYlfFpnm2EPI3z4lLrq6o273s2nS5ZksVYf7JSMFhBV+4FRA0us4DUPFY3QanaOrnMT8GSyoOrWMlKKuVtlM8QgLB2ef6b+UPboLqlbDPJPo4w0fwwyL2EoL2WyCqHCWxuF73j7lMFLckRgkD8YGJx85IBtt/3BOJefjrZpU3+vEuQ95PrK+ihLOBIp7xpICudm4vrZixnm/TTn1cOJSwYIufzw0AwgHvhIJ4uvFt2GiIkASzkyNGf5yt4DuQwUIdlxzMtCODs+Q8ijuwSs54u8N0B5T+oo1oKs5Y1bYA9+V1N7whF0sqzL0yMae0qhI96RppADq8MAQvDHRnf4ETfVg/4WPUtDagvhz8AVPTEiMq0udMYAmj1pVn0JU7GOXImM08eabI/pouSHrnYdr78OuT7k/GyoQjvAJFSkKw6tN41MwNAx8G0imGO2OAcikEql6oMnH6nIi7beuC9ZQHv5uqQN4ych+doIN2ah3v2fcamHkpdcQ54ODUKrCoRL6Sq1UdgNeJcrbq4sGXBqFzarSbvgWeAbadc5ITkKeIn1Tm/24aXC3FbwKNwxhADgI/Jk+RtqIMbkbQ5fiuQalqW89PPMSr6xSqXXUqnvYDTKjwiWDDO0k0YdksIH2WvAuOmJZUbMhSuSpXTm+lHY="}'
+[Relay 2] [Relay] [DEBUG] Data before JSON parse: type=<class 'bytes'>, value=b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "bwtobWFKHQglmeIqQ/rfbo02qV/Au7jdUnYS9hn+j7jFfVixubG3M
+[Relay 2] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] Received session_key (base64): bwtobWFKHQglmeIqQ/rfbo02qV/Au7jdUnYS9hn+j7jFfVixubG3M+kcb2uKSetfOwo8WibewasueYlugs0JPRgYxzEbwLpTFw74GeI8wxMzXp938NazNcZGwJCzHdjwYYfk11kOIIdJHUSdYlPqw0OldZEvxagSNOfeAEntNPuZywCUR7G4SR838RUCh4eTEGVRgVAWcnoiIa1M2nyfiAiaou4YD5Ydl6C807eqGigYY+qVg9S4W06UG1jRDIB06fWsqvlp1kD1d3vyc2fkM5mkTzIVa1G3543t1o9DYvNF4CMDqpf+e/kjznjKGlFj6Zf3NVSG7ucSQm/KyLwhdg==
+[Relay 2] [Relay] Decoded session_key_enc (hex): 6f0b686d614a1d082599e22a43fadf6e8d36a95fc0bbb8dd527612f619fe8fb8c57d58b1b9b1b733e91c6f6b8a49eb5f3b0a3c5a26dec1ab2e79896e82cd093d1818c7311bc0ba53170ef819e23cc313335e9f77f0d6b335c646c090b31dd8f06187e4d7590e2087491d449d6253eac343a575912fc5a81234e7de0049ed34fb99cb009447b1b8491f37f11502878793106551815016727a2221ad4cda7c9f88089aa2ee180f961d97a0bcd3b7aa1a281863ea9583d4b85b4e941b58d10c8074e9f5acaaf969d640f5777bf27367e43399a44f32156b51b7e78dedd68f4362f345e02303aa97fe7bf923ce78ca1a5163e997f7355486eee712426fcac8bc2176
+[Relay 2] [Relay] Decrypting session key with fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] Decrypted session_key (hex): 91f6f32438fd5998c17a4df431be37ea4e7ee304f6e9fa68ba1b7faa5ba05a86
+[Relay 2] [Relay] Extracted session_key: <class 'str'>, len=344
+[Relay 2] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 2] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b'\x97\xd0\x10\xb5V5\xc0A\xefSmv\xf7=x\xfd\xe2\xe5\x98v\xf9\
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_
+[Relay 2] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=1090, type=<class 'bytes'>
+[Relay 2] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "sgUuEgLWQUZ1U
+[Relay 2] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=1116, preview=b'{"result": "OK", "echo": {"next_ip": "10.250.120.196", "next'
+[Relay 2] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=1512, preview=b'fcuO3SX4HMEHIZsHuOq1vBlg+EyXbeE850OSMOlxxAx3ELMaGQNfKEvM1PAC'
+[Relay 2] [Relay] [Last Hop] Sent response to ('10.250.120.196', 53843): b'fcuO3SX4HMEHIZsHuOq1vBlg+EyXbeE850OSMOlxxAx3ELMaGQNfKEvM1PAC'... (len=1512)
+[Relay 2] [Relay] [handle_message END] addr=('10.250.120.196', 53843), thread=6138097664
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 2] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 55698), thread=6195392512, relay_port=9102
+[Relay 2] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "28cUIhIaKp9iAPoyI7yW00yGiXAszGSq+LOatlp0ut+VQtOcnS7Fb8X3EZ72j+2A/NQEygyfVSxY7aKkFZlYisu843P6LnGZ7acz0vF6/SSDzpXidEQW9or3NccWm2ZmLQS4I09DB3eNMLXETPXDFri4HYhixhOHDChWDLTpeu4gEPGN51O6Z3uMJLUlqTf/lvoZMTF4ZjXiBdP8w7cBZks5UV53cFrUahcM4oa+GxUE1CWBkYYicGEVsQN0FMMiCYzY8LBBVjgtCr/2qzTQuLFZU5PFzKzJCH1kkjbI9a6cc/2bNi2s4cuK0shPCC8PIF4KAjaCl1lI2KD/YLD4Uw==", "payload": "MKCzmSEemGuxJ7oVYBvzZwvKci3K+kA7n/6C3Yq9G20GhqQib5wa8VZOAHIglxjGVvgTv9TxNsSEE9QZhwWA7vY1vA56tJW1FS4UWrIZ7W0WV8Ck25pKmDmWDRgxxs7mgJ0CMB6C0O/WmodNIhCCbz4ZLPNSjh6tfpHuKdh3z5Ga8ieqwlU0V303lqhwMX7gy12yKjnGBd/t4AOJz/3cCO2NFeR/DSLVIqK0bS2NNK5fLxC30uW3eS4OxAxOcdGYVoU0OARkDp517E+ZRnAkyv+5vHtrk1boWWWHKQ664rAlbYEXoihQKGwFFi11ZorOCo3JQEj8cp67i19SgqFqkYtdIaNxKvF9NXWJYml8MpHKXS8gD54xDHaI8+jSsijG5zk1iQPv0DWdm/u34TTWDDt/ukYq4MItJlkcTeWdhgXyBZtrTeb/PXmkdeg/Llv9+IKUWh9n6CFKrqCFS9l7/xmq/PkVEYOfgqLjfeUEINhMQg4VRcfi8JDp+elXdhWAXg8XB4zC6sYNYsvQzQk7kLtWuOlEkhH80/37n8smqkn8lxGVxHk/UZyWwuPKealbN1XzQJtswyzMbwfn4+JhOLUWlD6V6b9vPGLHBpvutUeaA7VgxqGeIzY9wCZ2qVCSMJZ9S4Kni2GRhWW27bz+dG5MAe7tuhYc98ehFEFGEjmsfGzEzs8o17EZl1wa00lr9YAty4iVdvUQy+aYzUj6E2ejWMuNdXcYCh5cGfwyW6xmKWZ6Mvxyx7p/T2XBxQsllVYHqgd8E/zd7umqUzHms0wZDCwWai8WaRBFlnXs/Vhymef7Fo1Jk0yixK3KSPc1e5swSz8y126q2+mBw7QkjpHUM78FOVB+LQr1LPiKqsVGLa65qxmgjhiKnJnfo7PHQOqX5BdIOXLWkemTzxN65xHM8m3LWV3oxziL6OXNdLasTYGZ+oUhbAsDbF6FJxX1QPkR+VS9HVPePrB+gAUXYwz47eyHckIllsfEAzMvU7nqi5C1ko/oN4kzY8yreWUpLgjC170f4v4h0DEQVVo51umT4h1y7W7DgCFYs6S9ITBjDM+yHO31/zM54X+6J1Q7TPmRJdeiEk3ptr+BhIDbjfgXIVAycDllP6BRFzsfaDQ+szet8Fw4ui1IsxljW5YbqcpmTA+EDPttB7ejqjZ7Sf2WRP4UZO8kxh+pRH1GHLHMSfBBoh1yjhqU/r+sS4CR4U5v5gJcLnKHnPGffBun3OwyNMrLAbu+I2liiXe/Li/zZoOdPA0Yynl6MxxdSYJ1jn1A+vQZMWQIboEyge0CM4Nu0UJb/+ZuVegVA69qJ4biDifZhpFGWQGkiNyiPGVDKpKtfODaKudXF3uyCd6ISqJh446Q6yOh/GA4mCtn3l/CRRPoD6I/ANA1sl8sVTUu1faj0uwW7qGs/No3Y9bc5UGAxTkqOkzKGtRZwh4OcPpMXqUyoLHzsdEGEa54vBGRyig="}'
+[Relay 2] [Relay] [DEBUG] Data before JSON parse: type=<class 'bytes'>, value=b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "28cUIhIaKp9iAPoyI7yW00yGiXAszGSq+LOatlp0ut+VQtOcnS7Fb
+[Relay 2] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] Received session_key (base64): 28cUIhIaKp9iAPoyI7yW00yGiXAszGSq+LOatlp0ut+VQtOcnS7Fb8X3EZ72j+2A/NQEygyfVSxY7aKkFZlYisu843P6LnGZ7acz0vF6/SSDzpXidEQW9or3NccWm2ZmLQS4I09DB3eNMLXETPXDFri4HYhixhOHDChWDLTpeu4gEPGN51O6Z3uMJLUlqTf/lvoZMTF4ZjXiBdP8w7cBZks5UV53cFrUahcM4oa+GxUE1CWBkYYicGEVsQN0FMMiCYzY8LBBVjgtCr/2qzTQuLFZU5PFzKzJCH1kkjbI9a6cc/2bNi2s4cuK0shPCC8PIF4KAjaCl1lI2KD/YLD4Uw==
+[Relay 2] [Relay] Decoded session_key_enc (hex): dbc71422121a2a9f6200fa3223bc96d34c8689702ccc64aaf8b39ab65a74badf9542d39c9d2ec56fc5f7119ef68fed80fcd404ca0c9f552c58eda2a41599588acbbce373fa2e7199eda733d2f17afd2483ce95e2744416f68af735c7169b66662d04b8234f4307778d30b5c44cf5c316b8b81d8862c613870c28560cb4e97aee2010f18de753ba677b8c24b525a937ff96fa193131786635e205d3fcc3b701664b39515e77705ad46a170ce286be1b1504d42581918622706115b1037414c322098cd8f0b04156382d0abff6ab34d0b8b1595393c5ccacc9087d649236c8f5ae9c73fd9b362dace1cb8ad2c84f082f0f205e0a023682975948d8a0ff60b0f853
+[Relay 2] [Relay] Decrypting session key with fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] Decrypted session_key (hex): 03bf2b9802e4939d703101980c690bc44868403603f3a2c19028e823c7172807
+[Relay 2] [Relay] Extracted session_key: <class 'str'>, len=344
+[Relay 2] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 2] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b'0\xa0\xb3\x99!\x1e\x98k\xb1\'\xba\x15`\x1b\xf3g\x0b\xcar-\
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_
+[Relay 2] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=1090, type=<class 'bytes'>
+[Relay 2] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_key": "TlUQ6cU5Zd/Yx
+[Relay 2] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=1116, preview=b'{"result": "OK", "echo": {"next_ip": "10.250.120.196", "next'
+[Relay 2] [Relay] [Last Hop] Response from dest decoded as UTF-8: '{"result": "OK", "echo": {"next_ip": "10.250.120.196", "next_port": 9103, "session_key": "TlUQ6cU5Zd/YxxZ453OwVrVxMM4+V0'
+[Relay 2] [Relay] [Last Hop] Response from dest (hex): 7b22726573756c74223a20224f4b222c20226563686f223a207b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e657874
+[Relay 2] [Relay] [Last Hop] About to AES-encrypt response: type=<class 'bytes'>, len=1116, preview=b'{"result": "OK", "echo": {"next_ip": "10.250.120.196", "next'
+[Relay 2] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=1512, preview=b'm0IbctLMzzKQTV0wIs4HGIluFdveM8HaHrDk0uBxb4wpdhUlI9jeAUqkdqES'
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 1] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 59318), thread=6133886976, relay_port=9101
+[Relay 1] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "asY3kcK+P68f3unA7mWWT6DQK6OFdc/kUg3MRDShbx82Fndw1L71zhxD1KH/PTiU9WAEeRrdJEIbtkoig4dyTtKJd+Y3/OOlKZ6rGSh2RJ10m87Tby+FsHXSbNFBzMtv0jO7U7l4KS4N58LiIcQsJtFjEy9e8gY/cMAIvXoALGqiadAu8g6HFCPquGAmyqVrYUnvyr55GDTCfYI003u9au5nJhpdyaKi4R7TCe+edZxLhvjGfaCRnTzTtFWfhGd/130A73HSOIOoasJbACudpNRGco4RKfwbiuJ+xnacZnY2FFFEcBcHtMUMfaWO10Krj6VlkREVu0xnsxuXSzuKdg==", "payload": "FHdYCPCV9Ey6LoEPLILolWauDFEyh6tFeQJAkaLk8/12cyExP8MCTWi85ymtas/2JWX8nVhr6uKObHtufg07pX5mem6dOTkUPkAqV9GIh1NuK6RqGLF7f75yd4rA0dMuBHf7XMrM4bAoBqXqfoBJFvYOhL+wgShEP3a6QwRxG29nU7K8g+n2WKOFo+r8nq+cJFmplWeVJuEzwENbEoXX4tHDoUtOpCO79yCxZududunWdDq8LGwHaQ8GvUdOZzyvCIx4pdgiEoQqV3mR7sSBV36rlT4X7ED9ecFQrfyooId29+GlJR34zdmlf2PFSwWAeGZ59Rn2FbpcWuGUZ6lqwIgAVOH31/WDQOQZ59yo/b2lfN6z909uF9vfMIMITUawn0MLr3Fr/hZfPBb96QiI/M+WkzEIShxRnHAgTVzE1xJ0zHtbWvlSLK/QnqSRdurtGxCsYq88LGilSZyklKrlHTSzXU6zGNbTksPIwcRIqagbGGNQJdAsj3+LAHyonxG5PvkwI++blcjxG7vI3CjU/lcX48JxBjBX4rQcbI0xqUs6UmvGNjt/vkKG0dYhNS/zheEpdXxNyU5BxUwVvi1wSAsVKQHkKDVtHLsjc9GaRAzJ4Psg1PEpmXhW9toTbjEFmXe42GCHhIxOYF+hf3+gCqYAC8NpiDsTimpSLeXbhHASBqjyfKtizRASt4dfkaRzhgXk6rOLnSaPr5tRlErZWfOygUlG2cglMpVHNaaXManSKis80ryP/8k0gi1hDtKIRjK+1pwDbLER0yZ06XeWcB0pUA5Afa8TA1XET/ctg8RrP9/z2mY9ZZsCEHH+J2Muzo0FZ4JdIP4k5j2MZQ9Gb5RCeapY1smpBwAtRongoJlB+Cv+7fb5AYnFc2tTZhjihmdillWwVvummIu/GpzIX7TqNoGeqKbbt37xL3duVElx7YI+1UBxnM5Dd3r7jnCfkZ7ZtnSEOc+B8typppVhn6PcaEBSHHTF0WSe4ghByqu3HWlThtMElmMPsTrsiF9gbR7Db/Y9JAUBe/szuqqyifBFJ30c/Nl3SEpYQtpe6xZOekPWdiiCGc5KX9IRFUz0/JCz4ckKUkfQsJO4VCsiAuhVevpyX7ibwORadx/kmclDQIf3UN2FiXeEVnANzcQ81qu12lL6qfDH8/N356eqAagHLBHL9PgAr5BGOvmpQWI8ykhGvFMhTWBo4zGnvIN2ghmlt4ABNGm2OWL02/re63zBmMteXDdhyEJscWERoLux/9Y5Jhs3TUC1Dls2Njy6/V7ItYvXpIbKryGYlKSyM22EPPsz7retFlxXtHPeJn9LP7/DUBzxWGK2FtcUwbjs0Z20kWUAoHAWWJXExlBWcSyGLT9F0eDNUPm/3F0vrZhXcHi76trIofsHJEyojA5gFbiLuK+WOK4bZ6x24kDn3pJDA5cYI3RuVwjp4TTEcH06vjL7u+ycZoUfgHWaOCHiqpo="}'
+[Relay 1] [Relay] [DEBUG] Data before JSON parse: type=<class 'bytes'>, value=b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "asY3kcK+P68f3unA7mWWT6DQK6OFdc/kUg3MRDShbx82Fndw1L71z
+[Relay 1] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] Received session_key (base64): asY3kcK+P68f3unA7mWWT6DQK6OFdc/kUg3MRDShbx82Fndw1L71zhxD1KH/PTiU9WAEeRrdJEIbtkoig4dyTtKJd+Y3/OOlKZ6rGSh2RJ10m87Tby+FsHXSbNFBzMtv0jO7U7l4KS4N58LiIcQsJtFjEy9e8gY/cMAIvXoALGqiadAu8g6HFCPquGAmyqVrYUnvyr55GDTCfYI003u9au5nJhpdyaKi4R7TCe+edZxLhvjGfaCRnTzTtFWfhGd/130A73HSOIOoasJbACudpNRGco4RKfwbiuJ+xnacZnY2FFFEcBcHtMUMfaWO10Krj6VlkREVu0xnsxuXSzuKdg==
+[Relay 1] [Relay] Decoded session_key_enc (hex): 6ac63791c2be3faf1fdee9c0ee65964fa0d02ba38575cfe4520dcc4434a16f1f36167770d4bef5ce1c43d4a1ff3d3894f56004791add24421bb64a228387724ed28977e637fce3a5299eab192876449d749bced36f2f85b075d26cd141cccb6fd233bb53b978292e0de7c2e221c42c26d163132f5ef2063f70c008bd7a002c6aa269d02ef20e871423eab86026caa56b6149efcabe791834c27d8234d37bbd6aee67261a5dc9a2a2e11ed309ef9e759c4b86f8c67da0919d3cd3b4559f84677fd77d00ef71d23883a86ac25b002b9da4d446728e1129fc1b8ae27ec6769c667636145144701707b4c50c7da58ed742ab8fa565911115bb4c67b31b974b3b8a76
+[Relay 1] [Relay] Decrypting session key with fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] Decrypted session_key (hex): 42cbcd5118bf21905a64088f251cd440b98cadc23b921e580ca55bb68ccd2e82
+[Relay 1] [Relay] Extracted session_key: <class 'str'>, len=344
+[Relay 1] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 1] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b'\x14wX\x08\xf0\x95\xf4L\xba.\x81\x0f,\x82\xe8\x95f\xae\x0c
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload as UTF-8: '{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "eKD4kKqF2QWv7nn95ioKGLsVYZB3xTQRjmZleRQMu8KbW1h/I7diPyI'
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130322c202273657373696f6e5f6b65
+[Relay 1] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=1090, type=<class 'bytes'>
+[Relay 1] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "eKD4kKqF2QWv7
+[Relay 1] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=1116, preview=b'{"result": "OK", "echo": {"next_ip": "10.250.120.196", "next'
+[Relay 1] [Relay] [Last Hop] Response from dest decoded as UTF-8: '{"result": "OK", "echo": {"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "eKD4kKqF2QWv7nn95ioKGLsVYZB3xT'
+[Relay 1] [Relay] [Last Hop] Response from dest (hex): 7b22726573756c74223a20224f4b222c20226563686f223a207b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e657874
+[Relay 1] [Relay] [Last Hop] About to AES-encrypt response: type=<class 'bytes'>, len=1116, preview=b'{"result": "OK", "echo": {"next_ip": "10.250.120.196", "next'
+[Relay 1] [Relay] [Last Hop] AES-encrypted response (hex): afe1fc5f5bef0c91966d21dee2e263b632a73649defe02c0edcf7264b7ea4605d50cb5b4b8b954fde33d755332519cca96be168a85e984344f48ccf5
+[Relay 1] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=1512, preview=b'r+H8X1vvDJGWbSHe4uJjtjKnNkne/gLA7c9yZLfqRgXVDLW0uLlU/eM9dVMy'
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 1] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 64363), thread=6137901056, relay_port=9101
+[Relay 1] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "EjB5O1dtBHLNMFjfygmujHQDW1zXpfLtWNvZGKSuof6XCbt6zPlzOoMyN86Fvd8UBjAufTOHu6Q/RRh5AGS2U52dRxJYV/0omK3xHi0rXo2v19+PFhwG5zFLkcN/gWmt2x/CyWVAez8fJFsiUFe54eUQU/5OVtgIcIOsowm1Ey10ZAoDRkIHwtaPHafRm/LVsuEci/irJ5LvsPgfnhaDotyT+F5pB2FnG5EW7LemhJoOBEOq6l0tTGtGY2ALA3LVf82uPzRzxOXHkTYGzoVl292tjdmJoD8QGfKFzvg5Dj+gw8qOapM1T6FxnpAiMYVyT2cG9Bs3kcY2nCBOen8Ikw==", "payload": "TrN/CpwTKt013zcfCsz+SHBHFvt7wduFHkDh5uZY9P+Y0Tvy0ydT50l1OeEy++eMvFRi/v+sI1lcO7Oearqb/0fNt9ihM2AffxegwyYUdBBdGg9SEnZG0rbAZaWdoELWNaRkHxO9Az1p4BmLU8nE7c5uDcypx+DZt/1JkYWLWKjZISMg/rj2s2WtN3unxOWkBRC9ebXghIOuGW2CrHoyegfh+XHRbUo4sPmA+nHH4kz1VyPiYLEmek0UvMo5s1YiqeuuwEM7s9lV0NGo9iw64k0PomoEW0ZKrRWzrwHfaIl4O/vyaYU8bYKWG/XuUUuaQXc0cyJI+sks3UAckAIi/s3SuGQSkzl7faYMVGzlyGNkutwKhxz8LM/Sgy96JguvV1OqHfCSb7/+QzuRPZ/UXNxGUg73gpqwXVTsjwJjP1v/aIFp6MWYDZikgtEVCkGfwel7oNyqY/9r6mVELK1qG4Z0V7EGFg81KTuEKJh6ZsAhmlfG7UcbL81/8/4LJ+LrItvrYcjO3LQkC56laYhiu967+3z+l3+JVrWicCtzrmDYdbQw4Dw/jFav4lhwb5XITpKzM+VbRPxzi2WDjP6bg4NBDbXhrLfufdXM50nvfM1vLAZR0CqGyvO98I11GNRaivwEgmV+XGIl1D4QG8ltI9WZf1UNNIuI1n1cA0tq4PnefuP8ipSRn6ZRP096aT6WzmGHtH5NwmMiL3+awIpjFpTTB4qncjXPiEsXxZvLw3DAvZwphZVsc9nHaQpP+jr+zkSBcJBYefAJn+9CB3tp3x8eE92AkeKvUM/2nk3p079LmxAzYkAZgLzE0goGNDlegiFPCRD22jVqKjVRGLGkmnOOcd+rQRWbFLUeF0n67aGn45hoRwyYhHxFzVxw9Z+Bc1CYF/EmvXQovURjWGbnf5VNgOyPMPm0HYFDVv70YINhXMGXQ55AXfSFN6cTQXo1snIwHSRO3/XMrkPhbGwkVGisj4EbsCLZ3dAAKuKhHFIbNoBzOWvwxfn0iwHlSqI8WrUpfzQPX0Euk0mZEklP2V9bUlLQJfcDwSUedDIG9/R7BbzIZvX/lbF4CGzeoLHM4ZNd+iGgsDhCyZsRmXjycpa0qlOn7JXIm+tWSVd4xxmKsBBN+L21jzxsZRTVpMdfjb7onXeFO1Xac83hZHZpu2KJnGK2TbwfleoLVOHkANBgyN8noMjL0FErhQlzdqrAQMBNzGmL1VT4IUCFPAmMYol0fi1EC/UltdnIIqFlc0WytV22YZRNLMznA/j+pR3TjFpGuEW7jdoVY922x7o7ze/tm8W+FkIyHUtDbHBv9sf/3ZkTr4A4Le7Iub7KL+ePnuffEu2lDp9WB6iDOYpz3+3QgPJMDT4ZMOrTRrUrMwoawnfbFMxMidq2lNOuqnTmA5xFXQx/Z2BBWbkW7prenYYJyNCoy5hsCVQfc9e6K67665fl9JLBfNFkxWiUinxu6fo="}'
+[Relay 1] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] Received session_key (base64): EjB5O1dtBHLNMFjfygmujHQDW1zXpfLtWNvZGKSuof6XCbt6zPlzOoMyN86Fvd8UBjAufTOHu6Q/RRh5AGS2U52dRxJYV/0omK3xHi0rXo2v19+PFhwG5zFLkcN/gWmt2x/CyWVAez8fJFsiUFe54eUQU/5OVtgIcIOsowm1Ey10ZAoDRkIHwtaPHafRm/LVsuEci/irJ5LvsPgfnhaDotyT+F5pB2FnG5EW7LemhJoOBEOq6l0tTGtGY2ALA3LVf82uPzRzxOXHkTYGzoVl292tjdmJoD8QGfKFzvg5Dj+gw8qOapM1T6FxnpAiMYVyT2cG9Bs3kcY2nCBOen8Ikw==
+[Relay 1] [Relay] Decoded session_key_enc (hex): 1230793b576d0472cd3058dfca09ae8c74035b5cd7a5f2ed58dbd918a4aea1fe9709bb7accf9733a833237ce85bddf1406302e7d3387bba43f4518790064b6539d9d47125857fd2898adf11e2d2b5e8dafd7df8f161c06e7314b91c37f8169addb1fc2c965407b3f1f245b225057b9e1e51053fe4e56d8087083aca309b5132d74640a03464207c2d68f1da7d19bf2d5b2e11c8bf8ab2792efb0f81f9e1683a2dc93f85e690761671b9116ecb7a6849a0e0443aaea5d2d4c6b4663600b0372d57fcdae3f3473c4e5c7913606ce8565dbddad8dd989a03f1019f285cef8390e3fa0c3ca8e6a93354fa1719e90223185724f6706f41b3791c6369c204e7a7f0893
+[Relay 1] [Relay] Decrypting session key with fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] Decrypted session_key (hex): c26d055c22c7df0cf451a83567fc9cde6bdbb99d2a8c99dcc03fd3f1bfdd943e
+[Relay 1] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 1] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b"N\xb3\x7f\n\x9c\x13*\xdd5\xdf7\x1f\n\xcc\xfeHpG\x16\xfb{\xc1\xdb\x85\x1e@\xe1\xe6\xe6X\xf4\xff\x98\xd1;\xf2\xd3'S\xe7Iu9\xe12\xfb\xe7\x8c\xbcTb\xfe\xff\xac#Y\\;\xb3\x9e"
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_ke'
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130322c202273657373696f6e5f6b65
+[Relay 1] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9102
+[Relay 2] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 64372), thread=6158561280, relay_port=9102
+[Relay 2] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "NWhSxSm5YzHlGcr+vGIdjdMJsxAhP9cHeU3hxOAr9sm0FTn559Cq4UcYz47lfoqooixtODH/Z+wwFgI0czuBiwHdjDT8Hyz0yBH2CiGNB9syHvx/fmE2SvJKSG3O+1OG49LMRb0U4RI67TygZWzzJ0HiIsShqWqf9IM0cN1QZDXbbkJL2U1+uSX4yaqLZvVv8e8uzhUrRdkbpXcuqk0//kpOFLL4I8Cl/Nh/xVtGTGDkESoVPtoFMx96GRek0og0DfAd1u8Wf5uJYea5Kv3hx7k/lEYbMW/4I4Pt0CGu4kqFbe5TI5nHQA4a3CTv6ULkzWaA/1JskPH4dlvzpBQ+aQ==", "payload": "xXKtAfyhJNN7amosLGvIiH4HV3A3PgpRM77DPTHNbpXGgCNPA84HOnOhCpGflqnR+/FEJf82G2K2wSEQEO2uYwuyOQMpD9GGPU3Gfs94866sJSJ15g7Q1vBCTsydSahWpf2ghBVfn2GOKs0vF5Uj/fDzGnYYGZaGB+h88FQi43UhItzPv5VI+db5ifZ3AlTQC58+kV4F11c5kcwBbSkaYAGLGunBX/Fle74mur/htqXGPpnVQ0hKbi0Ay00juA4DFWK4AxlETAZxaxHnh75XpAtrqyXnco3IoCMMjWBDRzLa6LDHsP6cqviRQzKwZENbBLiRA+A2oiNRa+iwBoX3N0BOuQRKyaFFb0OK10qmRdBOLfDPXGJgfDp9akRsdR4f3y42aM6Rcw5AaUdUKdlsBwzlJTQuBFk5iHhy8YDD+82FVJ3t51Z70L15S27iBL5XclGLY7c+cEP3jt6IXM4lfrkXIcSlpHarkgaormZFwRmUiGWAwa69875kYEKwUdIcupwFkPBs/LOsIhocFxVuKGD6KcaUEZzQDgqilIOQ3MyulFpqZcNbEmN7JlLzzwZiQT3y0tEa141lc0yPYPg0b7pv6ygakFHMm1wtbnKj5oHwvHGNx/bAOPwouRSWjHFdcxqZ4FsaQT6TVDkjcphM8wdF"}'
+[Relay 2] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] Received session_key (base64): NWhSxSm5YzHlGcr+vGIdjdMJsxAhP9cHeU3hxOAr9sm0FTn559Cq4UcYz47lfoqooixtODH/Z+wwFgI0czuBiwHdjDT8Hyz0yBH2CiGNB9syHvx/fmE2SvJKSG3O+1OG49LMRb0U4RI67TygZWzzJ0HiIsShqWqf9IM0cN1QZDXbbkJL2U1+uSX4yaqLZvVv8e8uzhUrRdkbpXcuqk0//kpOFLL4I8Cl/Nh/xVtGTGDkESoVPtoFMx96GRek0og0DfAd1u8Wf5uJYea5Kv3hx7k/lEYbMW/4I4Pt0CGu4kqFbe5TI5nHQA4a3CTv6ULkzWaA/1JskPH4dlvzpBQ+aQ==
+[Relay 2] [Relay] Decoded session_key_enc (hex): 356852c529b96331e519cafebc621d8dd309b310213fd707794de1c4e02bf6c9b41539f9e7d0aae14718cf8ee57e8aa8a22c6d3831ff67ec30160234733b818b01dd8c34fc1f2cf4c811f60a218d07db321efc7f7e61364af24a486dcefb5386e3d2cc45bd14e1123aed3ca0656cf32741e222c4a1a96a9ff4833470dd506435db6e424bd94d7eb925f8c9aa8b66f56ff1ef2ece152b45d91ba5772eaa4d3ffe4a4e14b2f823c0a5fcd87fc55b464c60e4112a153eda05331f7a1917a4d288340df01dd6ef167f9b8961e6b92afde1c7b93f94461b316ff82383edd021aee24a856dee532399c7400e1adc24efe942e4cd6680ff526c90f1f8765bf3a4143e69
+[Relay 2] [Relay] Decrypting session key with fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] Decrypted session_key (hex): 386794a4888dbb99e4f5ac3fdf7fbf5a869c4b3ed4f35c5d3a045acfa5d1d500
+[Relay 2] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 2] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=498, preview=b'\xc5r\xad\x01\xfc\xa1$\xd3{jj,,k\xc8\x88~\x07Wp7>\nQ3\xbe\xc3=1\xcdn\x95\xc6\x80#O\x03\xce\x07:s\xa1\n\x91\x9f\x96\xa9\xd1\xfb\xf1D%\xff6\x1bb\xb6\xc1!\x10'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=482, preview=b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_ke'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130332c202273657373696f6e5f6b65
+[Relay 2] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9103
+[Relay 3] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 64379), thread=6196867072, relay_port=9103
+[Relay 3] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_key": "UiZpQ33n+DF+RKEt5Yuwv2odx7jU92c/SzrqwMucThejNz30dHiLilMB1msIx2IXOQ+HVjkwYflZ5lfJ15m3j+RGveXcPk0BfjQ1PuZElXCv2LN8euin2397ECOjSfE3kMjdRUSisDGrqCqNvx/ShEqDkJZ49uXG12vjg34XyzT1f8n53d14dK5UCqVzolbDMZVWfiBUcGerYnWiGC4Qah3fGWWc8xZemrQUShMZym0fsjZ4Dm44F49e9KGxcf/Fal6mD3+fQ+2AiTebO72DN4okYcyOCg/n8GvESJq9JeW0dAa6irQ8bVZfaqtU3jiPvUWyWWVcASMuo/pIlFPkZQ==", "payload": "DvncF4VkHHTjrTL5YUA5UgRJboFOG8HxJC1TPQXIz954OrCqPY/5rA=="}'
+[Relay 3] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 3] [Relay] Received session_key (base64): UiZpQ33n+DF+RKEt5Yuwv2odx7jU92c/SzrqwMucThejNz30dHiLilMB1msIx2IXOQ+HVjkwYflZ5lfJ15m3j+RGveXcPk0BfjQ1PuZElXCv2LN8euin2397ECOjSfE3kMjdRUSisDGrqCqNvx/ShEqDkJZ49uXG12vjg34XyzT1f8n53d14dK5UCqVzolbDMZVWfiBUcGerYnWiGC4Qah3fGWWc8xZemrQUShMZym0fsjZ4Dm44F49e9KGxcf/Fal6mD3+fQ+2AiTebO72DN4okYcyOCg/n8GvESJq9JeW0dAa6irQ8bVZfaqtU3jiPvUWyWWVcASMuo/pIlFPkZQ==
+[Relay 3] [Relay] Decoded session_key_enc (hex): 522669437de7f8317e44a12de58bb0bf6a1dc7b8d4f7673f4b3aeac0cb9c4e17a3373df474788b8a5301d66b08c76217390f8756393061f959e657c9d799b78fe446bde5dc3e4d017e34353ee6449570afd8b37c7ae8a7db7f7b1023a349f13790c8dd4544a2b031aba82a8dbf1fd2844a83909678f6e5c6d76be3837e17cb34f57fc9f9dddd7874ae540aa573a256c33195567e20547067ab6275a2182e106a1ddf19659cf3165e9ab4144a1319ca6d1fb236780e6e38178f5ef4a1b171ffc56a5ea60f7f9f43ed8089379b3bbd83378a2461cc8e0a0fe7f06bc4489abd25e5b47406ba8ab43c6d565f6aab54de388fbd45b259655c01232ea3fa489453e465
+[Relay 3] [Relay] Decrypting session key with fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] Decrypted session_key (hex): b738b63385a8a7815be155295e302a014b24df5370ecac43bcc162d7feb01428
+[Relay 3] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 3] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=40, preview=b'\x0e\xf9\xdc\x17\x85d\x1ct\xe3\xad2\xf9a@9R\x04In\x81N\x1b\xc1\xf1$-S=\x05\xc8\xcf\xdex:\xb0\xaa=\x8f\xf9\xac'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226d7367223a202248656c6c6f2c20776f726c6421227d
+[Relay 3] [Relay] [DEBUG] Next hop JSON keys: ['msg']
+[Relay 3] [Relay] [DEBUG] Payload is not JSON, assuming last hop. Error: 'next_ip'
+[Relay 3] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=24, type=<class 'bytes'>
+[Relay 3] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 3] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] Response from dest decoded as UTF-8: '{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] Response from dest (hex): 7b22726573756c74223a20224f4b222c20226563686f223a207b226d7367223a202248656c6c6f2c20776f726c6421227d7d
+[Relay 3] [Relay] [Last Hop] About to AES-encrypt response: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] AES-encrypted response (hex): 138360d32e74922af70fbf8cb643b1d61a19abeb6752351332ae35bac425d6083e3ca7f0bfdbb86fc71103372f7fb815d059f79145c0fc879fe37d4f
+[Relay 3] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=88, preview=b'E4Ng0y50kir3D7+MtkOx1hoZq+tnUjUTMq41usQl1gg+PKfwv9u4b8cRAzcv'
+[Relay 3] [Relay] [Last Hop] Sent response to ('10.250.120.196', 64379): b'E4Ng0y50kir3D7+MtkOx1hoZq+tnUjUTMq41usQl1gg+PKfwv9u4b8cRAzcv'... (len=88)
+[Relay 3] [Relay] [handle_message END] addr=('10.250.120.196', 64379), thread=6196867072
+[Relay 2] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=88, preview=b'E4Ng0y50kir3D7+MtkOx1hoZq+tnUjUTMq41usQl1gg+PKfwv9u4b8cRAzcv'
+[Relay 2] [Relay] [DEBUG] Encrypted response for previous hop: type=<class 'bytes'>, len=140, preview=b'elZDr2J1hCmaF0L/rduvsWaNjA2X6CY1kp4pUstP7xK5LX0qZYLuyp0t8M6X'
+[Relay 1] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=140, preview=b'elZDr2J1hCmaF0L/rduvsWaNjA2X6CY1kp4pUstP7xK5LX0qZYLuyp0t8M6X'
+[Relay 2] [Relay] [handle_message END] addr=('10.250.120.196', 64372), thread=6158561280
+[Relay 1] [Relay] [DEBUG] Encrypted response for previous hop: type=<class 'bytes'>, len=208, preview=b'BesQozTR1LXPprHaBNcWvg6KybaAiq2kKXGnSkZgRlD5wmQ6U6UanVYVkOu3'
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 1] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 49755), thread=6201880576, relay_port=9101
+[Relay 1] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "Qf0ct9BfJLx7PT8WQFXyAVjBI5xZ7r2zIZQE/7LQdYliPbXeXAKIfsBvII6NsY20ZMSDzSmn4/2IuXInhsdx38l91d3ol2J45mSPCohN2Jcu7ZKJrEm4VrHvul7jVBJIXPI54ZNnL8LurWZBEsRpS1lDfOEcHRoYBf0VtJx2mCrsBpBM0IYLi3YttjHrfbSxwjmFjwsCPhViATeEmj/PerbOr42EqDvY0bBj8k9XmyIWkGMlSO7EEDrJbcbeLMEkcBzxsTAaC2dj++FxwFO7UO2juZ7jtBqXumk20PcnHfO6wD38LlrDpo5V4yO1ZJmJL0jLtibqBlbqXud+b2JXWg==", "payload": "wWqHW5HAnlV3EdfMPIC260psj9vjoRtKjlpPuH3Vh/QB+CtIuIw7d+enpqFSZx2KGy1WyMhrs3ecjsxokhb+e82vxaVZs40TlU17UrSd7KatpFcyeE1ic7XUMTn/F8s+zekX5BRaGY4VNcPUa7gB/vKmt6u/bs9RwTMK2589tsN03UF8DLaafde01mOXdFOzaGhDtSTJ+msWSA8j+DacBTBt8uENQBvENzu94n51z28/DYVcPhQsYUCEZhBpHMEJhMBrcFripdxOUhNiPjqp6B+GcKrP7h6bq8w6hPrd/9zhEBYUbNtvm7PC6LBNH37w2MQLoytbj4BGOxduLX2SAy+MzBC3fdocBpWQHcMzrodTAoY4QTWlV8ZziomiyFjfk4rnFQM21brZareTGr9v4SPekHOHBp58hB66/QZ1MovLNEJRKUCB6okl1gnNJB+bmxGl9tDoYuzchDjQ81rSbAmefaiEhfkFztiUN+htp5uJ+UdihmbQ+pKS63hdde8hkDCXbwTRGOlJ4J94Q8opp/ewEdoWzLKmDD3JjowS2aUTFlF127RaY/z1d9IlgcGWQDF78w474jKIckfaLZ330aQ+g+LkGpszTW0SOqz4v/jn8aH8vTf/KKOYTyOlyh1q4NEG1WEw5VNwzrY0yodeusaL4ZxRP6VhlFvfDc9nV3cW1zXoU97ktCCAuTgc+pfpnuuQ5Vq/agW0N4CxnUMx29H5zMYY//mxrXJ1ZzYmy2DimXunV5lAEBJCSzqcicUOcMJt3DOD2w4QpHoGVcgugymFYxlJkH9Cn2t5FDlfDIvQQf0mnLOumUrIIaVSMl7WgTlY8mdOLx+H7xSPVrEFJ8EPnj/LTgPXIFhXIgRA23R3CSAos2fMWY+Vn0mvzaq4++xcMMogzQlGERGtamfErhyfXNPu3ZP2gnecfxPziQFlktLfsopzvR8EbDrcshf/XfvSmpUcFGL0wkN0nodxFbezfZ1P/YsXOqInaufOqpUjTfzazLXXc+iWqdpC7awmbBNX80ZKtEqpvzcUjcmDnKZbbNGcOhYDWnt8FU+TqNYne3ygyrtZdkZbySRgsZnI9leYb12WajSJsFH5HVPNcoab6fsFFJxWP3qWTcFpC77PQKDUIxC4CgtAWP5k+giOTGOjbMGalrGmkn5S1wyGmcD9EMHOUVhzQzQvsl7cCejhJ0YQd1UP5ol+1bU6NGPfe3kmZBAkAjThN4HYDLXhQ5eTDNUv3n/JcmqASaH/B7eCJpC1uClWZeXW5iNirAz43uLgWgwzmpNDnBNDK21+ZyF1xATwvv/JNBYO+ErUUT2azcAe+uFyLb2hWSVVAWPsN7L6IA6WJYDysTp1eQZDDGgTN/qIYWvDH35EUDCVn08BADP4hFzyVQ3uAorH9YLYTUhcbnFn7EOb/h3AhlAmdejkbvx3obj8Opl8ANPxPWMzAmLmtROVCtt/T7FS342ysUI="}'
+[Relay 1] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] Received session_key (base64): Qf0ct9BfJLx7PT8WQFXyAVjBI5xZ7r2zIZQE/7LQdYliPbXeXAKIfsBvII6NsY20ZMSDzSmn4/2IuXInhsdx38l91d3ol2J45mSPCohN2Jcu7ZKJrEm4VrHvul7jVBJIXPI54ZNnL8LurWZBEsRpS1lDfOEcHRoYBf0VtJx2mCrsBpBM0IYLi3YttjHrfbSxwjmFjwsCPhViATeEmj/PerbOr42EqDvY0bBj8k9XmyIWkGMlSO7EEDrJbcbeLMEkcBzxsTAaC2dj++FxwFO7UO2juZ7jtBqXumk20PcnHfO6wD38LlrDpo5V4yO1ZJmJL0jLtibqBlbqXud+b2JXWg==
+[Relay 1] [Relay] Decoded session_key_enc (hex): 41fd1cb7d05f24bc7b3d3f164055f20158c1239c59eebdb3219404ffb2d07589623db5de5c02887ec06f208e8db18db464c483cd29a7e3fd88b9722786c771dfc97dd5dde8976278e6648f0a884dd8972eed9289ac49b856b1efba5ee35412485cf239e193672fc2eead664112c4694b59437ce11c1d1a1805fd15b49c76982aec06904cd0860b8b762db631eb7db4b1c239858f0b023e15620137849a3fcf7ab6ceaf8d84a83bd8d1b063f24f579b221690632548eec4103ac96dc6de2cc124701cf1b1301a0b6763fbe171c053bb50eda3b99ee3b41a97ba6936d0f7271df3bac03dfc2e5ac3a68e55e323b56499892f48cbb626ea0656ea5ee77e6f62575a
+[Relay 1] [Relay] Decrypting session key with fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] Decrypted session_key (hex): d11337852da20b65833a48020207e806fe22f9ed5ba271c772e472846f0d942d
+[Relay 1] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 1] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b'\xc1j\x87[\x91\xc0\x9eUw\x11\xd7\xcc<\x80\xb6\xebJl\x8f\xdb\xe3\xa1\x1bJ\x8eZO\xb8}\xd5\x87\xf4\x01\xf8+H\xb8\x8c;w\xe7\xa7\xa6\xa1Rg\x1d\x8a\x1b-V\xc8\xc8k\xb3w\x9c\x8e\xcch'
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_ke'
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130322c202273657373696f6e5f6b65
+[Relay 1] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9102
+[Relay 2] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 49764), thread=6168817664, relay_port=9102
+[Relay 2] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "o8/ncHOeMKsyTwJw0o0PA3E1PrzCF2rXivA71RRqRqEv6U6581qofkwIQgiHBh40U1xU+gzbYIPZciks04rD0eq0uB5UIULbduK+FWj89HU+I9ndF8jqLPjvL2a0riX3d+3ckbfSwqjldFxbYKYA5ax8tNwdpxzwN21JAf4NTTHlPaN0Zy4QKF7wgU0bSEL2RCiuks9Lr5lJfhKXrMN+VuY/gwnJqoFMwezXrlHsj8pEkTpfyW9lZuIABJIdOVwI/HcmyES3bwJGvFdErRbc3t+euRpx6sH0lXcfXqZ/BM3vCapPNPJ5gnSyLVFrLxx0Ds+EQ2hZyCC5iYhcmEL95g==", "payload": "LffCEFxU4a+Ev6wdlrrOWL/jNFiht/UZDSWZmDKo1CNX26F+E/yCggI6k32mPB9IuQnBs+0Q/rxgSMdXo3qLy9lm9p1/D2p6Fx230bxi9Y+A4KSHkjfHeS7rsEIDkMZSkCi7duzFqzC0eK4G8+7d74VllRLelWeFlVzyNHb6D32dLl6WMeNzKKe4FwiB9bLrWx41oywYeku4PBZbfCLCjtxNXs+smVHRv1HjSuuoiIIb7/jiA82llVTlhaYrINyQ+LR4Q3Nm/9Uv54WvONpugAeaSKRoT12mK/uUqk01sNX/0tugYZbi7LBFBMW22AclIzm4dSlJSzvSD5X+62VP4ayUr59ujC81BPt8DAhQEjDgOxEztAuPEagwBtjujg4pYUJZ5sfngE4xgMEx7BW5uVb/8YVrMuDWFqXLgnseFyPTz4UoOcTFk3aypQgfk191bvgo2ZFpQt6lahKySx4MAT3IitqolHJLEQ0//jFc4q8erAampSZGQ3jQrEJUhq20T3dkERivEE6qvJd2UXkyaaDs7ZeqkD5QadcsZm+N/P8bH1ow5KUdeFWwsuiJA4L9rk8bdFgRVMkr6/9VZhLilSsnuEcc2M3XcgEQXcuvE2mkxh3MYQXoBPyxt1g/n26BCdlkkMwdxni3IOJsHHmVpQ1z"}'
+[Relay 2] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] Received session_key (base64): o8/ncHOeMKsyTwJw0o0PA3E1PrzCF2rXivA71RRqRqEv6U6581qofkwIQgiHBh40U1xU+gzbYIPZciks04rD0eq0uB5UIULbduK+FWj89HU+I9ndF8jqLPjvL2a0riX3d+3ckbfSwqjldFxbYKYA5ax8tNwdpxzwN21JAf4NTTHlPaN0Zy4QKF7wgU0bSEL2RCiuks9Lr5lJfhKXrMN+VuY/gwnJqoFMwezXrlHsj8pEkTpfyW9lZuIABJIdOVwI/HcmyES3bwJGvFdErRbc3t+euRpx6sH0lXcfXqZ/BM3vCapPNPJ5gnSyLVFrLxx0Ds+EQ2hZyCC5iYhcmEL95g==
+[Relay 2] [Relay] Decoded session_key_enc (hex): a3cfe770739e30ab324f0270d28d0f0371353ebcc2176ad78af03bd5146a46a12fe94eb9f35aa87e4c08420887061e34535c54fa0cdb6083d972292cd38ac3d1eab4b81e542142db76e2be1568fcf4753e23d9dd17c8ea2cf8ef2f66b4ae25f777eddc91b7d2c2a8e5745c5b60a600e5ac7cb4dc1da71cf0376d4901fe0d4d31e53da374672e10285ef0814d1b4842f64428ae92cf4baf99497e1297acc37e56e63f8309c9aa814cc1ecd7ae51ec8fca44913a5fc96f6566e20004921d395c08fc7726c844b76f0246bc5744ad16dcdedf9eb91a71eac1f495771f5ea67f04cdef09aa4f34f2798274b22d516b2f1c740ecf84436859c820b989885c9842fde6
+[Relay 2] [Relay] Decrypting session key with fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] Decrypted session_key (hex): b0030658cb5d9d73eacca9b4e24bce18dd05343c185639824322d711bd2f491b
+[Relay 2] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 2] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=498, preview=b'-\xf7\xc2\x10\\T\xe1\xaf\x84\xbf\xac\x1d\x96\xba\xceX\xbf\xe34X\xa1\xb7\xf5\x19\r%\x99\x982\xa8\xd4#W\xdb\xa1~\x13\xfc\x82\x82\x02:\x93}\xa6<\x1fH\xb9\t\xc1\xb3\xed\x10\xfe\xbc`H\xc7W'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=482, preview=b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_ke'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130332c202273657373696f6e5f6b65
+[Relay 2] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9103
+[Relay 3] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 49766), thread=6191673344, relay_port=9103
+[Relay 3] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_key": "P0IdAhg3fU8mOLd1THglJlHn5a3nsNWCV14tZirvwsczVzeLZZGTGBKY0Ixh5YR9ji4/Os7ZsiseN5Kvpdbn/cFXYamjd4zMdXulwFGyNWjt4w4DlDzk4wqJVNEF/3xoujimSRcCnwnpflWCvirnDXJk/7MpbCTBuHRYJridiS3ENDOphMdggDKpWbkauRpG5yTXnJPUUpXzM3LFnlAJL+uJPqJEgImJnzOJIK6uKTV+5LN7B9S25+C3jwLiV09D/j/uy18FxO3UEFq/01vQHQqweH/wAVbL5NnQAOaV3u5qCWKJFRu1BnWtp9sZcDJpTLJNxfa434kfAhCGP1z+Ag==", "payload": "HtiU96EGY4btVY3cWQf2bRHgjNkO3fcaNGThnqOmlxOD0gt23Tk3uA=="}'
+[Relay 3] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 3] [Relay] Received session_key (base64): P0IdAhg3fU8mOLd1THglJlHn5a3nsNWCV14tZirvwsczVzeLZZGTGBKY0Ixh5YR9ji4/Os7ZsiseN5Kvpdbn/cFXYamjd4zMdXulwFGyNWjt4w4DlDzk4wqJVNEF/3xoujimSRcCnwnpflWCvirnDXJk/7MpbCTBuHRYJridiS3ENDOphMdggDKpWbkauRpG5yTXnJPUUpXzM3LFnlAJL+uJPqJEgImJnzOJIK6uKTV+5LN7B9S25+C3jwLiV09D/j/uy18FxO3UEFq/01vQHQqweH/wAVbL5NnQAOaV3u5qCWKJFRu1BnWtp9sZcDJpTLJNxfa434kfAhCGP1z+Ag==
+[Relay 3] [Relay] Decoded session_key_enc (hex): 3f421d0218377d4f2638b7754c78252651e7e5ade7b0d582575e2d662aefc2c73357378b659193181298d08c61e5847d8e2e3f3aced9b22b1e3792afa5d6e7fdc15761a9a3778ccc757ba5c051b23568ede30e03943ce4e30a8954d105ff7c68ba38a64917029f09e97e5582be2ae70d7264ffb3296c24c1b8745826b89d892dc43433a984c7608032a959b91ab91a46e724d79c93d45295f33372c59e50092feb893ea2448089899f338920aeae29357ee4b37b07d4b6e7e0b78f02e2574f43fe3feecb5f05c4edd4105abfd35bd01d0ab0787ff00156cbe4d9d000e695deee6a096289151bb50675ada7db197032694cb24dc5f6b8df891f0210863f5cfe02
+[Relay 3] [Relay] Decrypting session key with fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] Decrypted session_key (hex): b26aaa22e9af972537a48f1663ac174a345aaebb32e06675bb5ea35b23580100
+[Relay 3] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 3] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=40, preview=b'\x1e\xd8\x94\xf7\xa1\x06c\x86\xedU\x8d\xdcY\x07\xf6m\x11\xe0\x8c\xd9\x0e\xdd\xf7\x1a4d\xe1\x9e\xa3\xa6\x97\x13\x83\xd2\x0bv\xdd97\xb8'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226d7367223a202248656c6c6f2c20776f726c6421227d
+[Relay 3] [Relay] [DEBUG] Next hop JSON keys: ['msg']
+[Relay 3] [Relay] [DEBUG] Payload is not JSON, assuming last hop. Error: 'next_ip'
+[Relay 3] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=24, type=<class 'bytes'>
+[Relay 3] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 3] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] Response from dest decoded as UTF-8: '{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] Response from dest (hex): 7b22726573756c74223a20224f4b222c20226563686f223a207b226d7367223a202248656c6c6f2c20776f726c6421227d7d
+[Relay 3] [Relay] [Last Hop] About to AES-encrypt response: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] AES-encrypted response (hex): f9fa6357136e46181fc3c47822167730b554ec8bebb746570ab6fd97df83bef8e5d9e35f19efc6ee000d6ad9d1145a8119f0b65423dfd7bdaa5064de
+[Relay 3] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=88, preview=b'+fpjVxNuRhgfw8R4IhZ3MLVU7Ivrt0ZXCrb9l9+Dvvjl2eNfGe/G7gANatnR'
+[Relay 3] [Relay] [Last Hop] Sent response to ('10.250.120.196', 49766): b'+fpjVxNuRhgfw8R4IhZ3MLVU7Ivrt0ZXCrb9l9+Dvvjl2eNfGe/G7gANatnR'... (len=88)
+[Relay 2] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=88, preview=b'+fpjVxNuRhgfw8R4IhZ3MLVU7Ivrt0ZXCrb9l9+Dvvjl2eNfGe/G7gANatnR'
+[Relay 2] [Relay] [DEBUG] Response base64-decoded from next relay: type=<class 'bytes'>, len=66, preview=b'\xf9\xfacW\x13nF\x18\x1f\xc3\xc4x"\x16w0\xb5T\xec\x8b\xeb\xb7FW\n\xb6\xfd\x97\xdf\x83\xbe\xf8\xe5\xd9\xe3_\x19\xef\xc6\xee\x00\rj\xd9\xd1\x14Z\x81\x19\xf0\xb6T#\xdf\xd7\xbd\xaaPd\xde'
+[Relay 3] [Relay] [handle_message END] addr=('10.250.120.196', 49766), thread=6191673344
+[Relay 2] [Relay] [DEBUG] Encrypted response for previous hop: type=<class 'bytes'>, len=112, preview=b'BicCt+jwdSKsPDvftGc1xMZw0bBMlnl2Ly4jsUepDzEMMlzqeIw6j21ki1o6'
+[Relay 2] [Relay] [handle_message END] addr=('10.250.120.196', 49764), thread=6168817664
+[Relay 1] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=112, preview=b'BicCt+jwdSKsPDvftGc1xMZw0bBMlnl2Ly4jsUepDzEMMlzqeIw6j21ki1o6'
+[Relay 1] [Relay] [DEBUG] Response base64-decoded from next relay: type=<class 'bytes'>, len=82, preview=b'\x06\'\x02\xb7\xe8\xf0u"\xac<;\xdf\xb4g5\xc4\xc6p\xd1\xb0L\x96yv/.#\xb1G\xa9\x0f1\x0c2\\\xeax\x8c:\x8fmd\x8bZ:\x1f?\xe2\x8cd{\x9a\xd1\x03\xa3B\t\xec3\xbf'
+[Relay 1] [Relay] [DEBUG] Encrypted response for previous hop: type=<class 'bytes'>, len=132, preview=b'91kdUQd4cPoc3tJSu/giEFbeoaoMyr2rCol/0tS64qxC8vGLdmAnSxyGJHZs'
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 3] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 51302), thread=6158299136, relay_port=9103
+[Relay 3] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_key": "5LI2UyJGpR+Ic2orFL/n9DtY/8Zqps7lXeGhTqvzU1N6DhSx3Dbkoeb8jvKbCmDAOfnBSTlRBuRwukmH7aeQzRmFXE2Rgu4w7p1mp3WNqtXXE4FO8sEaRFaWED/BV4+WZAufRK1YkeVf7oRwW2IdClARifRreA4RDoDD7jG9NxpRsvCTtHoGKMQgVn+W/HRbmccYRtuKDDDkbDGjUhnYE7TcSNPtDx+YCF8iRe1iKTviHQbB1WPib5mXDgWZ7whSvNxJ6R8dQBi86/1DhFJFdBdyn5kAAYv+RJWNFA+BUdCHh+WPz58m3kYednc4nDDxXT7xxzacezN9eSOGpdr1vw==", "payload": "3DXmzIBUg5G/DzVKZFZs/lZgWFxLWescuoPymZj6R2oIG4HdqyHbPZ1M60RS8mE0csu90iBeWTUDDB25+iKFNAZmsNZ13vz/3vO6DBBemgqii98nF7WCxZyuKDSYQIo4WvsIKvI+xGEtrOtL8u6sGvDVqPoWR5crUMYhI4JpayYbIEN019909MDbmE9n4S5b+8UyoTVYhHCPuCUVMzPGJblbhTR9z42cIvneaM/+/g1I8ySlYkP4YHOuqrVeWml45tnup1ehLIVWYhfFN2iP8RWUGU5dzA+I5QjBVWH1pGw9uQJwxJeLpVbbTpyHQ54P7p1uU7Ylo47x0O3lTgnHr0ZOFDMaT+3O6ng6w4u45/zzcomiZS9DAZSlzGiro+kPgW3cTLujHP2mhoyB2q3ecND/m4xYrRmerxPczaPc7WeaH7QQKh7hb38zn7rEeoW+4E6jbc9i1R5aZj3yxrjg9bhTw59k/NgbKoZ6yI/On+PCR5QJ9Upi5V8wPG5AnC/bOPK8Aap6u/TemKeM+IlSWpH/byq2zGzoFhy93JhDFTje8iWZfSErnHKhf1rGT9BnFKJZzPH2vYm3MezIXvH6Fpx50dbk+cpbJrcBqpy2L5D02ETwFDtkG0dyytrXWc1vgM14InOPFKHUB6WpcYJwb9651gQGH1y80uwedLJYaZP3n7fnDnXvAdL52ivjqXQTE5SfiTh8cIegvrSZ6IS3Ve4qGH6E6F6j71WKPrbw0GzwWaUlPQfSIN93ml7pqZof6lwhbTn8wSrs0Pu4OIcQQOkbEN97is8AFDofQWEswdNVObR6CZCa7fT1UartRCjXnKVBQmOkxah8q9Opig6w2qWaTE950I9m0RagPTzEaPIE0SNxAJCi6UqaQcIgBd8qDQfecbfb5BoLylOqqqKwxvCrMNX2zMIqgRJcCHV4+H178RrGchJDgRz1gTVodks3W/dCdmFHUVrIeAJ7JehTqTyFteRGOwdnJgt0a7u14b5B0g5syrrhtt7jfW+oH2YfR3dkqBip41zPFdxqzf8HD3Ili/dqGd3OjF1aUBw6oQXCirw0m1Gno/p9T7xaD5MU8dFfPN34AoWjYQa3FHAnIfHDdhKRYvmoOLdn+d86bGCJEeSJLwYUrve3U+7ZEiuJhUzlubCGCfYINSo+CsO4wqhOuMdq4RkVd6EE3BzJmdNwx/Ymb2UWGQ6jY37kTYK987Czq0Q4c9DgiK+NeRBZ0q+Lwg0Wj0GoW+gJKV4m7X+9TJs/oeQkZ14cxcx/lVEpcAEzdbPasT6ZcuIrN7EM//Aziw5ZiV+APoJc5kN5IQrYbPbvhbszyihTCW8iQEwDZrFY/cb9yZ6pDTqEOlnrYR8juJ3IARTpSD6at94IzNqyIoY7jNYmeZLqND5cYqowJ5R9LOM81i+JyncJjUEeM/u5hBoOt8nD7bBXwoFkGG7RErJkdqvO/787+6zYV7eD2HY="}'
+[Relay 3] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 3] [Relay] Received session_key (base64): 5LI2UyJGpR+Ic2orFL/n9DtY/8Zqps7lXeGhTqvzU1N6DhSx3Dbkoeb8jvKbCmDAOfnBSTlRBuRwukmH7aeQzRmFXE2Rgu4w7p1mp3WNqtXXE4FO8sEaRFaWED/BV4+WZAufRK1YkeVf7oRwW2IdClARifRreA4RDoDD7jG9NxpRsvCTtHoGKMQgVn+W/HRbmccYRtuKDDDkbDGjUhnYE7TcSNPtDx+YCF8iRe1iKTviHQbB1WPib5mXDgWZ7whSvNxJ6R8dQBi86/1DhFJFdBdyn5kAAYv+RJWNFA+BUdCHh+WPz58m3kYednc4nDDxXT7xxzacezN9eSOGpdr1vw==
+[Relay 3] [Relay] Decoded session_key_enc (hex): e4b236532246a51f88736a2b14bfe7f43b58ffc66aa6cee55de1a14eabf353537a0e14b1dc36e4a1e6fc8ef29b0a60c039f9c149395106e470ba4987eda790cd19855c4d9182ee30ee9d66a7758daad5d713814ef2c11a445696103fc1578f96640b9f44ad5891e55fee84705b621d0a501189f46b780e110e80c3ee31bd371a51b2f093b47a0628c420567f96fc745b99c71846db8a0c30e46c31a35219d813b4dc48d3ed0f1f98085f2245ed62293be21d06c1d563e26f99970e0599ef0852bcdc49e91f1d4018bcebfd438452457417729f9900018bfe44958d140f8151d08787e58fcf9f26de461e7677389c30f15d3ef1c7369c7b337d792386a5daf5bf
+[Relay 3] [Relay] Decrypting session key with fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] Decrypted session_key (hex): 0bb2a9b9d52f0f15d9302e710666e10d873246b57ea38f1d9b0da17d9466b1b1
+[Relay 3] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 3] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b'\xdc5\xe6\xcc\x80T\x83\x91\xbf\x0f5JdVl\xfeV`X\\KY\xeb\x1c\xba\x83\xf2\x99\x98\xfaGj\x08\x1b\x81\xdd\xab!\xdb=\x9dL\xebDR\xf2a4r\xcb\xbd\xd2 ^Y5\x03\x0c\x1d\xb9'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_ke'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130312c202273657373696f6e5f6b65
+[Relay 3] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 3] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9101
+[Relay 1] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 51314), thread=6188888064, relay_port=9101
+[Relay 1] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "H7at0pqN9f9Mo3mM+NXMyWCW3LdyKkw+MBDRoQgwXssyb+UajmVIaX/nkzZ8WWkdNv+5P+8T0sZloydcwT0NEJxxw1yuBb8AKxUh8rknLSXGGBbos5nGdFPjdBd/yTjAkz7cI6g9OGP/yPH9MnL8MjxxqzTLGmcoOGodLxMaJa+Nj/2qtwsroT7jyaVsCnlDNj1X4RbhQi4TCCO9Sm9LRK83BSioxCsBxYhHG7ixQY688CZrztD2i3cdSI4Ht08lsuizn9GpNb8r6ObyxXvyX17VKukVVm4GyrG3UlSQqOTMwlX3J01uhMmOyGoj7pUo8qzXaliMjXAPQYNcE7eXmw==", "payload": "Ol3ujohjwyFQ4ElFoWpYraSP+W0wgic6aGt3/afwMjl1BaKCMquj+XbQAKCiX5jRHC9SneTAJcG2kCyzM7GVfTcu07Lu3bwc+tEbl7oY8MzFFJWnFKqlEpLVuLL2Pd64jt/H199K4J76w2qS7jmIyoCngP7Mwc9r12MhMniyMVwrNgwX0+XeKXPmmijgxsmMz/jSiD0Hv3G7t/abB/zVvJCtVNl3OQOdopFF8CCzzaXlVsut3B/vbZ+0EavrU3lpk/9UGCszFxx6j+JwVbxeUU7VpRuOtO6dX3CBEcay0hc7Ms+2dALmnTl8fJOPnBp50GVHdYlrhcPfoAlcuReclVSSnMyCRNIzvAJiChOw1SlfaIE6xIQfFrFMH0y+jqpF+j/Z7CMixHqlPjJH7ngXbgKRbOHeh6kve34itzjJU4hvOqiHx16VXl9GJmeS+7xVB1805QN3+RcmHNePZbiF2JMZPUsq/BUrhyVYkd7ClKREHJzo6kro0l//HBBwCGROvVOuD7SF+uYSHT6FJyJ+GMlTaYeKJDdRvpTkOs6PSOGR2uPMBCCwHSSy2Vh16zOoWAiZUj7hHiz5OSRjfQk+cYr/5C8A1u/DwHxf3jaLZyBKn75+Wmx646hTdP1l880vmR+6RB/Az0j+Ltn/zRmXHZwA"}'
+[Relay 1] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] Received session_key (base64): H7at0pqN9f9Mo3mM+NXMyWCW3LdyKkw+MBDRoQgwXssyb+UajmVIaX/nkzZ8WWkdNv+5P+8T0sZloydcwT0NEJxxw1yuBb8AKxUh8rknLSXGGBbos5nGdFPjdBd/yTjAkz7cI6g9OGP/yPH9MnL8MjxxqzTLGmcoOGodLxMaJa+Nj/2qtwsroT7jyaVsCnlDNj1X4RbhQi4TCCO9Sm9LRK83BSioxCsBxYhHG7ixQY688CZrztD2i3cdSI4Ht08lsuizn9GpNb8r6ObyxXvyX17VKukVVm4GyrG3UlSQqOTMwlX3J01uhMmOyGoj7pUo8qzXaliMjXAPQYNcE7eXmw==
+[Relay 1] [Relay] Decoded session_key_enc (hex): 1fb6add29a8df5ff4ca3798cf8d5ccc96096dcb7722a4c3e3010d1a108305ecb326fe51a8e6548697fe793367c59691d36ffb93fef13d2c665a3275cc13d0d109c71c35cae05bf002b1521f2b9272d25c61816e8b399c67453e374177fc938c0933edc23a83d3863ffc8f1fd3272fc323c71ab34cb1a6728386a1d2f131a25af8d8ffdaab70b2ba13ee3c9a56c0a7943363d57e116e1422e130823bd4a6f4b44af370528a8c42b01c588471bb8b1418ebcf0266bced0f68b771d488e07b74f25b2e8b39fd1a935bf2be8e6f2c57bf25f5ed52ae915566e06cab1b7525490a8e4ccc255f7274d6e84c98ec86a23ee9528f2acd76a588c8d700f41835c13b7979b
+[Relay 1] [Relay] Decrypting session key with fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] Decrypted session_key (hex): 4611f5962664967d4de3def64489a35f6c1c9e794dc90ba172d2a70886d85679
+[Relay 1] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 1] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=498, preview=b":]\xee\x8e\x88c\xc3!P\xe0IE\xa1jX\xad\xa4\x8f\xf9m0\x82':hkw\xfd\xa7\xf029u\x05\xa2\x822\xab\xa3\xf9v\xd0\x00\xa0\xa2_\x98\xd1\x1c/R\x9d\xe4\xc0%\xc1\xb6\x90,\xb3"
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=482, preview=b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_ke'
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130322c202273657373696f6e5f6b65
+[Relay 1] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9102
+[Relay 2] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 51318), thread=6196948992, relay_port=9102
+[Relay 2] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "U1eAz6MEfilL0dVcQ9HWFmrBXCoQDq1nhdUUq2DbWmIbn5RvlkkGFJ9bBCAyVVB3QC02Rk2VpCLuuIIDDQtrQk6cIa8cISAbFUVWTAwwYlcgIV6WDkd+1h04p8XEhGo1BuMLfT8ZJhBorrkdW4+2wldMKpZQvWA2+VXV55wsmp8DLHZX8bWJsapKmDD5JuPx9ROROjwSJOWikU6i0L6FCOxz2JT+zMqixPO2npU4KfQaS4TsVUM+TTtk8H1Mdg9GfcsxA78gJY53/8QXtZtJuEuXCOrBIBMnsfrCh0zSxSk+9mJ7Y4JuFFGlYdN/zWS02IrQIClFEg03mCW0h3k+bg==", "payload": "acgy61qMn9RBGZQOq8VvZKPAfoTp3Vvz2WXUflgi+VivzZXSUWo8qw=="}'
+[Relay 2] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] Received session_key (base64): U1eAz6MEfilL0dVcQ9HWFmrBXCoQDq1nhdUUq2DbWmIbn5RvlkkGFJ9bBCAyVVB3QC02Rk2VpCLuuIIDDQtrQk6cIa8cISAbFUVWTAwwYlcgIV6WDkd+1h04p8XEhGo1BuMLfT8ZJhBorrkdW4+2wldMKpZQvWA2+VXV55wsmp8DLHZX8bWJsapKmDD5JuPx9ROROjwSJOWikU6i0L6FCOxz2JT+zMqixPO2npU4KfQaS4TsVUM+TTtk8H1Mdg9GfcsxA78gJY53/8QXtZtJuEuXCOrBIBMnsfrCh0zSxSk+9mJ7Y4JuFFGlYdN/zWS02IrQIClFEg03mCW0h3k+bg==
+[Relay 2] [Relay] Decoded session_key_enc (hex): 535780cfa3047e294bd1d55c43d1d6166ac15c2a100ead6785d514ab60db5a621b9f946f964906149f5b042032555077402d36464d95a422eeb882030d0b6b424e9c21af1c21201b1545564c0c30625720215e960e477ed61d38a7c5c4846a3506e30b7d3f19261068aeb91d5b8fb6c2574c2a9650bd6036f955d5e79c2c9a9f032c7657f1b589b1aa4a9830f926e3f1f513913a3c1224e5a2914ea2d0be8508ec73d894fecccaa2c4f3b69e953829f41a4b84ec55433e4d3b64f07d4c760f467dcb3103bf20258e77ffc417b59b49b84b9708eac1201327b1fac2874cd2c5293ef6627b63826e1451a561d37fcd64b4d88ad0202945120d379825b487793e6e
+[Relay 2] [Relay] Decrypting session key with fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] Decrypted session_key (hex): 9acaf55d4d59bf57492c57da7ea6a50f70cb2115f9b2fb59d8fc2be63a265b74
+[Relay 2] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 2] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=40, preview=b'i\xc82\xebZ\x8c\x9f\xd4A\x19\x94\x0e\xab\xc5od\xa3\xc0~\x84\xe9\xdd[\xf3\xd9e\xd4~X"\xf9X\xaf\xcd\x95\xd2Qj<\xab'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226d7367223a202248656c6c6f2c20776f726c6421227d
+[Relay 2] [Relay] [DEBUG] Next hop JSON keys: ['msg']
+[Relay 2] [Relay] [DEBUG] Payload is not JSON, assuming last hop. Error: 'next_ip'
+[Relay 2] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=24, type=<class 'bytes'>
+[Relay 2] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 2] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 2] [Relay] [Last Hop] Response from dest decoded as UTF-8: '{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 2] [Relay] [Last Hop] Response from dest (hex): 7b22726573756c74223a20224f4b222c20226563686f223a207b226d7367223a202248656c6c6f2c20776f726c6421227d7d
+[Relay 2] [Relay] [Last Hop] About to AES-encrypt response: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 2] [Relay] [Last Hop] AES-encrypted response (hex): 11858b4266d41273d483d319b02e0e49e93d29cf7a62d7b0c0d6d70f50747ef84006cfe4977107fafef56bed9b2cb2ed238848a644a1689217fdce7b
+[Relay 2] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=88, preview=b'EYWLQmbUEnPUg9MZsC4OSek9Kc96YtewwNbXD1B0fvhABs/kl3EH+v71a+2b'
+[Relay 2] [Relay] [Last Hop] Sent response to ('10.250.120.196', 51318): b'EYWLQmbUEnPUg9MZsC4OSek9Kc96YtewwNbXD1B0fvhABs/kl3EH+v71a+2b'... (len=88)
+[Relay 1] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=88, preview=b'EYWLQmbUEnPUg9MZsC4OSek9Kc96YtewwNbXD1B0fvhABs/kl3EH+v71a+2b'
+[Relay 2] [Relay] [handle_message END] addr=('10.250.120.196', 51318), thread=6196948992
+[Relay 1] [Relay] [RETURN] Base64-decoded response: type=<class 'bytes'>, len=66, preview=b'\x11\x85\x8bBf\xd4\x12s\xd4\x83\xd3\x19\xb0.\x0eI\xe9=)\xcfzb\xd7\xb0\xc0\xd6\xd7\x0fPt~\xf8@\x06\xcf\xe4\x97q\x07\xfa\xfe\xf5k\xed\x9b,\xb2\xed#\x88H\xa6D\xa1h\x92\x17\xfd\xce{'
+[Relay 1] [Relay] [RETURN] AES-decrypted response: type=<class 'bytes'>, len=50, preview=b'\x16\xafm\xb1)\xfe*\xfc\\\xa9\x0e\x12\xa3\xe7\xa0\xe7>\x92\x00\xdc\xfb\xd8\xf38|\x1d\xe3\xbc\x05\x88N\xbeJ\xa3\xa9\xc9\x97L#\x89\xbah\xf3X\xf9\xc3\xba@\xc0@'
+[Relay 1] [Relay] [RETURN] AES-decrypted response not UTF-8: 'utf-8' codec can't decode byte 0xaf in position 1: invalid start byte
+[Relay 1] [Relay] [RETURN] AES-encrypted response (hex): bbc45b30ece4b977dd0dbdc55a17181c4fd4638dd4e2b4abeff69107d75652e35011c5e080dd9260a67151ba32c673fd714c50b458d8a730550140a4
+[Relay 1] [Relay] [RETURN] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=112, preview=b'u8RbMOzkuXfdDb3FWhcYHE/UY43U4rSr7/aRB9dWUuNQEcXggN2SYKZxUboy'
+[Relay 1] [Relay] [handle_message END] addr=('10.250.120.196', 51314), thread=6188888064
+[Relay 3] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=112, preview=b'u8RbMOzkuXfdDb3FWhcYHE/UY43U4rSr7/aRB9dWUuNQEcXggN2SYKZxUboy'
+[Relay 3] [Relay] [RETURN] Base64-decoded response: type=<class 'bytes'>, len=82, preview=b'\xbb\xc4[0\xec\xe4\xb9w\xdd\r\xbd\xc5Z\x17\x18\x1cO\xd4c\x8d\xd4\xe2\xb4\xab\xef\xf6\x91\x07\xd7VR\xe3P\x11\xc5\xe0\x80\xdd\x92`\xa6qQ\xba2\xc6s\xfdqLP\xb4X\xd8\xa70U\x01@\xa4'
+[Relay 3] [Relay] [RETURN] AES-decrypted response: type=<class 'bytes'>, len=66, preview=b'!\x0c\x9cd?\xb4g\xebYc\x02\xd0\xe8\x99\xd7\x08\n\x86Uz\xcf\'~\xb0\\.\x89\xfa\xf8mY\x81Y\x0f?p\xae\xe3&gK\xf3\x90\xf8x\x18"\x9b\x10\xd1\xae\x91\xb6\xc0F\x83\xd6@ ;'
+[Relay 3] [Relay] [RETURN] AES-decrypted response not UTF-8: 'utf-8' codec can't decode byte 0x9c in position 2: invalid start byte
+[Relay 3] [Relay] [RETURN] AES-encrypted response (hex): c0bf58fe5cd304ae786d74fc9db03273cddc272b930d83502574e559077078fcfdbf6bb492c8fe986124db5af7f3d94a502132cbc22912d6a7f5815f
+[Relay 3] [Relay] [RETURN] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=132, preview=b'wL9Y/lzTBK54bXT8nbAyc83cJyuTDYNQJXTlWQdwePz9v2u0ksj+mGEk21r3'
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 2] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 51697), thread=6196899840, relay_port=9102
+[Relay 2] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "h37w6bxCUxrrs/vYHp5GvGPq2jjj1ZeHOI0r8YXitgc80zLZEsig7bVEBPvlRQcMag/6p/GC6YNK21jjGARAJw0eS+B9rrlW2hxdhDeODCbjZ/vt3Ztp3ByKNdmhQMP1Fkx7ArT1Pmqmsn86qYXRvwBZjzwswEk50tf1NTK4tsYhLOMENYLhoqJyO40VBZVdKqk/zihF5rU9Mm5LY0Kd8TZ+1+rACoBNcx/azaE9q5sB61GXz+kELar8XIo3YJYRbNpZ6pKi5lMmFHcEvH0SMmTkddg5WaQXpj/cUPR+6j2dKZIeQFUzt+6no8iuh7bl0i7Mx2cAXbkakqSuhX2AgQ==", "payload": "zulAI8Y9z47Nbixt9l0QrRF9jx9EIWQQZnaqAMxJyClIkCO+7XDxHfjcquZNx+1d7KKE6BrKqjVP/LQbgRsGAAQGU/28PGF2h4bnU+Pqr2/QKbF1IgZ6Jcf7lxOZDurlWe00CF9hvb4XYeoXJH4XKPcLPg6tIARVwmZmXDGyuzUBezAH30E1lNhk2ViY+K3WvFCBvaN8he1Vhhg1DkkWqw+vBqzToDIe6L+mi0q/cP5zskQZjrU4cBPDAJ0a1c6P8nNi2KoGPN4g+uexIV81XaEMSlmwUGGk/rvV3PHXvntZ3KT1+oZrMxFkKw/klKk6Q4BIopJiymOzgoSKdI+FltD8j0l85pNiUDLiPoXqVHZeWFMFNujYLbTiZtdJmJ+iSMcWsfzOeTU49XOgwq5cYqXRNQOs5xzeubyZa/rDmqmnn54ODSnhPH2VgcYI37MR0+Zc2K8a9Qp7zqaUIiOwYZY9pEqGmTCbHOJNl86Wx5HkFIjA8nF0NxYYzRqF1G2VzkS1VtG8inmN+3pg3pfg1Q4X8uEGvaIJi/DbR1M1hX179GdCATCTsk1t3eSR4Q7j4Tgi1SaAH3eylJA67M2WQMdcpuFOn6LhYylE0Y9e2pSHrogJW3wSYKgCllNDT5rGJ0aEGKPuvl6000UCFmRMsCaYprOkCN14qhc7eaz1+FqShiK2V/Hhcuv+WnUVASvHoBzLFaT9wM4ibgFSBD7eSJofS/OpbUT37BfJiCDpiK5vyvxDvcfYqkUW8kBasrET+j4tsUXCurwKWBWu9oEq3NwuDkCEJ++nC8m0IbYNauRZ8StCfjOR/o9BpB1xKcmsxewHgkBcHmOtgTbJ08irvlnuFbIdgpXj7NuWblB+XRZrivuM17mHfgTY/r3zI38dnQuLsyPka1mqAbDcS3jmDq0lhmUGF4xTpeiKWYGfolfy8YcokOYBpFYBCebwBcAmqYEuQGyo9W0I5ro0aO9JvjAakuLi+ShCKFDbq3HIjY3rSPXWbW7qEEAwzCkqBGnPw9AwMPx0LACqu6mZElJUJGEMyz6rQoqxkSByQWodCKnpybJguGvw+zjZLgx6RqEcZxD2RFKt0f7K23zi/8qSTIiJckUVb36jr9DcXGQBfs2j4xm9jVsqUAlQ65+ZHV5fw6xS5DJg3VBmqayF8B7VuaCXpWJQ7Uk4enDPYPbiR5KJyyEXPng6RO1A481b6xHLEP+6P/oVVeq/gz6KubAwUXnZKg6KKCVEnwVbVSoYZBifSbMtRAzmdmaIc23+BUEuBxY/NmetdfV6Wv7tXTEZ2Yx23/yuKRHkdWz9BzHwhrsMiXpNcoTplSWWVf5UNBPoyG6lSE3To134mxYdQbi3BpOl2u2n6fvpo2zs9qVHi5Cl3qGgyJYVUY3k8DcPPYGliXuYUbCzlyRHFbrYngBbb7yGM3/NnCwLkAVsc1aOMOcuV9bzciGGzdyVAbcjbRPHdwQ="}'
+[Relay 2] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] Received session_key (base64): h37w6bxCUxrrs/vYHp5GvGPq2jjj1ZeHOI0r8YXitgc80zLZEsig7bVEBPvlRQcMag/6p/GC6YNK21jjGARAJw0eS+B9rrlW2hxdhDeODCbjZ/vt3Ztp3ByKNdmhQMP1Fkx7ArT1Pmqmsn86qYXRvwBZjzwswEk50tf1NTK4tsYhLOMENYLhoqJyO40VBZVdKqk/zihF5rU9Mm5LY0Kd8TZ+1+rACoBNcx/azaE9q5sB61GXz+kELar8XIo3YJYRbNpZ6pKi5lMmFHcEvH0SMmTkddg5WaQXpj/cUPR+6j2dKZIeQFUzt+6no8iuh7bl0i7Mx2cAXbkakqSuhX2AgQ==
+[Relay 2] [Relay] Decoded session_key_enc (hex): 877ef0e9bc42531aebb3fbd81e9e46bc63eada38e3d59787388d2bf185e2b6073cd332d912c8a0edb54404fbe545070c6a0ffaa7f182e9834adb58e3180440270d1e4be07daeb956da1c5d84378e0c26e367fbeddd9b69dc1c8a35d9a140c3f5164c7b02b4f53e6aa6b27f3aa985d1bf00598f3c2cc04939d2d7f53532b8b6c6212ce3043582e1a2a2723b8d1505955d2aa93fce2845e6b53d326e4b63429df1367ed7eac00a804d731fdacda13dab9b01eb5197cfe9042daafc5c8a376096116cda59ea92a2e65326147704bc7d123264e475d83959a417a63fdc50f47eea3d9d29921e405533b7eea7a3c8ae87b6e5d22eccc767005db91a92a4ae857d8081
+[Relay 2] [Relay] Decrypting session key with fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] Decrypted session_key (hex): 553f1930ed384413c79f5a699c0dfff2a4ca914b29acc9b5a3882771b1bb0893
+[Relay 2] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 2] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b'\xce\xe9@#\xc6=\xcf\x8e\xcdn,m\xf6]\x10\xad\x11}\x8f\x1fD!d\x10fv\xaa\x00\xccI\xc8)H\x90#\xbe\xedp\xf1\x1d\xf8\xdc\xaa\xe6M\xc7\xed]\xec\xa2\x84\xe8\x1a\xca\xaa5O\xfc\xb4\x1b'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_ke'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130312c202273657373696f6e5f6b65
+[Relay 2] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9101
+[Relay 1] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 51698), thread=6158069760, relay_port=9101
+[Relay 1] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "tf6UWP0rBnQ6qGRUnTwCU7Y+UEyF4aCZBMzXr2mU3CpMnRtJSyd8cQnJX1L75QrnLeOVF43FqGewpIj4OKFN3YTxtee9tTBMiszSgKaAXw7hWV7tKbntg1Z2FcUByNh+GskXtEeH5PsTRtLYQIgGcj1RT9czTiMHk+ncS8W7G4Fhv7iWMqxzub0zqw7eb0KkJZ+6vxaaAB+lBEEMWOh2HdPTnMkIYhLHMoLoZdwjli2bS5wQrCdoRGxllnEkRgEOsd8yxS1/wlLJ8H6necu27mCVl3j9HPOMpv//KLndY//mDOP3bNQQ0y+jTcMlWKa8tkmI4r8HLx6CwS8kJBvcIQ==", "payload": "LHK3BMpRkukO5hcYqSrPESVlJ+dvxwCEkkzSj2mY9J1PL762Usrfu6ECLuNPkWtKDThBJw1PIqiIeYOcPbxCB400K053xzZIOI9cIoac7jKAWrE5B3JTQSTMVJJPEt4w/eyp+d4G+4dx5IUyr28RGXG7fLnyi9Q/OlcQeJhY8TVSpPVV/JipEKpk5FX45hFRcbhIUAgkoRx/5NFzYmcDYfqp/CedSyUex/oo3OAgHOGRGp0ViqlDANQBmtGpfG8hQVTbIGqc87d3ckNiMB3kvR8+AeiBkOu0Vy6jJlyPFpnr8FPhJuz6NOGRiVCqxHnK4qmPVbznmT7FGsOh3MxuSRgNvjxCMz1LllinbsMVa+wB4n3et4FmwgBJSz9ubyhY4a+5JZU5p4o5YAEwvW4dpdr98pzch8YUojc55s9BZtDc8eyzrvYI5cTyR/4WjPlGhZ9ni7aBhijlRHadIFb4vek0vTVwkgfhJXdxp7QUQNCBJJr/LOtDK31DsnAC3r50qbqW3aboJYYho59k089Z5r9UzH3k3NiiEWixbmxGpHWOjt+VGJfU85xUb2ReWxqr91hsd7VhWyWUrLANfnFpsX4+5lfBC+d00oxPgRYTz4VqLMjj8xWNEVETpHBy3Dq41wv1zv4gHa4H5sqUwj4WrAfT"}'
+[Relay 1] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] Received session_key (base64): tf6UWP0rBnQ6qGRUnTwCU7Y+UEyF4aCZBMzXr2mU3CpMnRtJSyd8cQnJX1L75QrnLeOVF43FqGewpIj4OKFN3YTxtee9tTBMiszSgKaAXw7hWV7tKbntg1Z2FcUByNh+GskXtEeH5PsTRtLYQIgGcj1RT9czTiMHk+ncS8W7G4Fhv7iWMqxzub0zqw7eb0KkJZ+6vxaaAB+lBEEMWOh2HdPTnMkIYhLHMoLoZdwjli2bS5wQrCdoRGxllnEkRgEOsd8yxS1/wlLJ8H6necu27mCVl3j9HPOMpv//KLndY//mDOP3bNQQ0y+jTcMlWKa8tkmI4r8HLx6CwS8kJBvcIQ==
+[Relay 1] [Relay] Decoded session_key_enc (hex): b5fe9458fd2b06743aa864549d3c0253b63e504c85e1a09904ccd7af6994dc2a4c9d1b494b277c7109c95f52fbe50ae72de395178dc5a867b0a488f838a14ddd84f1b5e7bdb5304c8accd280a6805f0ee1595eed29b9ed83567615c501c8d87e1ac917b44787e4fb1346d2d8408806723d514fd7334e230793e9dc4bc5bb1b8161bfb89632ac73b9bd33ab0ede6f42a4259fbabf169a001fa504410c58e8761dd3d39cc9086212c73282e865dc23962d9b4b9c10ac2768446c6596712446010eb1df32c52d7fc252c9f07ea779cbb6ee60959778fd1cf38ca6ffff28b9dd63ffe60ce3f76cd410d32fa34dc32558a6bcb64988e2bf072f1e82c12f24241bdc21
+[Relay 1] [Relay] Decrypting session key with fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] Decrypted session_key (hex): c684ef4e19d90b74f2114159db23f1746f220975902729322e877fd258a27a0c
+[Relay 1] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 1] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=498, preview=b',r\xb7\x04\xcaQ\x92\xe9\x0e\xe6\x17\x18\xa9*\xcf\x11%e\'\xe7o\xc7\x00\x84\x92L\xd2\x8fi\x98\xf4\x9dO/\xbe\xb6R\xca\xdf\xbb\xa1\x02.\xe3O\x91kJ\r8A\'\rO"\xa8\x88y\x83\x9c'
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=482, preview=b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_ke'
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130332c202273657373696f6e5f6b65
+[Relay 1] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9103
+[Relay 3] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 51708), thread=6158118912, relay_port=9103
+[Relay 3] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_key": "rWW7CGzP5HiuXblhiCFiIVoERh+hitr2QINRHCI+a9w4SsITjRsVxEfi/uy8uepOtdgJlHkThfQv1vtLpUnFPzLekwJKSun56zQg1413b3KolmfIqaE36rHSQl/QQPcfcXR99IRJpmPwYb5mkcqIQ2a+AebYG9+zQ9gTvBGBRdjcwfLbKSuy+Bfk1y+fk3WFZKowk02UuAd7pmzRGyadPyl5/2ObJ2WjLxqIuDgb7d3z2DNzHqaVR1noxMcOQ7GF9cjnTaGEehQic5C177VggsCfWyqkiinUJSbeShGdcFVVHt27tE1RXlIjf/UlKz+DUfWCWjAfU+Q62rUOzWWMlA==", "payload": "n58ArxEqrE+67XjUEbR/e4Vi9Fr01KS9lBzYWFVS4VNv33vfrturPA=="}'
+[Relay 3] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 3] [Relay] Received session_key (base64): rWW7CGzP5HiuXblhiCFiIVoERh+hitr2QINRHCI+a9w4SsITjRsVxEfi/uy8uepOtdgJlHkThfQv1vtLpUnFPzLekwJKSun56zQg1413b3KolmfIqaE36rHSQl/QQPcfcXR99IRJpmPwYb5mkcqIQ2a+AebYG9+zQ9gTvBGBRdjcwfLbKSuy+Bfk1y+fk3WFZKowk02UuAd7pmzRGyadPyl5/2ObJ2WjLxqIuDgb7d3z2DNzHqaVR1noxMcOQ7GF9cjnTaGEehQic5C177VggsCfWyqkiinUJSbeShGdcFVVHt27tE1RXlIjf/UlKz+DUfWCWjAfU+Q62rUOzWWMlA==
+[Relay 3] [Relay] Decoded session_key_enc (hex): ad65bb086ccfe478ae5db961882162215a04461fa18adaf64083511c223e6bdc384ac2138d1b15c447e2feecbcb9ea4eb5d80994791385f42fd6fb4ba549c53f32de93024a4ae9f9eb3420d78d776f72a89667c8a9a137eab1d2425fd040f71f71747df48449a663f061be6691ca884366be01e6d81bdfb343d813bc118145d8dcc1f2db292bb2f817e4d72f9f93758564aa30934d94b8077ba66cd11b269d3f2979ff639b2765a32f1a88b8381bedddf3d833731ea6954759e8c4c70e43b185f5c8e74da1847a14227390b5efb56082c09f5b2aa48a29d42526de4a119d7055551eddbbb44d515e52237ff5252b3f8351f5825a301f53e43adab50ecd658c94
+[Relay 3] [Relay] Decrypting session key with fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] Decrypted session_key (hex): ceec50d97452a4dcdd254732e187efb3b33c7d6b6a562d7d28065af02ddcae2f
+[Relay 3] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 3] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=40, preview=b'\x9f\x9f\x00\xaf\x11*\xacO\xba\xedx\xd4\x11\xb4\x7f{\x85b\xf4Z\xf4\xd4\xa4\xbd\x94\x1c\xd8XUR\xe1So\xdf{\xdf\xae\xdb\xab<'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226d7367223a202248656c6c6f2c20776f726c6421227d
+[Relay 3] [Relay] [DEBUG] Next hop JSON keys: ['msg']
+[Relay 3] [Relay] [DEBUG] Payload is not JSON, assuming last hop. Error: 'next_ip'
+[Relay 3] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=24, type=<class 'bytes'>
+[Relay 3] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 3] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] Response from dest decoded as UTF-8: '{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] Response from dest (hex): 7b22726573756c74223a20224f4b222c20226563686f223a207b226d7367223a202248656c6c6f2c20776f726c6421227d7d
+[Relay 3] [Relay] [Last Hop] About to AES-encrypt response: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] AES-encrypted response (hex): 4eacfcf36399ba3af2813dcdf791b836c9559b204c6a672795819f608b57fc1a9aefafc3c2b6a1466b359ae5ba8493ec0058b376fdd43d00fe36beea
+[Relay 3] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=88, preview=b'Tqz882OZujrygT3N95G4NslVmyBMamcnlYGfYItX/Bqa76/DwrahRms1muW6'
+[Relay 1] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=88, preview=b'Tqz882OZujrygT3N95G4NslVmyBMamcnlYGfYItX/Bqa76/DwrahRms1muW6'
+[Relay 3] [Relay] [Last Hop] Sent response to ('10.250.120.196', 51708): b'Tqz882OZujrygT3N95G4NslVmyBMamcnlYGfYItX/Bqa76/DwrahRms1muW6'... (len=88)
+[Relay 1] [Relay] [RETURN] Base64-decoded response: type=<class 'bytes'>, len=66, preview=b"N\xac\xfc\xf3c\x99\xba:\xf2\x81=\xcd\xf7\x91\xb86\xc9U\x9b Ljg'\x95\x81\x9f`\x8bW\xfc\x1a\x9a\xef\xaf\xc3\xc2\xb6\xa1Fk5\x9a\xe5\xba\x84\x93\xec\x00X\xb3v\xfd\xd4=\x00\xfe6\xbe\xea"
+[Relay 3] [Relay] [handle_message END] addr=('10.250.120.196', 51708), thread=6158118912
+[Relay 1] [Relay] [RETURN] AES-decrypted response: type=<class 'bytes'>, len=50, preview=b'0\xf1\xe91Y\x1a\xad\x9d\x82kh\x0cX\xc8\x02,\x87EC\xc7\x89\xa2\xd1\xf4)i\x01\xa2h\xb4&\xb0Q<B\xd2\xdfl\x08\xa5\x9e\xd0\x1a\x8a[\x88}\x92sv'
+[Relay 1] [Relay] [RETURN] AES-decrypted response not UTF-8: 'utf-8' codec can't decode byte 0xf1 in position 1: invalid continuation byte
+[Relay 1] [Relay] [RETURN] AES-encrypted response (hex): d8f867f3b69866ab408e33e842f49e3c6ff6c9d9d55ab3f938b690aed53c6529b01cbeb120aeddf356d665b8dad5ec5acf336a44cbcd841444952127
+[Relay 1] [Relay] [RETURN] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=112, preview=b'2Phn87aYZqtAjjPoQvSePG/2ydnVWrP5OLaQrtU8ZSmwHL6xIK7d81bWZbja'
+[Relay 1] [Relay] [handle_message END] addr=('10.250.120.196', 51698), thread=6158069760
+[Relay 2] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=112, preview=b'2Phn87aYZqtAjjPoQvSePG/2ydnVWrP5OLaQrtU8ZSmwHL6xIK7d81bWZbja'
+[Relay 2] [Relay] [RETURN] Base64-decoded response: type=<class 'bytes'>, len=82, preview=b"\xd8\xf8g\xf3\xb6\x98f\xab@\x8e3\xe8B\xf4\x9e<o\xf6\xc9\xd9\xd5Z\xb3\xf98\xb6\x90\xae\xd5<e)\xb0\x1c\xbe\xb1 \xae\xdd\xf3V\xd6e\xb8\xda\xd5\xecZ\xcf3jD\xcb\xcd\x84\x14D\x95!'"
+[Relay 2] [Relay] [RETURN] AES-decrypted response: type=<class 'bytes'>, len=66, preview=b'\xc9H(\xb7)6\x0f\xcf\xcb\x1br\x8c2\x98\xfc\x86\xae\xb9\x80\x06?p\x82\x11\xfbA\x05w\xc6\x9d\xa5\xee3\xdf\x92\xb6\xbd\xc0\xb3-x\xdd\xfc\xfb\xf0\x8f\xb4\xf8A\x0c\x81\xd9\xf5\n\xce\xd7j\xa9\xc7y'
+[Relay 2] [Relay] [RETURN] AES-decrypted response not UTF-8: 'utf-8' codec can't decode byte 0xc9 in position 0: invalid continuation byte
+[Relay 2] [Relay] [RETURN] AES-encrypted response (hex): 6ae386fe0620574da63488f3206d1d96e582d47f7efa7b9378baef0261925556c10501f8e06d90167e2246ca70c5d2257816c3a634bb8f15657eeae8
+[Relay 2] [Relay] [RETURN] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=132, preview=b'auOG/gYgV02mNIjzIG0dluWC1H9++nuTeLrvAmGSVVbBBQH44G2QFn4iRspw'
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 2] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 52639), thread=6194884608, relay_port=9102
+[Relay 2] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "5y0UcwWpl0eokbl8gwQyP1oB9jgbFA+4BPNP/rfdWyhg6q7ZEp/z4EhMPDUjuvjhJEEzv+cEYqWKUQwHcbvhXH1OS5SCknocPT9MHyofZefa33oovWGJar9ef51A5pVYmds84JmL93OUlr3JdBI/REZZ2jf3sQB1JEi+2eJ09du4cYsbfWkFpclUKv3FBetz1/Rf/jheKgldYj4JKBx6oud+Eo+itmyBBBm3ZLtQxiLTg+8tVTBuOGYtgiA7gJX7mKx7iNegudcy/4NszXStjBp/ygVOjDKGzvcSb/HZ706fBEoEMVKAvjpZuNRCvSrTfsc8Drr2e+kh8XI4dn1TNQ==", "payload": "VofF7Hn89KnTJ8hqaTe8ZYVgITsrQumn16zsWKvAkxoDrodDtGmAr9ZX7UgI3Z/rXpwLanQSD7vAoviRTogx/R8CyCNzef1JYKANwmYm1NLd3mkvkpQmWbZleIWF4NSdcA9QaM78OYL5ExQYUCq9+VDDtFM52bR54HMnNuMANMqyfOGtJxCxvyDwxu+yoXsmzyPcpD/Th44rQu1EhcT+3P8bMOqGlkvScg/gBdVOspQUWd9nE+4iVwBhOlEFg9Lt9/pkHFaozQiyJJhbzgcjRkiEgcOBiGvdgRfiG+gM6B1OhBZYqwRrVkwdC1iwRLTLg6qkcBqDp4exqWZBZaNSsQMtbBaEAQRngu1C5C0vx8zf5Yz960X1JHA+dPdgIZH8FoLDvEdyhvPdP6uGIiDAZGzyxKa5K2Fv99z9nnyco8YbobIs/v8YfSSV/tWRSVlke96aXaSlHQ0zcbUQdW4hkpqPhf18KRMqjbK9+P1BV0vaPuBP1JibnLyzSxmGGkjCD1zSbTpVZjmWFpwM8HJ7DH5N6YgvmS91+zqjC8rVwDbuBwy4vjR/z2E75Y+h1TrLMcfMY4GBAA3ZjvRW3LAyY7LKPAMOcpOSFHBFv/RbsHZjc5W9T7KHxxRCQIaHDd3ssE8YDm1NjFclXPaOqh3bvaP67TVG0ga7GOKOg7D/E8en0rRkM8XLwqgz6UZWNUyiwYVnttMX3J0+XD0B/jKCLneArojrZ2kpc3EGNpc5YLoSX29fnoQaVRA99Lla82g/JBID+50N/Vt0xkcLluUM5GpYX+qKypXpJ94j/Dw0iSQ0b2rGGwVvw3VHBbI+ZNPGQMvs8Q08wcdU7tl2dby95p9kImWTtd8EaTLnU7PZWRKPNvvbPnoDq+K1kXjkpNX+47SR4b/HbbxMjJRyh1lnRunvgsSO20mZDxgrksuGD5t+7qiru8sgjI97midbenRBgmtoAbor/ely095rAc1hU0XIXFPEMsou9pe6zo5zPx54MgKrLIbc9kab6TwwVm+ENREy4n/Kt3pICBdH+gKIxVWy8g0tQulyPfHMKKgpf5jMdkxBfiOZux3V8LOB5ZibOndv07LQwDk9ICjrAq2zo8M7H1xmMlJnrlIT4KCogL0swcQyknEwm4D4aEEOVXRS2jGFcQXpoim3alz6kLQwnT/ja+c8IasS57fZAylHd4L2AiJ0KqtgJS7uniMCjdzpn1oDp6FqlijWiNMUaW5qLDjC/uNB1Cj5YFNHdhuokENl4VuyKw4VaaRQyCLw9bkVQK1fQaRB1puQr+iQadBdkaXRItl7xvEAdoarXjz9WACrLH00r9nDRa8hen0XD54kIv6WvOTh8wFGZ7Ow9o6yF4f7c3lSWwA3AkkgTfX4/qaiyS9VMKgsD6Sdy3GD6nvZi7zLFdzwfAdxlj5RJ4Gz2lNqB+kasQL3THFnq4q+Fs9bsySgxE9UHbzZ4IUYPWdjdYY="}'
+[Relay 2] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] Received session_key (base64): 5y0UcwWpl0eokbl8gwQyP1oB9jgbFA+4BPNP/rfdWyhg6q7ZEp/z4EhMPDUjuvjhJEEzv+cEYqWKUQwHcbvhXH1OS5SCknocPT9MHyofZefa33oovWGJar9ef51A5pVYmds84JmL93OUlr3JdBI/REZZ2jf3sQB1JEi+2eJ09du4cYsbfWkFpclUKv3FBetz1/Rf/jheKgldYj4JKBx6oud+Eo+itmyBBBm3ZLtQxiLTg+8tVTBuOGYtgiA7gJX7mKx7iNegudcy/4NszXStjBp/ygVOjDKGzvcSb/HZ706fBEoEMVKAvjpZuNRCvSrTfsc8Drr2e+kh8XI4dn1TNQ==
+[Relay 2] [Relay] Decoded session_key_enc (hex): e72d147305a99747a891b97c8304323f5a01f6381b140fb804f34ffeb7dd5b2860eaaed9129ff3e0484c3c3523baf8e1244133bfe70462a58a510c0771bbe15c7d4e4b9482927a1c3d3f4c1f2a1f65e7dadf7a28bd61896abf5e7f9d40e6955899db3ce0998bf7739496bdc974123f444659da37f7b100752448bed9e274f5dbb8718b1b7d6905a5c9542afdc505eb73d7f45ffe385e2a095d623e09281c7aa2e77e128fa2b66c810419b764bb50c622d383ef2d55306e38662d82203b8095fb98ac7b88d7a0b9d732ff836ccd74ad8c1a7fca054e8c3286cef7126ff1d9ef4e9f044a04315280be3a59b8d442bd2ad37ec73c0ebaf67be921f17238767d5335
+[Relay 2] [Relay] Decrypting session key with fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] Decrypted session_key (hex): 0c902e73103cf906b24b2e83214c7363d077060f67954eda401bb497e9b7493b
+[Relay 2] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 2] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b"V\x87\xc5\xecy\xfc\xf4\xa9\xd3'\xc8ji7\xbce\x85`!;+B\xe9\xa7\xd7\xac\xecX\xab\xc0\x93\x1a\x03\xae\x87C\xb4i\x80\xaf\xd6W\xedH\x08\xdd\x9f\xeb^\x9c\x0bjt\x12\x0f\xbb\xc0\xa2\xf8\x91"
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_ke'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130312c202273657373696f6e5f6b65
+[Relay 2] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9101
+[Relay 1] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 52642), thread=6169620480, relay_port=9101
+[Relay 1] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "cQnIRZI1JIGB3McVYewtEzs3LCohGgAWmxKMlUN8HESMEz/xJlWdFWF31KMHULPdMimkLqYQfokpXMan3TP2AfAXGPD3jQE5U/ELsVeDgb9qs1FaN5mXMP3uL1b8IDtF7Tq5eEBB5jAZKo0yz1ubApDvJAT4Khy0hTpTVsFBKKyXwiJE7n9Xm9ZtFCC5qSuZ0dZSum5BZ0N/yHXfweH6u9MhmN8LsNZZwrnAx3IPw2lnfJGrT82Od+/yk4aZk+taB/sWrFjIzb80O1oYc3N+Ml+IyxBTishBHuymq21tVC8/EFjxqW8s48CQCjJjitBLOw1FLKcaGhfKd76+ex6UTg==", "payload": "0PrZ5G2O2yvuFPoRusSObsF73MWapgD6rhac/nne9fTcV9sVN+ieQBV8FEjRy9c1dGL3Kh5DBsk9LdJGf4zfMgzhyF+XkyuTT73WI2H3EGKi6eGkb++CCX2TSxv7zze2qX/td8MbyxqwjnsnaP2tZtsnWKEknBQCEJVRQvTx03dx8tjbpyGJ9guoh54rZ13VL6IWEOLGrUUUxaBEwssN4km8l0z/qWlCz1zWjc8FV9lnDgoD4hQyhz2kBzOviP3ZNGAD/Ry7fZDiCu9/n27+ShWxcmJwnfZHsoBpgGjJ0DvUMKnJ0a+MVoSxaOV/MheYkCEL0FTfKfTN/9B9WIw5LI6tjWG+yB9xb6bkT6ei6KshSm1uVzMFDBPyWDiY/G3yDahKFikQTi0DrXewB023vjpyq/MvBU+u/VheKF413225PqydWyh8NQg4vHcaD3xjG8FRhHO3k769Yk0W3lDr05lMMIWAiW3tbHCR7eYqfMO7qFfeBt1FdCuXUDf9Wjuy7B2QzA1kHlFiPRicSFOtSrJ35sk7BdxpJB47pwpQnlIu6z1WfuMXxyMgfsdzls6Zo/lv6mkd/3Tt+2xiuHHBCbi7XqT111vUx5jbtsYUuLkML4ShlmlrJTgA41AJbvz+VCjVikYZF5Tsa4TvTeYVf4ii"}'
+[Relay 1] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] Received session_key (base64): cQnIRZI1JIGB3McVYewtEzs3LCohGgAWmxKMlUN8HESMEz/xJlWdFWF31KMHULPdMimkLqYQfokpXMan3TP2AfAXGPD3jQE5U/ELsVeDgb9qs1FaN5mXMP3uL1b8IDtF7Tq5eEBB5jAZKo0yz1ubApDvJAT4Khy0hTpTVsFBKKyXwiJE7n9Xm9ZtFCC5qSuZ0dZSum5BZ0N/yHXfweH6u9MhmN8LsNZZwrnAx3IPw2lnfJGrT82Od+/yk4aZk+taB/sWrFjIzb80O1oYc3N+Ml+IyxBTishBHuymq21tVC8/EFjxqW8s48CQCjJjitBLOw1FLKcaGhfKd76+ex6UTg==
+[Relay 1] [Relay] Decoded session_key_enc (hex): 7109c8459235248181dcc71561ec2d133b372c2a211a00169b128c95437c1c448c133ff126559d156177d4a30750b3dd3229a42ea6107e89295cc6a7dd33f601f01718f0f78d013953f10bb1578381bf6ab3515a37999730fdee2f56fc203b45ed3ab9784041e630192a8d32cf5b9b0290ef2404f82a1cb4853a5356c14128ac97c22244ee7f579bd66d1420b9a92b99d1d652ba6e4167437fc875dfc1e1fabbd32198df0bb0d659c2b9c0c7720fc369677c91ab4fcd8e77eff293869993eb5a07fb16ac58c8cdbf343b5a1873737e325f88cb10538ac8411eeca6ab6d6d542f3f1058f1a96f2ce3c0900a32638ad04b3b0d452ca71a1a17ca77bebe7b1e944e
+[Relay 1] [Relay] Decrypting session key with fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] Decrypted session_key (hex): 39606f62130d092601cdc9471d27a22b0e170fbb35d1dbe019f3ec4d4f4fbc9b
+[Relay 1] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 1] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=498, preview=b'\xd0\xfa\xd9\xe4m\x8e\xdb+\xee\x14\xfa\x11\xba\xc4\x8en\xc1{\xdc\xc5\x9a\xa6\x00\xfa\xae\x16\x9c\xfey\xde\xf5\xf4\xdcW\xdb\x157\xe8\x9e@\x15|\x14H\xd1\xcb\xd75tb\xf7*\x1eC\x06\xc9=-\xd2F'
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=482, preview=b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_ke'
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130332c202273657373696f6e5f6b65
+[Relay 1] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9103
+[Relay 3] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 52649), thread=6203551744, relay_port=9103
+[Relay 3] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_key": "pns+UtUIHYQJbdpEtalnw80ckQbnHeY6Fh0UR9cAM78O9w089hmYcJ5muNE/l2tjejv3AVsNAWFdlKVAaWx6rZzh+hKgfrBhHG4fsv0gAwetds2ueS8gwk8Bc2IJsap80ahJFVfzTiS7mqlHebUW4cvcCRbrBeU8iahLn7FISfZLE+BdDxwjH0LwyDNJ3+LORKpP37G4Z0lBc9+HPtQhHL+S9A7PqCsGGywpdxlfcfktCOoXzJlOmP86fMNDC6Ba3RxBACGfgSwiFQEypQu+QEutPVBMnD74kwuf5EHFWO3zCoLUxI1qvhJvJ8iTO1bG/Mb7aWWq6ERdObfAtPHTaA==", "payload": "ooYmVs1cfr+XFf4CLE6zoPIesApXRDVLEAvI8pCdnkqeOn9cauKOqQ=="}'
+[Relay 3] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 3] [Relay] Received session_key (base64): pns+UtUIHYQJbdpEtalnw80ckQbnHeY6Fh0UR9cAM78O9w089hmYcJ5muNE/l2tjejv3AVsNAWFdlKVAaWx6rZzh+hKgfrBhHG4fsv0gAwetds2ueS8gwk8Bc2IJsap80ahJFVfzTiS7mqlHebUW4cvcCRbrBeU8iahLn7FISfZLE+BdDxwjH0LwyDNJ3+LORKpP37G4Z0lBc9+HPtQhHL+S9A7PqCsGGywpdxlfcfktCOoXzJlOmP86fMNDC6Ba3RxBACGfgSwiFQEypQu+QEutPVBMnD74kwuf5EHFWO3zCoLUxI1qvhJvJ8iTO1bG/Mb7aWWq6ERdObfAtPHTaA==
+[Relay 3] [Relay] Decoded session_key_enc (hex): a67b3e52d5081d84096dda44b5a967c3cd1c9106e71de63a161d1447d70033bf0ef70d3cf61998709e66b8d13f976b637a3bf7015b0d01615d94a540696c7aad9ce1fa12a07eb0611c6e1fb2fd200307ad76cdae792f20c24f01736209b1aa7cd1a8491557f34e24bb9aa94779b516e1cbdc0916eb05e53c89a84b9fb14849f64b13e05d0f1c231f42f0c83349dfe2ce44aa4fdfb1b867494173df873ed4211cbf92f40ecfa82b061b2c2977195f71f92d08ea17cc994e98ff3a7cc3430ba05add1c4100219f812c22150132a50bbe404bad3d504c9c3ef8930b9fe441c558edf30a82d4c48d6abe126f27c8933b56c6fcc6fb6965aae8445d39b7c0b4f1d368
+[Relay 3] [Relay] Decrypting session key with fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] Decrypted session_key (hex): 7c4c29cafbd406bf41f5b750f46be2245b0b40f75c297ef723e965312a6ecc0a
+[Relay 3] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 3] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=40, preview=b'\xa2\x86&V\xcd\\~\xbf\x97\x15\xfe\x02,N\xb3\xa0\xf2\x1e\xb0\nWD5K\x10\x0b\xc8\xf2\x90\x9d\x9eJ\x9e:\x7f\\j\xe2\x8e\xa9'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226d7367223a202248656c6c6f2c20776f726c6421227d
+[Relay 3] [Relay] [DEBUG] Next hop JSON keys: ['msg']
+[Relay 3] [Relay] [DEBUG] Payload is not JSON, assuming last hop. Error: 'next_ip'
+[Relay 3] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=24, type=<class 'bytes'>
+[Relay 3] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 3] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] Response from dest decoded as UTF-8: '{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] Response from dest (hex): 7b22726573756c74223a20224f4b222c20226563686f223a207b226d7367223a202248656c6c6f2c20776f726c6421227d7d
+[Relay 3] [Relay] [Last Hop] About to AES-encrypt response: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 3] [Relay] [Last Hop] AES-encrypted response (hex): e386da7cbd2ef32865f9abe7c7469d50932dea9cddfa81d6ec8c45280d75b22e7e08cc19578557411dd5b743538f04464580ddb2902f4764971a1106
+[Relay 3] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=88, preview=b'44bafL0u8yhl+avnx0adUJMt6pzd+oHW7IxFKA11si5+CMwZV4VXQR3Vt0NT'
+[Relay 1] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=88, preview=b'44bafL0u8yhl+avnx0adUJMt6pzd+oHW7IxFKA11si5+CMwZV4VXQR3Vt0NT'
+[Relay 3] [Relay] [Last Hop] Sent response to ('10.250.120.196', 52649): b'44bafL0u8yhl+avnx0adUJMt6pzd+oHW7IxFKA11si5+CMwZV4VXQR3Vt0NT'... (len=88)
+[Relay 1] [Relay] [RETURN] Base64-decoded response: type=<class 'bytes'>, len=66, preview=b'\xe3\x86\xda|\xbd.\xf3(e\xf9\xab\xe7\xc7F\x9dP\x93-\xea\x9c\xdd\xfa\x81\xd6\xec\x8cE(\ru\xb2.~\x08\xcc\x19W\x85WA\x1d\xd5\xb7CS\x8f\x04FE\x80\xdd\xb2\x90/Gd\x97\x1a\x11\x06'
+[Relay 1] [Relay] [RETURN] AES-decrypted response: type=<class 'bytes'>, len=50, preview=b'\xa2\xcb\xc3\x02\xb7\x07\x12:\xf7fBdK\x88?\xa0\x18\xea\xa6\xa4\xa8\x89\x1e(\xb7e\x07\xbd\x1d\x15\xea\xb8+\xd7\x17lY\xfe\xe9K\xef\xba\x89\x87\x00\x1d\x0c\xef\x8a\xf6'
+[Relay 3] [Relay] [handle_message END] addr=('10.250.120.196', 52649), thread=6203551744
+[Relay 1] [Relay] [RETURN] AES-decrypted response not UTF-8: 'utf-8' codec can't decode byte 0xa2 in position 0: invalid start byte
+[Relay 1] [Relay] [RETURN] AES-encrypted response (hex): 1000ebf8b3c947ba8a564c879d8bf96b11da08724739868e1368e3623d7ec048e245289d3cb42f158291cd3f1895d4f6105e41376eaee4ba2d1eb189
+[Relay 1] [Relay] [RETURN] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=112, preview=b'EADr+LPJR7qKVkyHnYv5axHaCHJHOYaOE2jjYj1+wEjiRSidPLQvFYKRzT8Y'
+[Relay 2] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=112, preview=b'EADr+LPJR7qKVkyHnYv5axHaCHJHOYaOE2jjYj1+wEjiRSidPLQvFYKRzT8Y'
+[Relay 1] [Relay] [handle_message END] addr=('10.250.120.196', 52642), thread=6169620480
+[Relay 2] [Relay] [RETURN] Base64-decoded response: type=<class 'bytes'>, len=82, preview=b'\x10\x00\xeb\xf8\xb3\xc9G\xba\x8aVL\x87\x9d\x8b\xf9k\x11\xda\x08rG9\x86\x8e\x13h\xe3b=~\xc0H\xe2E(\x9d<\xb4/\x15\x82\x91\xcd?\x18\x95\xd4\xf6\x10^A7n\xae\xe4\xba-\x1e\xb1\x89'
+[Relay 2] [Relay] [RETURN] AES-decrypted response: type=<class 'bytes'>, len=66, preview=b'6\xfaL\xdck$\xbd\x97\x85\xdb| \x08\xa2\x00\xa1\x15\x1b\xc4\xa2\x91\x83\xe6-\xbeW[\x16\xa4\xa5`\xa6\xbb\x92>/\xce\x93\xaa\x8c\x1a[\x90ab\xa1\xc9~\xa6N\x81\x88\xa2\x82K0\xfck\xe48'
+[Relay 2] [Relay] [RETURN] AES-decrypted response not UTF-8: 'utf-8' codec can't decode byte 0xfa in position 1: invalid start byte
+[Relay 2] [Relay] [RETURN] AES-encrypted response (hex): cc26a4687c73d5e43b686a4bcfec85cee8484f48f01a339348fa5a69f6fd2bd42ca3a709087d5a039ae5be4bfa7c0bc56701c903a8d37808be4b6fe3
+[Relay 2] [Relay] [RETURN] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=132, preview=b'zCakaHxz1eQ7aGpLz+yFzuhIT0jwGjOTSPpaafb9K9Qso6cJCH1aA5rlvkv6'
+[Relay 2] [Relay] [handle_message END] addr=('10.250.120.196', 52639), thread=6194884608
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 1] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 53154), thread=6169440256, relay_port=9101
+[Relay 1] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9101, "session_key": "awAPF1UL75Xy43ojWS/GFJPLXwQPIvgktNgAFAkalnthOjB8Ly25ID/g/RhmviYLF/xJSL315l39sODYg8Npclm8E1GOFVgjNKNBQlOfJHvXpkahWlEAUAOXKqcYb4gVGbFOSTLvSL8W6qsoB+st07I+hyvHufn0BZFQ2ck5fGtxrZVmhpc50MjbxwaEFb3WmZtuXK4GFd1q6ifUxWn7i1xo59jnUcwQlWAYwMlsAji2uflz5smMa8P1wPrbDCp53UXg6CEVO0mRiqmA07rKmVpfVXmztsEV5bA4gEOH2sY1PWMbaLo2nHK0JYx6JEV0n53/VUe7rs87a4qRoyCeeg==", "payload": "LDfwBHwdopR9l4RsX2owL9pbNi3Jyf7KYMHNkzT0b9Lqk8HDuPMmr0Bj2eA/kFDs21xaVa4WeRMh1eg+TNDRb+PnAXTvBnGrWAid4MVlveISR810jH+Cdk6Nf7qzsLS42IyZYavv3u7L+A90v2zoMfSeUCkTYVE49ofeTU3X6MnkfXFjTiEKuFLmXY8+dAn7uM6Fi8+5n7SD/j102nPYvnkHxALJ5EN7djx+zluWzszd7I+goUsN9Icv/waPNlLs8ssvJmeV9/QSrL/MS5aAkqpDiD5Gvw011sUz1eVyaFUYQZZXdSW8BpPxOWnHG08g7sQZ8x4OL/JaUQjrlGjjsfVamKLVoCBzXT3K5kn7PiIQJYCi7dVRhy7F+jdIK7TiLD7PLJueInR8sOTJ9w8oZ6TvxJ0YpqTTRaBIBB0QO8lMUmLvdgSAAN9zHkk8H+9D1WK76eTImUIO07ZgNLAS/Xsk6foh8vD0/PJqoj0AhqCmc2IxxGaitfYOhRaztfsKfo5hjjXciAb7GteiCLjUnR/vqa7/stwsxF6Rbu3TCZ79kvw/XQ49Ce4rnlGwlixV79wBicQkMWxU/I4/LJlPYPJLDu6y+MY4UEkGZwDOEpejmFW5bsrOMQO3uuUBMmWdIGz2nIf2S6O17kIo3R6N0tIoGZxePcQmHTJ8xhQ+F1f5KCSu4k8oADHkPXJhvBgmZqxdUrNFbDvyjZZ/JHU+AlSb6jaAm55ksFmN0MmRxAZzKWimGcKSqRzxZ7DeaKBB4wq7Yd7wY7tPOhhr8RO1YtVKmCWD4jeQRxZjk0aHLwIBZ7rGW7r3tLa+J30hJfOT6LHj0flW6LbaeJaJMZ7HiJ81jNWYZdLwLf8Joh8lKKhz2GqAewcGNW8PrqBVmpLoWmQMcQDqerrUz6gGBeTnfYdK3ehZoHByfniF3FK7c+YYipcG3tofimf1xHhwMeQrPc9kGmS+++D48RSnXrkmCho2LF1xKvStRBLnQw+4MO5eIa/mbuvp/FHVa2XYSK+a+2tQpBKLa8etlYGYAHDBtaR+x2PM1JpBN33lmKrKKWb3fxXz92eCnm27Cd1vEVF0hCphGQEgARMD8By45kwBSqfVPalGnSNMJIgzy3N+CCXNKthw/bNdKm8Jvs5pS4syG0cCcRGz/vLYBs3mWTILYhGANXAq62UrIPRyuQUGoqbOCR5xOMRk4YArrWuirw7lWQ4lI/JLLZZom8DPIz2HjhjevCHQJYZWaJyEqRjZQS7gOpLe9kFgD9AEbClLxPNFyOqEu0NJtAbfEOM/yNaacl7l3/j37esy2iE5QVpO7818iRpFobk6OQsJYlBTi7JDsQ8q6ftJ5uHqgclHux1APf3FK2r9X3+TJiRiD1A5A5WRktmMttEjHJBdjoDsjTf/EAC/VF656CzAtdKJDjrQDs5ClJFFQsirhUv2qadzZy6tXNUQE86Ouht6GwrtllZ52sg="}'
+[Relay 1] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] Received session_key (base64): awAPF1UL75Xy43ojWS/GFJPLXwQPIvgktNgAFAkalnthOjB8Ly25ID/g/RhmviYLF/xJSL315l39sODYg8Npclm8E1GOFVgjNKNBQlOfJHvXpkahWlEAUAOXKqcYb4gVGbFOSTLvSL8W6qsoB+st07I+hyvHufn0BZFQ2ck5fGtxrZVmhpc50MjbxwaEFb3WmZtuXK4GFd1q6ifUxWn7i1xo59jnUcwQlWAYwMlsAji2uflz5smMa8P1wPrbDCp53UXg6CEVO0mRiqmA07rKmVpfVXmztsEV5bA4gEOH2sY1PWMbaLo2nHK0JYx6JEV0n53/VUe7rs87a4qRoyCeeg==
+[Relay 1] [Relay] Decoded session_key_enc (hex): 6b000f17550bef95f2e37a23592fc61493cb5f040f22f824b4d80014091a967b613a307c2f2db9203fe0fd1866be260b17fc4948bdf5e65dfdb0e0d883c3697259bc13518e15582334a34142539f247bd7a646a15a51005003972aa7186f881519b14e4932ef48bf16eaab2807eb2dd3b23e872bc7b9f9f4059150d9c9397c6b71ad9566869739d0c8dbc7068415bdd6999b6e5cae0615dd6aea27d4c569fb8b5c68e7d8e751cc10956018c0c96c0238b6b9f973e6c98c6bc3f5c0fadb0c2a79dd45e0e821153b49918aa980d3baca995a5f5579b3b6c115e5b038804387dac6353d631b68ba369c72b4258c7a2445749f9dff5547bbaecf3b6b8a91a3209e7a
+[Relay 1] [Relay] Decrypting session key with fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] Decrypted session_key (hex): 02269b2f46e08d643fc1f18524a848cd368f20fd6cb827256c5c2c0a7da1a4a3
+[Relay 1] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 1] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=1106, preview=b',7\xf0\x04|\x1d\xa2\x94}\x97\x84l_j0/\xda[6-\xc9\xc9\xfe\xca`\xc1\xcd\x934\xf4o\xd2\xea\x93\xc1\xc3\xb8\xf3&\xaf@c\xd9\xe0?\x90P\xec\xdb\\ZU\xae\x16y\x13!\xd5\xe8>'
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=1090, preview=b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_ke'
+[Relay 1] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130332c202273657373696f6e5f6b65
+[Relay 1] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 1] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9103
+[Relay 3] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 53164), thread=6195654656, relay_port=9103
+[Relay 3] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9103, "session_key": "BLk6Y5JxKM+SfPtvX2KNBlzvODErylksx2i/+8oI2MCGSTbr7RmlndQ5u9eO6nWfMXV7HmBnLb/aNLD5RsJRFZf45FZpqT1jtqWg0u8Rnb58gNPYm3I5AnBowtvV9mmQzy9T4ZFftvBJJSy4GnRXYKeGxK152XRmOhnMD2KLhCP9saHQht4IvzuxOZ4Y+QI/6SpyhReHiuGJywUT7jdblE58BubZXkSbvKT1OT5nB49wuAkJiBtZykao48OBS6yJ+z+1cqCSLmOg7kit+TLwm+DsoDsO6fkw13w1w7hZp5KgjWaXdwWivjG4Y7BS/aKz5ASE0qLTM+ndnr5zCWcgjw==", "payload": "9Na+Aba8rct2bY19LY3Pk4b39TYGUDNbm0fPwv4aK3DCjSbFfY3YkLhFLwrqssFl717eTwTWBf8AAsaFsQptd2PQXA3fSBm7S6oi3Uon2EGX0tQC0xtV+aDnxkcUNm7P+g/2xIYrFQECujp7LWDeu4UiTGLoHFioXM+yGCZZxNuMgAXaw3mShYe1nZCf7NLkdaQB/fseFcyjWXtEC0gEcmaWIE4Alt+vE4v4OSIMo44KrAUcI/8ZIHcuKIplznd1QUbeMu7/Y9ow672/u/FO70adUwWDWB9eSDa5ZURhf0BIqLpdp9k4O3HENSRgNpJMiLVSYgiYpl6eAprXy0LoksXE2QiOP5/XhPplYy/FmLwTInxe2pcmXq0WT9jyLpbBdbDW29O0mOUpkWGYhX1z+FTG2wggnOB4VJppwakBAwUiiUMxYvjMNj5UzYDDsVgB3RAynSKnqRkauGyfidDf38zY+PjAQrFuH1kPQBPYDAMo2FI6JiDAr9zBEec/0TdCqa7SMb21h5k9s/jWGW2rTzylFA487JpHsT/6gQMVgWrxQBARJDOczLPY2CLQcvZUcoaftjJZ8Z5bwQU/OrXSPWMfNLx1zphoSDm5SsvfIFIlkJ+xvJbnHaZdTyskYGWLAVWPFb0DNT1oB98giAxM8PQD"}'
+[Relay 3] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 3] [Relay] Received session_key (base64): BLk6Y5JxKM+SfPtvX2KNBlzvODErylksx2i/+8oI2MCGSTbr7RmlndQ5u9eO6nWfMXV7HmBnLb/aNLD5RsJRFZf45FZpqT1jtqWg0u8Rnb58gNPYm3I5AnBowtvV9mmQzy9T4ZFftvBJJSy4GnRXYKeGxK152XRmOhnMD2KLhCP9saHQht4IvzuxOZ4Y+QI/6SpyhReHiuGJywUT7jdblE58BubZXkSbvKT1OT5nB49wuAkJiBtZykao48OBS6yJ+z+1cqCSLmOg7kit+TLwm+DsoDsO6fkw13w1w7hZp5KgjWaXdwWivjG4Y7BS/aKz5ASE0qLTM+ndnr5zCWcgjw==
+[Relay 3] [Relay] Decoded session_key_enc (hex): 04b93a63927128cf927cfb6f5f628d065cef38312bca592cc768bffbca08d8c0864936ebed19a59dd439bbd78eea759f31757b1e60672dbfda34b0f946c2511597f8e45669a93d63b6a5a0d2ef119dbe7c80d3d89b7239027068c2dbd5f66990cf2f53e1915fb6f049252cb81a745760a786c4ad79d974663a19cc0f628b8423fdb1a1d086de08bf3bb1399e18f9023fe92a728517878ae189cb0513ee375b944e7c06e6d95e449bbca4f5393e67078f70b80909881b59ca46a8e3c3814bac89fb3fb572a0922e63a0ee48adf932f09be0eca03b0ee9f930d77c35c3b859a792a08d66977705a2be31b863b052fda2b3e40484d2a2d333e9dd9ebe730967208f
+[Relay 3] [Relay] Decrypting session key with fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] Decrypted session_key (hex): 8811f7aad5e46d9f68a2d4888525da39f35f4cb0e57807e0d6b807c4aa71ee37
+[Relay 3] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 3] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=498, preview=b'\xf4\xd6\xbe\x01\xb6\xbc\xad\xcbvm\x8d}-\x8d\xcf\x93\x86\xf7\xf56\x06P3[\x9bG\xcf\xc2\xfe\x1a+p\xc2\x8d&\xc5}\x8d\xd8\x90\xb8E/\n\xea\xb2\xc1e\xef^\xdeO\x04\xd6\x05\xff\x00\x02\xc6\x85'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=482, preview=b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_ke'
+[Relay 3] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226e6578745f6970223a202231302e3235302e3132302e313936222c20226e6578745f706f7274223a20393130322c202273657373696f6e5f6b65
+[Relay 3] [Relay] [DEBUG] Next hop JSON keys: ['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 3] [Relay] [DEBUG] Forwarding to next relay 10.250.120.196:9102
+[Relay 2] [Relay] [handle_message ENTERED] addr=('10.250.120.196', 53165), thread=6194491392, relay_port=9102
+[Relay 2] [Relay] [DEBUG] Raw data received: b'{"next_ip": "10.250.120.196", "next_port": 9102, "session_key": "xA+aTb8TFwAL/RX8vU8SzYJJA4yF0ZaiS1sAIQK3t5n9fPXBlWsnNV/3RpHT/KH4b4qXmgYhUqYu768qhtr2vcIVI714HmYJLEgc9DSpjZhQfXoFY3bbHlCmrlfocnTengrY3duDKs2mXKexYfxua8kehZlpw+hVs6hFGHLx7tg9CYcVNZ2XYryW/M9EXacW0Rvee95EWmcari7qDAgc6Y2d8NcFD2y4m+/qDI6T6RV2AxSvousitubf2JDOi/6qvKR7O0Lrlv80te3j7d8TRXCVEG+eN1HnIWjNc5IOUvP/kDADMFVPdlD1w/tK8sj/SPmcUceZrCV7ewKnDmv5EQ==", "payload": "/Pxtdh8E50Mo9Jmdb4lx+7N8YNM1U0wBWrqh9N549ERGYadz5vX4rw=="}'
+[Relay 2] [Relay] [DEBUG] Data after JSON parse: type=<class 'dict'>, keys=['next_ip', 'next_port', 'session_key', 'payload']
+[Relay 2] [Relay] Received session_key (base64): xA+aTb8TFwAL/RX8vU8SzYJJA4yF0ZaiS1sAIQK3t5n9fPXBlWsnNV/3RpHT/KH4b4qXmgYhUqYu768qhtr2vcIVI714HmYJLEgc9DSpjZhQfXoFY3bbHlCmrlfocnTengrY3duDKs2mXKexYfxua8kehZlpw+hVs6hFGHLx7tg9CYcVNZ2XYryW/M9EXacW0Rvee95EWmcari7qDAgc6Y2d8NcFD2y4m+/qDI6T6RV2AxSvousitubf2JDOi/6qvKR7O0Lrlv80te3j7d8TRXCVEG+eN1HnIWjNc5IOUvP/kDADMFVPdlD1w/tK8sj/SPmcUceZrCV7ewKnDmv5EQ==
+[Relay 2] [Relay] Decoded session_key_enc (hex): c40f9a4dbf1317000bfd15fcbd4f12cd8249038c85d196a24b5b002102b7b799fd7cf5c1956b27355ff74691d3fca1f86f8a979a062152a62eefaf2a86daf6bdc21523bd781e66092c481cf434a98d98507d7a056376db1e50a6ae57e87274de9e0ad8dddb832acda65ca7b161fc6e6bc91e859969c3e855b3a8451872f1eed83d098715359d9762bc96fccf445da716d11bde7bde445a671aae2eea0c081ce98d9df0d7050f6cb89befea0c8e93e915760314afa2eb22b6e6dfd890ce8bfeaabca47b3b42eb96ff34b5ede3eddf13457095106f9e3751e72168cd73920e52f3ff90300330554f7650f5c3fb4af2c8ff48f99c51c799ac257b7b02a70e6bf911
+[Relay 2] [Relay] Decrypting session key with fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] Decrypted session_key (hex): 9d38da5da4519e5205256cd5fbeb1a8ec499944fb88ca23ee3a196ad38d878dd
+[Relay 2] [Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)
+[Relay 2] [Relay] [DEBUG] Payload base64-decoded: type=<class 'bytes'>, len=40, preview=b'\xfc\xfcmv\x1f\x04\xe7C(\xf4\x99\x9do\x89q\xfb\xb3|`\xd35SL\x01Z\xba\xa1\xf4\xdex\xf4DFa\xa7s\xe6\xf5\xf8\xaf'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 2] [Relay] [DEBUG] AES-decrypted payload (hex): 7b226d7367223a202248656c6c6f2c20776f726c6421227d
+[Relay 2] [Relay] [DEBUG] Next hop JSON keys: ['msg']
+[Relay 2] [Relay] [DEBUG] Payload is not JSON, assuming last hop. Error: 'next_ip'
+[Relay 2] [Relay] [Last Hop] Forwarding payload to dest 127.0.0.1:9100, len=24, type=<class 'bytes'>
+[Relay 2] [Relay] [Last Hop] Sending to dest: type=<class 'bytes'>, len=24, preview=b'{"msg": "Hello, world!"}'
+[Relay 2] [Relay] [Last Hop] Received response from dest: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 2] [Relay] [Last Hop] Response from dest decoded as UTF-8: '{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 2] [Relay] [Last Hop] Response from dest (hex): 7b22726573756c74223a20224f4b222c20226563686f223a207b226d7367223a202248656c6c6f2c20776f726c6421227d7d
+[Relay 2] [Relay] [Last Hop] About to AES-encrypt response: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Relay 2] [Relay] [Last Hop] AES-encrypted response (hex): 87eac55fe7e0a05e58d670484fd7e90bc25211a5d7a8362b35375e0b14d0c407f2a17889e8c355301af3a252d587aff0d93ee55fb019a5cbffae3548
+[Relay 2] [Relay] [Last Hop] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=88, preview=b'h+rFX+fgoF5Y1nBIT9fpC8JSEaXXqDYrNTdeCxTQxAfyoXiJ6MNVMBrzolLV'
+[Relay 2] [Relay] [Last Hop] Sent response to ('10.250.120.196', 53165): b'h+rFX+fgoF5Y1nBIT9fpC8JSEaXXqDYrNTdeCxTQxAfyoXiJ6MNVMBrzolLV'... (len=88)
+[Relay 3] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=88, preview=b'h+rFX+fgoF5Y1nBIT9fpC8JSEaXXqDYrNTdeCxTQxAfyoXiJ6MNVMBrzolLV'
+[Relay 2] [Relay] [handle_message END] addr=('10.250.120.196', 53165), thread=6194491392
+[Relay 3] [Relay] [RETURN] Base64-decoded response: type=<class 'bytes'>, len=66, preview=b'\x87\xea\xc5_\xe7\xe0\xa0^X\xd6pHO\xd7\xe9\x0b\xc2R\x11\xa5\xd7\xa86+57^\x0b\x14\xd0\xc4\x07\xf2\xa1x\x89\xe8\xc3U0\x1a\xf3\xa2R\xd5\x87\xaf\xf0\xd9>\xe5_\xb0\x19\xa5\xcb\xff\xae5H'
+[Relay 3] [Relay] [RETURN] AES-decrypted response: type=<class 'bytes'>, len=50, preview=b'GW\xc8T\x83GW\xf7N\xcaj\x80t\xee{-\t\x8e\xf2\x16\x959Z\xa4\xde[g\xd8\xd4T\xe7\xd4\xa5\xe6-\xc2\xf7\xd8\xa2XA{\xbeo\xd2\xdb\x8fah\x9f'
+[Relay 3] [Relay] [RETURN] AES-decrypted response not UTF-8: 'utf-8' codec can't decode byte 0xc8 in position 2: invalid continuation byte
+[Relay 3] [Relay] [RETURN] AES-encrypted response (hex): ecd4e275c7cce90005287daa25415bbf0a180f31ee8b04a0e5a259566ff52f27da48240fffd05aae897aaf0da403505c45a9be7323f4bd657f9e7648
+[Relay 3] [Relay] [RETURN] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=112, preview=b'7NTidcfM6QAFKH2qJUFbvwoYDzHuiwSg5aJZVm/1LyfaSCQP/9Barol6rw2k'
+[Relay 3] [Relay] [handle_message END] addr=('10.250.120.196', 53164), thread=6195654656
+[Relay 1] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=112, preview=b'7NTidcfM6QAFKH2qJUFbvwoYDzHuiwSg5aJZVm/1LyfaSCQP/9Barol6rw2k'
+[Relay 1] [Relay] [RETURN] Base64-decoded response: type=<class 'bytes'>, len=82, preview=b"\xec\xd4\xe2u\xc7\xcc\xe9\x00\x05(}\xaa%A[\xbf\n\x18\x0f1\xee\x8b\x04\xa0\xe5\xa2YVo\xf5/'\xdaH$\x0f\xff\xd0Z\xae\x89z\xaf\r\xa4\x03P\\E\xa9\xbes#\xf4\xbde\x7f\x9evH"
+[Relay 1] [Relay] [RETURN] AES-decrypted response: type=<class 'bytes'>, len=66, preview=b'[\x17]\x1e\xbf\xd6\xfc\xf4\xbb^\xe4;2h#\x8d\xc3\xbe|5\xb0\r5\x82jj\x1a\xa8d\xb8x\x1a\x10\x82\x15\xd5\xb8P\xd4\xe7h\x9b\xf2\x0c#m\xee\xcf\x95&lg\x01wr\x98\xa3;$\xe8'
+[Relay 1] [Relay] [RETURN] AES-decrypted response not UTF-8: 'utf-8' codec can't decode byte 0xbf in position 4: invalid start byte
+[Relay 1] [Relay] [RETURN] AES-encrypted response (hex): 3505ae330b8c411cfe76efe26a44917982901f21746dc7ecc7c97c5a09885740879027ad5a867d8c2d88b06c1b0e498b8b1d1a1faa65e774cee12cae
+[Relay 1] [Relay] [RETURN] Base64-encoded AES-encrypted response: type=<class 'bytes'>, len=132, preview=b'NQWuMwuMQRz+du/iakSReYKQHyF0bcfsx8l8WgmIV0CHkCetWoZ9jC2IsGwb'
