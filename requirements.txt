@@ -1,0 +1,6 @@
+--only-binary=:all: grpcio==1.67.0
+grpcio-tools
+protobuf
+requests
+cryptography
+psutil

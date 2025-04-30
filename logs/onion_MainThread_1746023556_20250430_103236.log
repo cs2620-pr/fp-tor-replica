@@ -1,0 +1,6 @@
+2025-04-30 10:32:36 [INFO] onion_MainThread_1746023556: Initializing client...
+2025-04-30 10:32:36 [INFO] onion_MainThread_1746023556: Starting terminus service on localhost:5000
+2025-04-30 10:32:36 [INFO] onion_MainThread_1746023556: Client initialized
+2025-04-30 10:33:41 [INFO] onion_MainThread_1746023556: Built circuit: ['localhost:5051', 'localhost:5052', 'localhost:5053']
+2025-04-30 10:33:46 [INFO] onion_MainThread_1746023556: Built circuit: ['localhost:5051', 'localhost:5052', 'localhost:5053']
+2025-04-30 10:33:46 [ERROR] onion_MainThread_1746023556: Failed to send request: 'localhost:5053'
