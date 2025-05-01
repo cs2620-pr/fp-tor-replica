@@ -1,0 +1,4 @@
+2025-04-30 11:36:27 [INFO] onion_MainThread_1746027387: Registering with registry at localhost:5050
+2025-04-30 11:36:27 [INFO] onion_MainThread_1746027387: Registered with registry
+2025-04-30 11:36:27 [INFO] onion_MainThread_1746027387: Router initialized as MIDDLE node at localhost:5052
+2025-04-30 11:36:27 [INFO] onion_MainThread_1746027387: Starting MIDDLE router on localhost:5052

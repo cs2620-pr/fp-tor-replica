@@ -1,0 +1,3 @@
+2025-04-30 11:36:22 [INFO] onion_MainThread_1746027382: Starting registry service on localhost:5050
+2025-04-30 11:36:25 [INFO] onion_MainThread_1746027382: Registering node localhost:5051 as type 1
+2025-04-30 11:36:27 [INFO] onion_MainThread_1746027382: Registering node localhost:5052 as type 2

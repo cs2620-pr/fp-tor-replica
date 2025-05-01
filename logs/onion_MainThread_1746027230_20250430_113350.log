@@ -1,0 +1,14 @@
+2025-04-30 11:33:50 [INFO] onion_MainThread_1746027230: Starting registry service on localhost:5050
+2025-04-30 11:33:53 [INFO] onion_MainThread_1746027230: Registering node localhost:5051 as type 1
+2025-04-30 11:33:55 [INFO] onion_MainThread_1746027230: Registering node localhost:5052 as type 2
+2025-04-30 11:33:57 [INFO] onion_MainThread_1746027230: Registering node localhost:5053 as type 3
+2025-04-30 11:34:00 [INFO] onion_MainThread_1746027230: Pinging registered nodes
+2025-04-30 11:34:00 [INFO] onion_MainThread_1746027230: Node localhost:5051 is alive
+2025-04-30 11:34:00 [INFO] onion_MainThread_1746027230: Node localhost:5052 is alive
+2025-04-30 11:34:00 [INFO] onion_MainThread_1746027230: Received GetNodes request
+2025-04-30 11:34:00 [INFO] onion_MainThread_1746027230: Returning 3 nodes
+2025-04-30 11:34:00 [INFO] onion_MainThread_1746027230: Node localhost:5053 is alive
+2025-04-30 11:34:10 [INFO] onion_MainThread_1746027230: Pinging registered nodes
+2025-04-30 11:34:10 [INFO] onion_MainThread_1746027230: Node localhost:5051 is alive
+2025-04-30 11:34:10 [INFO] onion_MainThread_1746027230: Node localhost:5052 is alive
+2025-04-30 11:34:10 [INFO] onion_MainThread_1746027230: Node localhost:5053 is alive

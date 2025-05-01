@@ -1,0 +1,17 @@
+2025-04-30 11:37:59 [INFO] onion_MainThread_1746027479: Starting terminus service on localhost:5000
+2025-04-30 11:38:03 [INFO] onion_MainThread_1746027479: Built circuit: ['localhost:5051', 'localhost:5052', 'localhost:5053']
+2025-04-30 11:38:03 [INFO] onion_MainThread_1746027479: Preparing to send GET request to http://example.com
+2025-04-30 11:38:03 [INFO] onion_MainThread_1746027479: Creating exit layer
+2025-04-30 11:38:03 [ERROR] onion_MainThread_1746027479: Failed to send request: 'cryptography.hazmat.bindings._rust.openssl.rsa.RSAPrivateKey' object has no attribute 'encrypt'
+2025-04-30 11:38:03 [ERROR] onion_MainThread_1746027479: Traceback (most recent call last):
+  File "/Users/anaiskillian/ajuniorspring/cs2620/finalproj/network/terminus_service.py", line 344, in send_request
+    exit_layer = MessagePackager.create_exit_layer(
+        url, method, circuit_manager.node_keys[exit_node]
+    )
+  File "/Users/anaiskillian/ajuniorspring/cs2620/finalproj/core/message_handler.py", line 48, in create_exit_layer
+    encrypted_key = asymmetric_encrypt(public_key, sym_key)
+  File "/Users/anaiskillian/ajuniorspring/cs2620/finalproj/core/crypto_utils.py", line 76, in asymmetric_encrypt
+    encrypted_data = public_key.encrypt(
+                     ^^^^^^^^^^^^^^^^^^
+AttributeError: 'cryptography.hazmat.bindings._rust.openssl.rsa.RSAPrivateKey' object has no attribute 'encrypt'. Did you mean: 'decrypt'?
+

@@ -37,26 +37,30 @@ This implementation includes:
 ## Installation
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/onion-network.git
-   cd onion-network
-   ```
+```
+git clone https://github.com/yourusername/onion-network.git
+cd onion-network
+```
 
-2. Run the setup script:
-   ```
-   python3 setup.py
-   ```
+Create a virtual environment (optional but recommended):
+```
+python3 -m venv venv
+source venv/bin/activate
+```
 
-   If you're having issues with package compilation, try the binary-only installation:
-   ```
-   python3 setup.py --binary-only
-   ```
-
-3. The setup script will:
+Install the dependencies:
+```
+pip install -r requirements.txt
+```
+This will:
    - Install required dependencies
    - Generate protocol buffer files
    - Create necessary directories
    - Set up the project structure
+
+
+Generate the protocol buffers: python3 generate_protos.py
+
 
 ## Running the Network
 

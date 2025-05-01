@@ -245,8 +245,8 @@ def main():
     clear_screen()
     print_logo()
     
-    print_colored("Onion Network Test", "green")
-    print_colored("-" * 80, "blue")
+    print_colored("Onion Network Test", "blue")
+    print_colored("-" * 80, "cyan")
     
     # Set up signal handlers for clean shutdown
     signal.signal(signal.SIGINT, lambda sig, frame: sys.exit(0))
@@ -265,94 +265,74 @@ def main():
         client_port = 5000
         
         # Start the registry
+        print_colored("Starting registry service...", "blue")
         registry_proc = run_registry(registry_port)
         if not registry_proc:
             print_colored("Failed to start registry, aborting test", "red")
             return 1
         
         # Give the registry time to start
-        time.sleep(2)
+        time.sleep(3)
         
         # Start the router nodes
+        print_colored("Starting entry router...", "blue")
         entry_proc = run_router(entry_port, 1, registry_port)
         if not entry_proc:
             print_colored("Failed to start entry router, aborting test", "red")
             return 1
         
-        time.sleep(1)
+        time.sleep(2)
         
+        print_colored("Starting middle router...", "blue")
         middle_proc = run_router(middle_port, 2, registry_port)
         if not middle_proc:
             print_colored("Failed to start middle router, aborting test", "red")
             return 1
         
-        time.sleep(1)
+        time.sleep(2)
         
+        print_colored("Starting exit router...", "blue")
         exit_proc = run_router(exit_port, 3, registry_port)
         if not exit_proc:
             print_colored("Failed to start exit router, aborting test", "red")
             return 1
         
-        time.sleep(1)
+        time.sleep(2)
         
         # Start the terminus client
+        print_colored("Starting terminus client...", "blue")
         client = run_terminus(client_port, registry_port)
         if not client:
             print_colored("Failed to start terminus client, aborting test", "red")
             return 1
         
-        time.sleep(1)
+        # Give the terminus client time to start and register
+        time.sleep(3)
         
-        # Print summary of running components
-        print_colored("\nTest Environment Setup", "green")
-        print_colored("-" * 80, "blue")
-        print_colored(f"Registry: localhost:{registry_port}", "cyan")
-        print_colored(f"Entry Router: localhost:{entry_port}", "cyan")
-        print_colored(f"Middle Router: localhost:{middle_port}", "cyan")
-        print_colored(f"Exit Router: localhost:{exit_port}", "cyan")
-        print_colored(f"Terminus Client: localhost:{client_port}", "cyan")
-        print_colored("-" * 80, "blue")
+        # Verify the client is running
+        if not client.server:
+            print_colored("Terminus client failed to start properly", "red")
+            return 1
         
-        # Test fetching a URL
-        print_colored("\nRunning test...", "green")
-        success = test_fetch(client, "http://example.com")
+        print_colored("All components started successfully", "green")
+        print_colored("Running test...", "blue")
         
-        if success:
-            print_colored("\nTest PASSED!", "green")
-        else:
-            print_colored("\nTest FAILED!", "red")
+        # Run the test
+        if not test_fetch(client):
+            print_colored("Test failed", "red")
+            return 1
         
-        # Ask if user wants to run more tests
-        print_colored("\nDo you want to run more tests? (y/n)", "yellow")
-        choice = input().strip().lower()
-        
-        while choice in ["y", "yes"]:
-            print_colored("\nEnter a URL to fetch:", "yellow")
-            url = input().strip()
-            
-            if url:
-                success = test_fetch(client, url)
-                
-                if success:
-                    print_colored("Test PASSED!", "green")
-                else:
-                    print_colored("Test FAILED!", "red")
-            
-            print_colored("\nDo you want to run more tests? (y/n)", "yellow")
-            choice = input().strip().lower()
-        
-        print_colored("\nTests completed. Press Ctrl+C to exit.", "yellow")
-        
-        # Keep the program running until explicitly terminated
-        while True:
-            time.sleep(1)
-        
+        print_colored("Test completed successfully", "green")
         return 0
     
+    except KeyboardInterrupt:
+        print_colored("\nTest interrupted by user", "yellow")
+        return 1
+    
     except Exception as e:
-        print_colored(f"Error in test script: {e}", "red")
+        print_colored(f"Test failed with error: {e}", "red")
         import traceback
-        print_colored(traceback.format_exc(), "red")
+        print_colored(traceback.format_exc(), "yellow")  # Changed from red to yellow for traceback
         return 1
 
 

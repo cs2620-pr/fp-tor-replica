@@ -267,10 +267,11 @@ class TerminusClient:
             self.session_id = circuit_manager.session_id
             self.circuit = circuit_manager.circuit
             
-            # Store the private keys
+            # Store the private keys and node keys
             for i, node_address in enumerate(self.circuit):
-                _, private_key = circuit_manager.client_keys[node_address]
+                public_key, private_key = circuit_manager.client_keys[node_address]
                 self.private_keys[i] = private_key
+                circuit_manager.node_keys[node_address] = public_key
             
             self.monitor.log_info(f"Built circuit: {self.circuit}")
             
@@ -312,25 +313,14 @@ class TerminusClient:
             # Import the MessagePackager
             from core.message_handler import MessagePackager
             
-            # Get the node keys from the circuit
+            # Create a circuit manager with the existing circuit
             from core.circuit_manager import CircuitManager
             circuit_manager = CircuitManager(self.registry_address)
-            circuit_manager.session_id = self.session_id
-            circuit_manager.circuit = self.circuit
             
-            # Rebuild connections to nodes
-            for i, node_address in enumerate(self.circuit):
-                # Setup gRPC options for large messages
-                options = [
-                    ('grpc.max_send_message_length', 50 * 1024 * 1024),  # 50 MB
-                    ('grpc.max_receive_message_length', 50 * 1024 * 1024)  # 50 MB
-                ]
-                circuit_manager.node_channels[node_address] = grpc.insecure_channel(
-                    node_address, options=options
-                )
-                circuit_manager.node_stubs[node_address] = onion_network_pb2_grpc.RouterStub(
-                    circuit_manager.node_channels[node_address]
-                )
+            # Establish the circuit
+            if not circuit_manager.establish_circuit():
+                self.monitor.log_error("Failed to establish circuit")
+                return False
             
             # Get the nodes and their public keys
             exit_node = self.circuit[2]

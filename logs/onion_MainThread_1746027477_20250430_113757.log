@@ -1,0 +1,5 @@
+2025-04-30 11:37:57 [INFO] onion_MainThread_1746027477: Registering with registry at localhost:5050
+2025-04-30 11:37:57 [INFO] onion_MainThread_1746027477: Registered with registry
+2025-04-30 11:37:57 [INFO] onion_MainThread_1746027477: Router initialized as EXIT node at localhost:5053
+2025-04-30 11:37:57 [INFO] onion_MainThread_1746027477: Starting EXIT router on localhost:5053
+2025-04-30 11:38:03 [INFO] onion_MainThread_1746027477: Key exchange for session 619bd57d-5677-49ed-aff3-92b1357111eb
