@@ -30078,3 +30078,339 @@
 2025-05-01 17:26:51 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
 2025-05-01 17:26:51 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
 2025-05-01 17:26:51 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:27:01 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:27:01 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:27:01 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:27:01 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:27:11 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:27:11 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:27:11 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:27:11 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:27:21 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:27:21 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:27:21 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:27:21 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:27:31 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:27:31 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:27:31 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:27:31 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:27:41 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:27:41 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:27:41 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:27:41 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:27:51 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:27:51 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:27:51 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:27:51 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:28:01 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:28:01 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:28:01 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:28:01 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:28:11 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:28:15 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:28:15 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:28:15 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:28:25 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:28:25 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:28:25 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:28:25 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:28:35 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:28:35 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:28:35 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:28:35 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:28:45 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:28:45 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:28:45 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:28:45 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:28:55 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:28:55 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:28:55 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:28:55 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:29:05 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:29:05 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:29:05 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:29:05 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:29:15 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:29:15 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:29:15 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:29:15 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:29:26 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:29:26 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:29:26 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:29:26 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:29:36 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:29:36 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:29:36 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:29:36 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:29:46 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:29:46 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:29:46 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:29:46 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:29:56 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:29:56 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:29:56 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:29:56 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:30:06 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:30:06 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:30:06 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:30:06 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:30:16 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:30:16 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:30:16 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:30:16 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:30:26 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:30:26 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:30:26 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:30:26 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:30:36 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:30:36 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:30:36 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:30:36 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:30:46 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:30:46 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:30:46 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:30:46 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:30:56 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:30:56 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:30:56 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:30:56 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:31:06 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:31:06 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:31:06 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:31:06 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:31:16 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:31:16 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:31:16 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:31:16 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:31:26 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:31:26 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:31:26 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:31:26 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:31:36 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:31:36 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:31:36 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:31:36 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:31:46 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:31:46 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:31:46 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:31:46 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:31:56 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:31:56 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:31:56 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:31:56 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:32:06 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:32:06 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:32:06 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:32:06 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:32:16 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:32:16 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:32:16 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:32:16 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:32:26 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:32:26 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:32:26 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:32:26 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:32:36 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:32:36 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:32:36 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:32:36 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:32:46 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:32:46 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:32:46 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:32:46 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:32:56 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:32:56 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:32:56 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:32:56 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:33:06 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:33:06 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:33:06 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:33:06 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:33:16 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:33:16 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:33:16 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:33:16 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:33:26 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:33:26 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:33:26 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:33:26 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:33:36 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:33:36 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:33:36 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:33:36 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:33:46 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:33:46 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:33:46 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:33:46 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:33:56 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:33:56 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:33:56 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:33:56 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:34:06 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:34:06 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:34:06 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:34:06 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:34:16 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:34:16 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:34:16 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:34:16 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:34:26 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:34:26 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:34:26 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:34:26 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:34:36 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:34:36 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:34:36 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:34:37 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:34:47 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:34:47 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:34:47 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:34:47 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:34:57 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:34:57 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:34:57 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:34:57 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:35:07 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:35:07 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:35:07 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:35:07 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:35:17 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:35:17 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:35:17 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:35:17 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:35:27 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:35:27 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:35:27 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:35:27 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:35:37 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:35:37 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:35:37 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:35:37 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:35:47 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:35:47 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:35:47 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:35:47 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:35:57 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:35:57 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:35:57 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:35:57 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:36:07 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:36:07 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:36:07 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:36:07 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:36:17 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:36:17 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:36:17 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:36:17 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:36:27 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:36:27 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:36:27 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:36:27 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:36:37 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:36:37 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:36:37 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:36:37 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:36:47 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:36:47 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:36:47 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:36:47 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:36:57 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:36:57 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:36:57 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:36:57 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:37:07 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:37:07 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:37:07 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:37:07 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:37:17 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:37:17 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:37:17 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:37:17 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:37:27 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:37:27 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:37:27 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:37:27 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:37:37 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:37:37 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:37:37 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:37:37 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:37:47 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:37:47 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:37:47 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:37:47 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:37:57 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:37:57 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:37:57 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:37:57 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:38:07 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:38:07 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:38:07 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:38:07 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:38:17 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:38:17 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:38:17 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:38:17 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:38:27 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:38:27 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:38:27 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:38:27 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:38:37 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:38:37 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:38:37 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:38:37 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:38:47 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:38:47 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:38:47 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:38:47 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:38:57 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:38:57 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:38:57 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:38:57 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:39:07 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:39:07 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:39:07 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:39:07 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:39:17 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:39:17 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:39:17 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:39:17 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:39:27 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:39:27 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:39:27 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:39:27 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:39:37 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:39:37 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:39:37 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:39:37 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:39:47 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:39:47 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:39:47 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:39:47 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:39:57 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:39:57 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:39:57 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:39:57 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:40:07 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:40:07 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:40:07 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:40:07 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:40:17 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:40:17 [INFO] onion_MainThread_1746023482: Node localhost:5051 is alive
+2025-05-01 17:40:17 [INFO] onion_MainThread_1746023482: Node localhost:5052 is alive
+2025-05-01 17:40:17 [INFO] onion_MainThread_1746023482: Node localhost:5053 is alive
+2025-05-01 17:40:27 [INFO] onion_MainThread_1746023482: Pinging registered nodes
+2025-05-01 17:40:27 [WARNING] onion_MainThread_1746023482: Node localhost:5051 is not responding: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:5051: Failed to connect to remote host: connect: Connection refused (61)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:5051: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-05-01T17:40:27.967105-04:00"}"
+>
+2025-05-01 17:40:27 [WARNING] onion_MainThread_1746023482: Node localhost:5052 is not responding: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:5052: Failed to connect to remote host: connect: Connection refused (61)"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-05-01T17:40:27.973151-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:5052: Failed to connect to remote host: connect: Connection refused (61)"}"
+>
+2025-05-01 17:40:27 [WARNING] onion_MainThread_1746023482: Node localhost:5053 is not responding: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:5053: Failed to connect to remote host: connect: Connection refused (61)"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-05-01T17:40:27.973968-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:5053: Failed to connect to remote host: connect: Connection refused (61)"}"
+>
