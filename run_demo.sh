@@ -1,6 +1,15 @@
 #!/bin/bash
 # Demo runner for Tor-inspired relay network
-# Usage: ./run_demo.sh
+# Usage: ./run_demo.sh [path_length]
+
+# Kill any process using demo ports (CDS:9000, Dest:9100, Relay1:9101, Relay2:9102, Relay3:9103)
+for port in 9000 9100 9101 9102 9103; do
+    PIDS=$(lsof -ti tcp:$port)
+    if [ ! -z "$PIDS" ]; then
+        echo "Killing processes on port $port: $PIDS"
+        kill -9 $PIDS
+    fi
+done
 
 set -e
 
@@ -36,7 +45,8 @@ echo "Started Destination Server (PID $DEST_PID, port 9100)"
 sleep 1
 
 # Run client
-$PYTHON client.py 127.0.0.1 9100 '{"msg": "Hello, world!"}' | tee client.log
+PATH_LENGTH=${1:-3}
+$PYTHON client.py 127.0.0.1 9100 '{"msg": "Hello, world!"}' $PATH_LENGTH | tee client.log
 
 # Cleanup
 kill $CDS_PID $R1_PID $R2_PID $R3_PID $DEST_PID

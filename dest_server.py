@@ -59,20 +59,25 @@ def handle_client(conn, addr):
                 except Exception as e:
                     print(f"[DestServer] ERROR: Could not parse JSON: {e}")
                     error_message = f"ERROR: {str(e)}".encode('utf-8')
-                    to_send = base64.b64encode(error_message)
+                    # Wrap all errors in a JSON object for consistency
+                    error_json = json.dumps({"result": "ERROR", "error": str(e)}).encode('utf-8')
+                    to_send = error_json
             else:
-                error_message = b"ERROR: Could not decode payload as JSON."
-                to_send = base64.b64encode(error_message)
+                error_message = "ERROR: Could not decode payload as JSON."
+                error_json = json.dumps({"result": "ERROR", "error": error_message}).encode('utf-8')
+                to_send = error_json
         except Exception as e:
             print(f"[DestServer] ERROR: Invalid input: {e}\nPayload: {data}")
             error_message = f"ERROR: {str(e)}".encode('utf-8')
-            to_send = base64.b64encode(error_message)
+            error_json = json.dumps({"result": "ERROR", "error": str(e)}).encode('utf-8')
+            to_send = error_json
         print(f"[DestServer] Sending back: {to_send!r}, len={len(to_send)}, type={type(to_send)}")
         conn.sendall(to_send)
     except Exception as e:
         print(f"[DestServer] Error with {addr}: {e}")
         error_message = f"ERROR: {str(e)}".encode('utf-8')
-        conn.sendall(base64.b64encode(error_message))
+        error_json = json.dumps({"result": "ERROR", "error": str(e)}).encode('utf-8')
+        conn.sendall(error_json)
     finally:
         conn.close()
 

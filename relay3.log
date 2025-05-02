@@ -1,1 +1,10 @@
-run_demo.sh: line 24: /Users/mohamedzidancassim/.pyenv/versions/3.13.2/bin/python3: No such file or directory
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 3] [Relay] Deregistering from CDS and shutting down...
+[Relay 3] [Relay] ERROR during deregistration: [Errno 54] Connection reset by peer

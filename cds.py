@@ -33,6 +33,13 @@ class CentralDirectoryServer:
         try:
             data = conn.recv(8192)
             relay_info = json.loads(data.decode())
+            # Support deregistration
+            if relay_info.get('deregister'):
+                with self.lock:
+                    self.relays = [r for r in self.relays if not (r['ip'] == relay_info['ip'] and r['port'] == relay_info['port'])]
+                    print(f"[CDS] Deregistered relay: {relay_info['ip']}:{relay_info['port']}")
+                conn.sendall(b'OK')
+                return
             with self.lock:
                 # Check for duplicate (by ip/port)
                 found = False
@@ -67,17 +74,28 @@ class CentralDirectoryServer:
 
     def handle_client_request(self, conn, addr):
         try:
-            with self.lock:
-                if len(self.relays) < 3:
-                    conn.sendall(b'NOT_ENOUGH_RELAYS')
-                    return
-                selected = random.sample(self.relays, 3)
-            conn.sendall(json.dumps(selected).encode())
-            import hashlib
-            for relay in selected:
-                fingerprint = hashlib.sha256(relay['public_key'].encode()).hexdigest()
-                print(f"[CDS] [KEY] Sending relay public key fingerprint: {fingerprint} for {relay['ip']}:{relay['port']}")
-            print(f"[CDS] Provided relays to client {addr}: {selected}")
+            data = conn.recv(1024)
+            req = data.decode().strip()
+            n = 3
+            if req.startswith('REQUEST_RELAYS:'):
+                try:
+                    n = int(req.split(':')[1])
+                except Exception:
+                    n = 3
+            if req.startswith('REQUEST_RELAYS'):
+                with self.lock:
+                    if len(self.relays) < n:
+                        conn.sendall(b'NOT_ENOUGH_RELAYS')
+                        return
+                    selected = random.sample(self.relays, n)
+                conn.sendall(json.dumps(selected).encode())
+                import hashlib
+                for relay in selected:
+                    fingerprint = hashlib.sha256(relay['public_key'].encode()).hexdigest()
+                    print(f"[CDS] [KEY] Sending relay public key fingerprint: {fingerprint} for {relay['ip']}:{relay['port']}")
+                print(f"[CDS] Provided relays to client {addr}: {selected}")
+                return
+            conn.sendall(b'ERROR')
         except Exception as e:
             print(f"[CDS] Client request error from {addr}: {e}")
             conn.sendall(b'ERROR')
