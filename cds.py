@@ -4,27 +4,42 @@ import json
 import random
 import hashlib
 
-RELAY_REG_PORT = 9000  # Port for relays to register
-CLIENT_REQ_PORT = 9001  # Port for clients to request relays
+def find_available_port(start_port, max_attempts=10):
+    """Try to find an available port starting from start_port."""
+    for port in range(start_port, start_port + max_attempts):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            try:
+                s.bind(("0.0.0.0", port))
+                return port
+            except OSError:
+                continue
+    raise RuntimeError(f"Could not find available port after {max_attempts} attempts")
 
 class CentralDirectoryServer:
     def __init__(self):
         self.relays = []  # List of dicts: {"ip": str, "port": int, "public_key": str}
         self.lock = threading.Lock()
+        self.relay_port = find_available_port(9000)
+        self.client_port = find_available_port(9001)
 
     def start(self):
         threading.Thread(target=self.relay_registration_server, daemon=True).start()
         threading.Thread(target=self.client_request_server, daemon=True).start()
-        print(f"[CDS] Central Directory Server running on ports {RELAY_REG_PORT} (relay reg), {CLIENT_REQ_PORT} (client req)")
+        print(f"[CDS] Central Directory Server running on ports {self.relay_port} (relay reg), {self.client_port} (client req)")
+        
+        # Write ports to a file so client can find them
+        with open("cds_ports.txt", "w") as f:
+            f.write(f"{self.relay_port}\n{self.client_port}\n")
+        
         while True:
             pass  # Keep main thread alive
 
     def relay_registration_server(self):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            s.bind(("0.0.0.0", RELAY_REG_PORT))
+            s.bind(("0.0.0.0", self.relay_port))
             s.listen()
-            print(f"[CDS] Listening for relay registrations on port {RELAY_REG_PORT}")
+            print(f"[CDS] Listening for relay registrations on port {self.relay_port}")
             while True:
                 conn, addr = s.accept()
                 threading.Thread(target=self.handle_relay_registration, args=(conn, addr), daemon=True).start()
@@ -58,9 +73,9 @@ class CentralDirectoryServer:
     def client_request_server(self):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            s.bind(("0.0.0.0", CLIENT_REQ_PORT))
+            s.bind(("0.0.0.0", self.client_port))
             s.listen()
-            print(f"[CDS] Listening for client relay requests on port {CLIENT_REQ_PORT}")
+            print(f"[CDS] Listening for client relay requests on port {self.client_port}")
             while True:
                 conn, addr = s.accept()
                 threading.Thread(target=self.handle_client_request, args=(conn, addr), daemon=True).start()
@@ -73,7 +88,6 @@ class CentralDirectoryServer:
                     return
                 selected = random.sample(self.relays, 3)
             conn.sendall(json.dumps(selected).encode())
-            import hashlib
             for relay in selected:
                 fingerprint = hashlib.sha256(relay['public_key'].encode()).hexdigest()
                 print(f"[CDS] [KEY] Sending relay public key fingerprint: {fingerprint} for {relay['ip']}:{relay['port']}")

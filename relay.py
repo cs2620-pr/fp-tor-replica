@@ -22,8 +22,19 @@ def log(msg):
 
 log("[Relay] ---- Relay process started ----")
 
+def get_cds_relay_port():
+    """Get the relay registration port from the CDS ports file."""
+    try:
+        with open("cds_ports.txt", "r") as f:
+            lines = f.readlines()
+            if len(lines) >= 1:
+                return int(lines[0].strip())
+    except (FileNotFoundError, ValueError, IndexError) as e:
+        print(f"[Relay] WARNING: Could not read CDS port file: {e}. Using default port.")
+    return 9000  # Default port as fallback
+
 CDS_IP = '127.0.0.1'
-CDS_PORT = 9000
+CDS_PORT = get_cds_relay_port()
 
 class RelayNode:
     def __init__(self, relay_id, listen_port):

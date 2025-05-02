@@ -1,0 +1,31 @@
+[Client] Relay 10.250.61.236:9101 public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Client] Relay 10.250.61.236:9103 public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Client] Relay 10.250.61.236:9102 public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Client] Using relay 10.250.61.236:9101 public key fingerprint for layer 1: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Client] Using relay 10.250.61.236:9103 public key fingerprint for layer 2: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Client] Using relay 10.250.61.236:9102 public key fingerprint for layer 3: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Client] [DEBUG] Layer 1 relay: 10.250.61.236:9101 fingerprint: 795f10dfbf4829f63e32deb8d1486d4165efc77e961a5808388a93da75f17cc3
+[Client] [DEBUG] Layer 2 relay: 10.250.61.236:9103 fingerprint: 48ba2887af9134b2a4c15712300c47ec8b23563f726da898a1362b1cb13824e1
+[Client] [DEBUG] Layer 3 relay: 10.250.61.236:9102 fingerprint: a76fd0b323a85d60373e37492bf4f5b6a5e33fc03c24a5c6e6d28be73f4e120d
+[Client] [DEBUG] Session keys (hex): ['92e6c529edc7faf148a72d59e041803f1b695571dc84f46da6daa46e053d7bec', '14ada6965acd5819dd45949a4774e49622e971377fffe8cbeae5eb8676ab9cdb', '4e2b4f0b8ba4bb927459636f2560d2de03b431b61c7ca8775291f442591e32ab']
+[Client] [DEBUG] Onion message session_key field (base64): fgwOjkHfrgseVDDFiSZTQd161ux3eQP96IibHjiuuC/kT0QBoTW/aAHWVTOZQ+x368AVsXrS4mf5IkQJIp2dQTDel0QBumKEhH/5t3KoRkSEEx1l/afUTQtuMiRP0hpMh1If47lYjOKCychBy17AHyx1HKe4fPYAtLt48yviKcNsMxAKrSgXxiElkv84vDwAPp2a185TU1WGVKqh3MqUJ1+WuMtKe0lcBq5VNxE9AMWNutv0FJn0WaFRxgveNW5GDn+oBCaGFf7jMzeBI5xVeB/UUO7cA/7GRV7dtRknSF8YZ6XwZE7qmTJ9WGG7YDur1refJKq8OFQyphC/4nfsrg==
+[Client] [DEBUG] Onion message: {'next_ip': '10.250.61.236', 'next_port': 9101, 'session_key': 'fgwOjkHfrgseVDDFiSZTQd161ux3eQP96IibHjiuuC/kT0QBoTW/aAHWVTOZQ+x368AVsXrS4mf5IkQJIp2dQTDel0QBumKEhH/5t3KoRkSEEx1l/afUTQtuMiRP0hpMh1If47lYjOKCychBy17AHyx1HKe4fPYAtLt48yviKcNsMxAKrSgXxiElkv84vDwAPp2a185TU1WGVKqh3MqUJ1+WuMtKe0lcBq5VNxE9AMWNutv0FJn0WaFRxgveNW5GDn+oBCaGFf7jMzeBI5xVeB/UUO7cA/7GRV7dtRknSF8YZ6XwZE7qmTJ9WGG7YDur1refJKq8OFQyphC/4nfsrg==', 'payload': 'LQWGY0zeZeV/jVwnEHVqwP1v8QdUlIcW2++bj6qJY6uJKM4oR83DAiK3J2mlTRHTLq4hy8obM47h9Ydhx70Oyw4AWOkWbzZj0VObSqHzm06NI8aIMMAA/RH9XjH7RG+7qwXZ2Q+Cp/Ubk+2lP1T7OoLkk+9zoa7LL83uKg+HsnPJ1KePIyrcbFl8RkOMkat+8rYRIx5zNjjqaR5JK+MR8w6p8/nGd2Qu8LhSztUpJ4W8dLI8BefvsAIRNRhywB8b5ihsyHV3neCbHgkRwiqZkZ7VGuYnS4TW0a/HDytroesbkMAQNd/wnS/ztOILzaHAFosAoi8huE+LI7WJBgSQH8X8+PaAGOTMSCBBdU0tdvFpk45SB1KzV7to79gs2J2b/TMFFw0A0NQvBB0jx6cEzdA2VKS4nZgIj+58Tr4mDaC/g17PJRLg1LwOPdxdajI6Dg7YPN/hHIBMRTAMTyxqJdOyScCNqddsalRTmpL2WcUlfXSKgmF9GyKRMiHktDtuF4oeJ+ULG3JHU+ZYb+Klx4OCVkFv3UWUjRD+5rqrl5uv7Do8mrMqtZqfMqQs3dnQpm+ZSo8ZlLv+qFX3Ztn8nWMxSTRFTjQBatbVUlRebsNpY0Ccz9Rn1V2kncWGn0PnGs1yGt8NYDaaIWrFkW2j2Ch1ItQvtpKWWyEJaJfEY5peZvoNjlzmCYII3bL/8TrO0poo2x0WR1c4oh2w9TGaoWiC42iiFH0JcGxQw2XVat2HaOLr0q656NYlfaNvIKsY7W7szMWjkdoZ1ySANZzs9HmJPpc1ftGBOY0Jt7oSverMZ7JMsl4gVyog5H86oo2v/GooSAAzYRTjByW0qPd6iaL29bbyEVP+VlLBh7EJ/nZk5r8Zad8YR834Gs433ApiszaJ2T2/2cq3WZW3r7eqDXb6ZLPtwl7LtETwjC5HyT6VrmmGeh1hwASWwlDlF1xkeHMTncjOo6y2n2C+lk2hXDn4BI4g3kh7xKtxK8SRdcP8M9ulz7eYFG2H7SuOMHqZPQNEsBIkHexMeOiCJWhwwRXEK+bJFO5XksGVfjlnEpMntudAl47MOgkLS5XD7BTE+ajLTogiit/nIgubNNiuFJscLEenuntQvT/R2aImRjoHga6FlJBBZRSNc8J3VsEicM+Ja95+4DjIyPLYr4/UM5GmpxglGgYnm/j30mlbqPtaWfHoq7PQwjQcJWyva+X3Qs9WjipCVfu63/IY1go8AjwNs1RjpcleJMPQSo6qQgMIPQ/ZL5b7E9W1MYv86FlKmT2NDD0Odjz31Bvbo8ME1fS4TT+YGvtF5Cvzssi5rnwCKEVI2fYiNqf3QRddY0Mkt6p4FdfoY3sovlcGMf+8pNjRXHuxOIyXCkXfjDOps+boti8lLmlgxp/ut115rsoaD46NtIrflxzjy3yyxMGrjyfsLnipCFtXO1pehwxumzcyWxPTLRLqaLr2W2mh5nxzHw=='}
+[Client] [DEBUG] Sending to first relay 10.250.61.236:9101, len=1901, type=<class 'bytes'>
+[Client] [DEBUG] Received response from first relay: type=<class 'bytes'>, len=132, preview=b'aeihpB3OTRsdLbIUaKO/FMEYBxGW4FEMOj9YVlni+rF3DZuan0vamIy2aP
+[Client] [DEBUG] Received base64-decoded response: type=<class 'bytes'>, len=98, preview=b'i\xe8\xa1\xa4\x1d\xceM\x1b\x1d-\xb2\x14h\xa3\xbf\x14\xc1\x
+[Client] [DEBUG] Before aes_decrypt at layer 0: type=<class 'bytes'>, len=98, preview='b'i\xe8\xa1\xa4\x1d\xceM\x1b\x1d-\xb2\x14h\xa3\xbf\x14\xc1\x'
+[Client] [DEBUG] After decrypt at layer 0: type=<class 'bytes'>, len=82, preview=b"\\\x8f{\xbb\xad\xb9\xcd\xc8\xf4\xca\x92\xfd\x1f\xce\xae\x8
+[Client] [DEBUG] After decrypt at layer 0 (hex): 5c8f7bbbadb9cdc8f4ca92fd1fceae82219e5574f12e393b55273eff7aa5
+[Client] [DEBUG] Passed raw bytes to next decryption at layer 0, type=<class 'bytes'>, len=82
+[Client] [DEBUG] Before aes_decrypt at layer 1: type=<class 'bytes'>, len=82, preview='b"\\\x8f{\xbb\xad\xb9\xcd\xc8\xf4\xca\x92\xfd\x1f\xce\xae\x8'
+[Client] [DEBUG] After decrypt at layer 1: type=<class 'bytes'>, len=66, preview=b'\x18\x8c,\x84\x1b(\xebP\xcd\xf77\x16\xcbm\xcc\xa5\x01\x01\
+[Client] [DEBUG] After decrypt at layer 1 (hex): 188c2c841b28eb50cdf73716cb6dcca501018a0a61120f95ace933d847be
+[Client] [DEBUG] Passed raw bytes to next decryption at layer 1, type=<class 'bytes'>, len=66
+[Client] [DEBUG] Before aes_decrypt at layer 2: type=<class 'bytes'>, len=66, preview='b'\x18\x8c,\x84\x1b(\xebP\xcd\xf77\x16\xcbm\xcc\xa5\x01\x01\'
+[Client] [DEBUG] After decrypt at layer 2: type=<class 'bytes'>, len=50, preview=b'{"result": "OK", "echo": {"msg": "Hello, world!"}}'
+[Client] [DEBUG] After decrypt at layer 2 (hex): 7b22726573756c74223a20224f4b222c20226563686f223a207b226d7367
+[Client] [DEBUG] Passed raw bytes to next decryption at layer 2, type=<class 'bytes'>, len=50
+[Client] [DEBUG] Final decrypted bytes: b'{"result": "OK", "echo": {"msg": "Hello, world!"}}', len=50
+[Client] [DEBUG] Final decrypted bytes (hex): 7b22726573756c74223a20224f4b222c20226563686f223a207b226d7367223a202248656c6c6f2c20776f726c6421227d7d
+[Client] [DEBUG] Final decoded response: {"result": "OK", "echo": {"msg": "Hello, world!"}}
+[Client] [DEBUG] Final JSON: {'result': 'OK', 'echo': {'msg': 'Hello, world!'}}

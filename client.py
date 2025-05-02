@@ -3,9 +3,22 @@ import json
 import base64
 from crypto_utils import generate_aes_key, aes_encrypt, aes_decrypt, deserialize_public_key, rsa_encrypt, public_key_fingerprint
 import hashlib
+import os
 
 CDS_IP = '127.0.0.1'
-CDS_CLIENT_PORT = 9001
+
+def get_cds_client_port():
+    """Get the client port from the CDS ports file."""
+    try:
+        with open("cds_ports.txt", "r") as f:
+            lines = f.readlines()
+            if len(lines) >= 2:
+                return int(lines[1].strip())
+    except (FileNotFoundError, ValueError, IndexError) as e:
+        print(f"[Client] WARNING: Could not read CDS port file: {e}. Using default port.")
+    return 9001  # Default port as fallback
+
+CDS_CLIENT_PORT = get_cds_client_port()
 
 class Client:
     def __init__(self, dest_ip, dest_port, message):
@@ -25,9 +38,15 @@ class Client:
             s.connect((CDS_IP, CDS_CLIENT_PORT))
             s.sendall(b'REQUEST_RELAYS')
             data = s.recv(65536)
+            if not data:
+                raise Exception('[Client] ERROR: No response from CDS when requesting relays.')
             if data == b'NOT_ENOUGH_RELAYS':
-                raise Exception('Not enough relays registered!')
-            relays = json.loads(data.decode())
+                raise Exception('[Client] ERROR: Not enough relays registered!')
+            try:
+                relays = json.loads(data.decode())
+            except Exception as e:
+                print(f"[Client] ERROR: Could not decode CDS response as JSON. Raw response: {data!r}")
+                raise
             for relay in relays:
                 pubkey_obj = deserialize_public_key(relay['public_key'].encode())
                 print(f"[Client] Relay {relay['ip']}:{relay['port']} public key fingerprint: {public_key_fingerprint(pubkey_obj)}")
