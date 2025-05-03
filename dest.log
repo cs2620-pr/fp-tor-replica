@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/anaiskillian/ajuniorspring/cs2620/finalproj/dest_server.py", line 90, in <module>
+    start_dest_server()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/Users/anaiskillian/ajuniorspring/cs2620/finalproj/dest_server.py", line 82, in start_dest_server
+    s.bind(("0.0.0.0", DEST_PORT))
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 48] Address already in use
