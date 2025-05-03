@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 cryptography
+=======
+--only-binary=:all: grpcio==1.67.0
+grpcio-tools
+protobuf
+requests
+cryptography
+psutil
+>>>>>>> 2597248222d31c641c7817f7a11e5cedf270e50a

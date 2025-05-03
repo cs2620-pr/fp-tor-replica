@@ -1,0 +1,10 @@
+2025-04-30 10:29:34 [INFO] onion_MainThread_1746023374: Registering with registry at localhost:5050
+2025-04-30 10:29:34 [INFO] onion_MainThread_1746023374: Registered with registry
+2025-04-30 10:29:34 [INFO] onion_MainThread_1746023374: Starting MIDDLE router on localhost:5052
+2025-04-30 10:29:39 [INFO] onion_MainThread_1746023374: Received Ping request
+2025-04-30 10:29:49 [INFO] onion_MainThread_1746023374: Received Ping request
+2025-04-30 10:29:59 [INFO] onion_MainThread_1746023374: Received Ping request
+2025-04-30 10:30:09 [INFO] onion_MainThread_1746023374: Received Ping request
+2025-04-30 10:30:19 [INFO] onion_MainThread_1746023374: Received Ping request
+2025-04-30 10:30:29 [INFO] onion_MainThread_1746023374: Received Ping request
+2025-04-30 10:30:39 [INFO] onion_MainThread_1746023374: Received Ping request

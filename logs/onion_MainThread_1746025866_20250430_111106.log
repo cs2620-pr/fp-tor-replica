@@ -1,0 +1,7 @@
+2025-04-30 11:11:06 [INFO] onion_MainThread_1746025866: Registering with registry at localhost:5050
+2025-04-30 11:11:06 [INFO] onion_MainThread_1746025866: Registered with registry
+2025-04-30 11:11:06 [INFO] onion_MainThread_1746025866: Router initialized as MIDDLE node at localhost:5052
+2025-04-30 11:11:06 [INFO] onion_MainThread_1746025866: Starting MIDDLE router on localhost:5052
+2025-04-30 11:11:10 [INFO] onion_MainThread_1746025866: Received Ping request
+2025-04-30 11:11:11 [INFO] onion_MainThread_1746025866: Received Ping request
+2025-04-30 11:11:11 [INFO] onion_MainThread_1746025866: Key exchange for session c4c32121-f5cb-433d-9322-03e5d946ba29

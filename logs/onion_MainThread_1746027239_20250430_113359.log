@@ -1,0 +1,11 @@
+2025-04-30 11:33:59 [INFO] onion_MainThread_1746027239: Starting terminus service on localhost:5000
+2025-04-30 11:34:00 [INFO] onion_MainThread_1746027239: Built circuit: ['localhost:5051', 'localhost:5052', 'localhost:5053']
+2025-04-30 11:34:00 [INFO] onion_MainThread_1746027239: Preparing to send GET request to http://example.com
+2025-04-30 11:34:00 [INFO] onion_MainThread_1746027239: Creating exit layer
+2025-04-30 11:34:00 [ERROR] onion_MainThread_1746027239: Failed to send request: 'localhost:5053'
+2025-04-30 11:34:00 [ERROR] onion_MainThread_1746027239: Traceback (most recent call last):
+  File "/Users/anaiskillian/ajuniorspring/cs2620/finalproj/network/terminus_service.py", line 343, in send_request
+    url, method, circuit_manager.node_keys[exit_node]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'localhost:5053'
+

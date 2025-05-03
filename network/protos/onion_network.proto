@@ -1,0 +1,101 @@
+syntax = "proto3";
+
+package onion_network;
+
+// Node types in the onion network
+enum NodeType {
+  UNKNOWN = 0;
+  ENTRY = 1;
+  MIDDLE = 2;
+  EXIT = 3;
+}
+
+// Empty message for responses that don't need to return data
+message Empty {}
+
+// Node information
+message Node {
+  string address = 1;
+  NodeType node_type = 2;
+}
+
+// Request to get available nodes from the registry
+message GetNodesRequest {}
+
+// Response with available nodes
+message GetNodesResponse {
+  repeated Node nodes = 1;
+}
+
+// Request to register a node with the registry
+message RegisterNodeRequest {
+  string address = 1;
+  NodeType node_type = 2;
+}
+
+// Request to exchange keys between a client and a node
+message ExchangeKeysRequest {
+  string session_id = 1;
+  string public_key = 2;
+}
+
+// Response to key exchange with node's public key
+message ExchangeKeysResponse {
+  string public_key = 1;
+}
+
+// Request to process a message at a router node
+message RouteMessageRequest {
+  bytes encrypted_message = 1;
+  bytes encrypted_key = 2;
+  bytes initialization_vector = 3;
+  bytes session_id = 4;
+  string return_address = 5;  // Optional, used by entry nodes
+}
+
+// Response to a message processing request
+message RouteMessageResponse {}
+
+// Message to be delivered to a terminus (client)
+message DeliverMessageRequest {
+  bytes encrypted_message = 1;
+  bytes encrypted_key = 2;
+  bytes initialization_vector = 3;
+  bytes session_id = 4;
+}
+
+// Service for the registry (directory server)
+service Registry {
+  // Get a list of available nodes
+  rpc GetNodes(GetNodesRequest) returns (GetNodesResponse);
+  
+  // Register a node with the registry
+  rpc RegisterNode(RegisterNodeRequest) returns (Empty);
+  
+  // Check if the registry is online
+  rpc Ping(Empty) returns (Empty);
+}
+
+// Service for router nodes (entry, middle, exit)
+service Router {
+  // Forward a message through the network
+  rpc RouteMessage(RouteMessageRequest) returns (RouteMessageResponse);
+  
+  // Send a message backward through the network
+  rpc RouteBackward(RouteMessageRequest) returns (RouteMessageResponse);
+  
+  // Exchange keys with a client
+  rpc ExchangeKeys(ExchangeKeysRequest) returns (ExchangeKeysResponse);
+  
+  // Check if the router is online
+  rpc Ping(Empty) returns (Empty);
+}
+
+// Service for terminus nodes (clients)
+service Terminus {
+  // Deliver a message to a client
+  rpc DeliverMessage(DeliverMessageRequest) returns (Empty);
+  
+  // Check if the terminus is online
+  rpc Ping(Empty) returns (Empty);
+}
