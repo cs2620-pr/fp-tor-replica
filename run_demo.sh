@@ -13,7 +13,9 @@ done
 
 set -e
 
-PYTHON="/Users/mohamedzidancassim/.pyenv/versions/3.13.2/bin/python3"
+# Determine Python executable
+PYTHON=$(command -v python3 || command -v python || echo "python3")
+
 
 # Start CDS
 $PYTHON cds.py > cds.log 2>&1 &
