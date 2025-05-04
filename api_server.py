@@ -192,14 +192,23 @@ def mark_messages_read(sender, recipient):
         conn.commit()
 
 # --- Relay and Server Management Endpoints ---
-destination_server_pid = None
-
 def find_relay_process_by_port(port):
     """Find PID of relay.py process with the given port as argument."""
     for proc in psutil.process_iter(['pid', 'cmdline']):
         try:
             cmd = proc.info['cmdline']
             if cmd and 'relay.py' in cmd and str(port) in cmd:
+                return proc.pid
+        except Exception:
+            continue
+    return None
+
+def find_destination_server_process():
+    """Find PID of dest_server.py process."""
+    for proc in psutil.process_iter(['pid', 'cmdline']):
+        try:
+            cmd = proc.info['cmdline']
+            if cmd and 'dest_server.py' in cmd:
                 return proc.pid
         except Exception:
             continue
@@ -238,26 +247,23 @@ def stop_relay():
 
 @app.route('/api/destination/start', methods=['POST'])
 def start_destination():
-    global destination_server_pid
-    if destination_server_pid:
+    if find_destination_server_process():
         return jsonify({'success': False, 'error': 'Destination server already running'}), 400
     try:
         proc = subprocess.Popen([
-            'python3', 'destination_server.py'
+            'python3', 'dest_server.py'
         ], cwd=os.path.dirname(__file__))
-        destination_server_pid = proc.pid
         return jsonify({'success': True, 'pid': proc.pid})
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)}), 500
 
 @app.route('/api/destination/stop', methods=['POST'])
 def stop_destination():
-    global destination_server_pid
-    if not destination_server_pid:
+    pid = find_destination_server_process()
+    if not pid:
         return jsonify({'success': False, 'error': 'Destination server not running'}), 404
     try:
-        os.kill(destination_server_pid, SIGTERM)
-        destination_server_pid = None
+        os.kill(pid, SIGTERM)
         return jsonify({'success': True})
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)}), 500
@@ -383,6 +389,8 @@ def monitor():
             relay['id'] = relay.get('id') or relay.get('port') or f"{relay.get('ip')}:{relay.get('port')}"
             relay['status'] = 'online'
             filtered_relays.append(relay)
+    # Destination server status
+    destination_running = bool(find_destination_server_process())
     relayCount_arg = request.args.get('relayCount', None)
     if relayCount_arg is not None:
         try:
@@ -414,7 +422,8 @@ def monitor():
     return jsonify({
         'relays': shown_relays,
         'clients': users,
-        'messages': paths
+        'messages': paths,
+        'destination_server_running': destination_running
     })
 
 @app.route('/api/send', methods=['POST'])

@@ -108,8 +108,8 @@ export default function MonitorPage() {
   const relayOptions = [];
   for (let i = 1; i <= maxRelays; ++i) relayOptions.push(i);
 
-  // --- Destination server status (simple: running if any relay has 'destination' role, else stopped) ---
-  const destinationRunning = network.relays.some(r => r.role === 'destination' || r.id === 'destination');
+  // --- Destination server status (use backend field for accuracy) ---
+  const destinationRunning = network.destination_server_running;
 
   return (
     <div className="monitor-page">
