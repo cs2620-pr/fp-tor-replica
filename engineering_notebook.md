@@ -8,6 +8,8 @@ This engineering notebook documents our implementation of a simplified Tor-inspi
 
 Unlike the actual Tor network, which uses a decentralized architecture, our system relies on a Central Directory Server (CDS) to coordinate relays and facilitate circuit establishment. This design choice was made to simplify the implementation while still demonstrating the fundamental concepts of onion routing.
 
+This project is a Tor-inspired relay chat system designed to demonstrate the principles of onion routing, secure messaging, and distributed relay management. It features a robust backend for relay and destination server management, a user-friendly frontend for visualization and control, and a modular client for secure communication.
+
 ## 2. System Architecture
 
 ### 2.1 Overview
@@ -19,6 +21,11 @@ Our system consists of five main components:
 3. **Client**: Constructs multi-layered encrypted messages and sends them through the relay network
 4. **Destination Server**: Receives the final decrypted message and returns a response
 5. **Cryptographic Utilities**: Provides shared encryption/decryption functionality
+- **Relay Management:** Dynamically start, stop, and monitor relays. Each relay acts as a node in the onion routing network.
+- **Destination Server:** Acts as the endpoint for messages traversing the relay chain.
+- **Client Messaging:** Users can send messages through a configurable chain of relays, experiencing layered encryption and decryption.
+- **Visualization:** The frontend allows users to visualize the relay network, see the relay chain for each message, and step through the encryption/decryption process.
+- **User Management:** Supports user registration, login, and chat functionality.
 
 The system operates using the following workflow:
 
@@ -29,6 +36,23 @@ The system operates using the following workflow:
 5. The destination server receives the final message and sends a response back through the circuit
 6. The response travels back through the relays, with each adding a layer of encryption
 7. The client receives and decrypts the response
+
+### Architecture
+- **Backend (Flask + Python):**
+  - Hosts API endpoints for relay management, user management, and message routing.
+  - Uses psutil for robust process discovery and management, allowing relays and the destination server to be started/stopped regardless of how they were launched.
+  - Maintains a database for users and messages.
+- **Relays:**
+  - Each relay is a separate process, identified by port and optional ID.
+  - Relays register with a central directory server (CDS) and forward encrypted messages.
+- **Destination Server:**
+  - Receives and decrypts the final message in the chain.
+- **Frontend (React + JS/HTML/CSS):**
+  - Provides a dashboard for relay/server management and network visualization.
+  - Allows users to add relays, start/stop the destination server, and monitor real-time status.
+  - Visualizes the relay chain and encryption steps for educational purposes.
+- **Client:**
+  - Can be run from any computer (with network access to the server) to send messages through the relay chain.
 
 ### 2.2 Threat Model and Security Goals
 
@@ -79,7 +103,7 @@ def handle_client_request(self, conn, addr):
 
 1. **Centralization vs. Decentralization**: We opted for a centralized design to simplify implementation, though this creates a single point of failure not present in the real Tor network.
 
-2. **Random Relay Selection**: Our CDS selects relays randomly with `random.sample()`, which provides basic circuit diversity. A production system would need more sophisticated selection algorithms based on relay performance, geographical distribution, etc.
+2. **Random Relay Selection**: Our CDS selects relays randomly with random.sample(), which provides basic circuit diversity. A production system would need more sophisticated selection algorithms based on relay performance, geographical distribution, etc.
 
 3. **No Authentication**: For simplicity, the CDS doesn't authenticate relays or clients, which would be essential in a production system.
 
@@ -102,36 +126,40 @@ Relays only know their immediate predecessor and successor in the circuit, which
 Each relay operates by:
 
 1. **Key Generation**: Creating or loading a persistent RSA key pair
-   ```python
-   def load_or_generate_keys(self):
-       # Load keys from file or generate new ones if they don't exist
-   ```
+   
+```python
+def load_or_generate_keys(self):
+    # Load keys from file or generate new ones if they don't exist
+```
 
 2. **Registration**: Sending its information to the CDS
-   ```python
-   def register_with_cds(self):
-       # Send IP, port, and public key to the CDS
-   ```
+   
+```python
+def register_with_cds(self):
+    # Send IP, port, and public key to the CDS
+```
 
 3. **Message Handling**: Processing incoming messages
-   ```python
-   def handle_message(self, conn, addr):
-       # Decrypt session key with private key
-       # Use session key to decrypt payload
-       # Forward to next hop or destination
-       # Handle response on return path
-   ```
+   
+```python
+def handle_message(self, conn, addr):
+    # Decrypt session key with private key
+    # Use session key to decrypt payload
+    # Forward to next hop or destination
+    # Handle response on return path
+```
 
 4. **Return Path Processing**: Encrypting and returning responses
-   ```python
-   def forward_to_dest(self, payload, session_key, addr, conn):
-       # Forward decrypted payload to final destination
-       # Encrypt response and send back up the circuit
-   ```
+   
+```python
+def forward_to_dest(self, payload, session_key, addr, conn):
+    # Forward decrypted payload to final destination
+    # Encrypt response and send back up the circuit
+```
 
 #### 3.2.3 Design Considerations
 
-1. **Persistent Keys**: For simplicity, we save relay key pairs to disk (`relay{id}_key.pem`). In production, these would require additional security measures.
+1. **Persistent Keys**: For simplicity, we save relay key pairs to disk (relay{id}_key.pem). In production, these would require additional security measures.
 
 2. **Error Handling**: Extensive error handling and logging are implemented to aid debugging, which is crucial in a distributed system.
 
@@ -151,33 +179,92 @@ The client component is responsible for:
 4. Sending the message through the relay network
 5. Receiving and decrypting the response
 
+## Major Design Choices
+### 1. **Process Management with psutil**
+- **Why:** Needed robust, persistent process discovery and management, especially after backend restarts.
+- **How:** Backend uses psutil to find, start, and stop relay and destination server processes by port or script name, not relying on in-memory state.
+- **Result:** Relays and servers can be managed even if the backend is restarted or run from multiple terminals.
+
+### 2. **Frontend-Backend Synchronization**
+- **Why:** The UI must always reflect the true state of relays and servers, regardless of backend restarts or manual process launches.
+- **How:** The /api/monitor endpoint dynamically discovers running relays and the destination server using process inspection.
+- **Result:** The frontend always shows the correct status, and actions like start/stop are reliable.
+
+### 3. **User-Friendly UI/UX**
+- **Why:** To make relay management and onion routing concepts accessible and interactive.
+- **How:**
+  - Added forms for adding relays with port/ID.
+  - Removed unnecessary controls (e.g., only "Stop" is shown for running relays).
+  - Column headers and data are always aligned.
+  - Visualization of relay chains and encryption steps.
+- **Result:** Users can easily manage the network and understand the routing/encryption process.
+
+### 4. **Security and Isolation**
+- **Why:** To demonstrate secure, layered encryption and avoid accidental process conflicts.
+- **How:**
+  - Each relay uses a persistent RSA keypair.
+  - Relays and destination server run as isolated processes.
+  - All communication is encrypted hop-by-hop.
+- **Result:** Simulates real Tor-like security and isolation.
+
+### 5. **Extensibility and Decoupling**
+- **Why:** To allow future expansion (e.g., more relay types, new visualizations) and independent development of frontend/backend.
+- **How:**
+  - The frontend and backend communicate via clean REST APIs.
+  - The demo visualization frontend (demo-frontend) is decoupled from the backend logic.
+- **Result:** Easy to extend, maintain, and adapt for new demos or research.
+
+### 6. **Network Accessibility**
+- **Why:** To allow clients on different machines to join the relay network.
+- **How:**
+  - Server and relays can be configured to bind to 0.0.0.0 for LAN/internet access.
+  - Client can specify the server's IP address.
+- **Result:** Supports distributed, multi-machine demos.
+
+## Notable Implementation Details
+- **Persistent Key Management:** Each relay stores its RSA keypair for consistent identity.
+- **Dynamic Process Discovery:** Relays/destination are found by inspecting running processes, not just by tracking launches.
+- **API-Driven UI:** All relay/server actions are performed via API calls, ensuring clean separation and easy automation/testing.
+- **Error Handling:** Backend and frontend provide clear feedback for errors (e.g., trying to start an already-running server).
+- **Live Updates:** The UI uses sockets/events to refresh the network view upon relevant changes.
+
+## Challenges and Solutions
+- **Process Tracking Across Restarts:** Solved by using psutil for process discovery instead of in-memory state.
+- **UI/Backend Sync:** Ensured by always querying the true process state, not cached/in-memory data.
+- **Network Access:** Required explicit configuration for multi-machine demos (binding to 0.0.0.0, firewall settings).
+- **User Experience:** Iteratively improved UI for clarity, reliability, and educational value.
+
+
 #### 3.3.2 Implementation Details
 
 The client's operation is divided into several phases:
 
 1. **Relay Acquisition**:
-   ```python
-   def get_relays_from_cds(self):
-       # Request and receive relay information from CDS
-   ```
+   
+```python
+def get_relays_from_cds(self):
+    # Request and receive relay information from CDS
+```
 
 2. **Onion Construction**:
-   ```python
-   def build_onion(self, relays):
-       # Generate symmetric keys (K1, K2, K3)
-       # Encrypt destination message with K3
-       # Add routing layer for relay 3 and encrypt with K2
-       # Add routing layer for relay 2 and encrypt with K1
-       # Prepare final message for relay 1
-   ```
+   
+```python
+def build_onion(self, relays):
+    # Generate symmetric keys (K1, K2, K3)
+    # Encrypt destination message with K3
+    # Add routing layer for relay 3 and encrypt with K2
+    # Add routing layer for relay 2 and encrypt with K1
+    # Prepare final message for relay 1
+```
 
 3. **Message Transmission**:
-   ```python
-   def send_onion(self, onion_msg, relays, keys):
-       # Send to first relay
-       # Receive response
-       # Decrypt through all layers
-   ```
+   
+```python
+def send_onion(self, onion_msg, relays, keys):
+    # Send to first relay
+    # Receive response
+    # Decrypt through all layers
+```
 
 #### 3.3.3 Design Considerations
 
@@ -258,7 +345,7 @@ def aes_decrypt(key, s):
 
 3. **IV Handling**: Each AES encryption operation uses a random initialization vector (IV) prepended to the ciphertext, ensuring identical plaintexts produce different ciphertexts.
 
-4. **Library Selection**: We use Python's `cryptography` library, which provides well-tested, high-level cryptographic primitives with secure defaults.
+4. **Library Selection**: We use Python's cryptography library, which provides well-tested, high-level cryptographic primitives with secure defaults.
 
 ## 4. Protocol Design
 
@@ -412,7 +499,7 @@ Individual testing of:
 
 ### 8.3 End-to-End Testing
 
-The `run_demo.sh` script provides an automated end-to-end test of the entire system:
+The run_demo.sh script provides an automated end-to-end test of the entire system:
 1. Starts the CDS
 2. Launches three relay nodes
 3. Starts the destination server
@@ -421,10 +508,10 @@ The `run_demo.sh` script provides an automated end-to-end test of the entire sys
 ### 8.4 Logging and Verification
 
 Each component writes to its own log file:
-- `cds.log`: Central Directory Server logs
-- `relay1.log`, `relay2.log`, `relay3.log`: Relay node logs
-- `dest.log`: Destination server logs
-- `client.log`: Client output
+- cds.log: Central Directory Server logs
+- relay1.log, relay2.log, relay3.log: Relay node logs
+- dest.log: Destination server logs
+- client.log: Client output
 
 These logs allow verification of the message path and encryption/decryption operations.
 
@@ -448,6 +535,10 @@ These logs allow verification of the message path and encryption/decryption oper
 2. **Circuit Rotation**: Implement periodic circuit rotation for improved security
 3. **Padding and Timing Defenses**: Add traffic padding and timing obfuscation
 4. **Directory Distribution**: Move to a distributed directory service
+5. **Enhanced Visualization:** More detailed step-by-step encryption/decryption animations.
+6. **Security Features:** Add authentication for relay management endpoints.
+7. **Scalability:** Support for larger relay networks and distributed directory servers.
+8. **Research Extensions:** Plug in new routing algorithms or relay types for experimentation.
 
 ## 10. Conclusion
 
@@ -456,3 +547,5 @@ This project successfully demonstrates the core principles of onion routing in a
 While our implementation lacks many of the advanced features and security protections of the actual Tor network, it provides a clear demonstration of the architectural and cryptographic foundations that make anonymous communication possible. The trade-offs we've made prioritize educational clarity over production-level security, allowing for easier understanding of the underlying concepts.
 
 The modular design and extensive documentation make this system a valuable educational tool for understanding anonymous communication networks and the practical application of cryptographic principles in distributed systems.
+
+Overall, our project demonstrates a secure, extensible, and user-friendly Tor-inspired relay chat network. Through robust process management, clear UI, and modular architecture, it provides a powerful platform for learning, experimentation, and demonstration of onion routing and secure communication principles.
