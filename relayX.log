@@ -6157,3 +6157,51 @@ ValueError: Decryption failed
 [Relay 9001] [Relay] [KEY] Public key fingerprint: fbb639e0cd1fd77d986e7f21572a90ec6b886c6b4a7a3371de858d4d1bde0f74
 [Relay 9001] Relay 9001 starting on 10.250.120.196:9001 (RELAY PORT 9001)
 [Relay 9001] Registering with CDS at 127.0.0.1:9000
+[Relay] ---- Relay process started ----
+[Relay 9999] [Relay] Loaded persistent RSA keypair from relay9999_key.pem
+[Relay 9999] [Relay] Public key fingerprint: 90d293ef1d789a8c281cf246dab970c066808657e447f06246c7c1e7f04541c3
+[Relay 9999] [Relay] [KEY] Public key fingerprint: 90d293ef1d789a8c281cf246dab970c066808657e447f06246c7c1e7f04541c3
+[Relay 9999] Relay 9999 starting on 10.250.120.196:9999 (RELAY PORT 9999)
+[Relay 9999] Registering with CDS at 127.0.0.1:9000
+[Relay] ---- Relay process started ----
+[Relay 9999] [Relay] Loaded persistent RSA keypair from relay9999_key.pem
+[Relay 9999] [Relay] Public key fingerprint: 90d293ef1d789a8c281cf246dab970c066808657e447f06246c7c1e7f04541c3
+[Relay 9999] [Relay] [KEY] Public key fingerprint: 90d293ef1d789a8c281cf246dab970c066808657e447f06246c7c1e7f04541c3
+[Relay 9999] Relay 9999 starting on 10.250.120.196:9999 (RELAY PORT 9999)
+[Relay 9999] Registering with CDS at 127.0.0.1:9000
+[Relay 9999] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9999, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsy5/WTyMC3dEc1EqPmiu\nUqrRty+ihoN0GnwZfv1+dSKfsL1zIZmsaOkDBL5YZtDF2MQNEmIZv9C11Hrf0t03\na/YLSJ5eBqXrOw76WGrNgGW19h9H46PEFJpS4U1e1pdVJv8BN3APhu/fD+OwJzwV\n2wglV3FXBcyWRdZDgON6i0a1lSUzY4rabm4W0Wrx3NuB3jwN35kpzt7ClDxBOc3H\nDzzcMoCGZnqZpIGM1l+lXuByPQ81R0NzDN3E21vlXcGobebziwA25Zjw8+GJVTxZ\nUe0jMGyd0Kc8YN1D/FtPS8u7yp7dXgeeYnUrQ82d3kllot+kXKILA1knOYTZHnAk\n9QIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 9999] [Relay] Listening for incoming messages on port 9999 (RELAY PORT 9999)
+[Relay] ---- Relay process started ----
+[Relay 9998] [Relay] Loaded persistent RSA keypair from relay9998_key.pem
+[Relay 9998] [Relay] Public key fingerprint: 8ff4691a5b9fe9748783b54eab80168343813cb8dbc58216455b611159efc00e
+[Relay 9998] [Relay] [KEY] Public key fingerprint: 8ff4691a5b9fe9748783b54eab80168343813cb8dbc58216455b611159efc00e
+[Relay 9998] Relay 9998 starting on 10.250.120.196:9998 (RELAY PORT 9998)
+[Relay 9998] Registering with CDS at 127.0.0.1:9000
+[Relay 9998] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9998, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnuJqrKQ9IA2Mzu92KS2x\n9TAodyg910ZdvYSflgNvgMcUsIu21cUvH29qjJFmD4wX2/ntMOFKX+WAV3PQhrLI\nH2kvQtdLalVTWuY588+1QDQxfTtX1Bqr7vg4URUgn+eojfHm6VpjnwPlwWQDGfDh\neloNyCRJtG8lQT1ntLpxoqmHDzFuAAJHurT8WkTTRz6WCjPlIOJnnhnyoLqMtddV\ngb6hXJmHhwn2LKcEk+NxG57HV1YQjTB7aBNfuVDNjAcCr7vGVJa8eF5VQnF7HUEI\ne3L/BJ4uC8ZCsumlySwrD+gn+7PQFuCC1Hw4pvCxrrUZOil9rBDeOQZjJrbsUR5J\nHQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 9998] [Relay] Listening for incoming messages on port 9998 (RELAY PORT 9998)
+[Relay] ---- Relay process started ----
+[Relay 9997] [Relay] Loaded persistent RSA keypair from relay9997_key.pem
+[Relay 9997] [Relay] Public key fingerprint: af9d5a902350c88bafff5ab7d37b94df044f06dea193fdeafa754a3d237e63e2
+[Relay 9997] [Relay] [KEY] Public key fingerprint: af9d5a902350c88bafff5ab7d37b94df044f06dea193fdeafa754a3d237e63e2
+[Relay 9997] Relay 9997 starting on 10.250.120.196:9997 (RELAY PORT 9997)
+[Relay 9997] Registering with CDS at 127.0.0.1:9000
+[Relay 9997] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9997, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7fyRzQAHr4hWJ+hbXyrM\nmuijfGxvI1xbY7clPNAQz/V9h0qRlP2CaCgh1pdPunfQfQ7khA1In5iBeR9K+fqW\nKO4KjjUj+Z4dwhalRWUSZFmyDQJhJYCTrTig49hraWIMmUn/xdnMM4C51GZGxcI+\nhu3AoKQTP6ge1AdcpLgclkComcOd8lY97lxXJ0rUg1PoJSnldmNn64f31HuCGbEw\nksK5hbfs5foolVQpmRT0zx850aAMYMy9uAL3dj9N4uPPV3WuDcBymBcITu9qGouz\nXiOLsC7VfADCxu9n+KkIV/jHSgcf8iFNViaGV/TNoNoVf9IvvqAwkfYg/UwIpupX\nPwIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 9997] [Relay] Listening for incoming messages on port 9997 (RELAY PORT 9997)
+[Relay 9997] [Relay] Deregistering from CDS and shutting down...
+[Relay 9999] [Relay] Deregistering from CDS and shutting down...
+[Relay 9998] [Relay] Deregistering from CDS and shutting down...
+[Relay] ---- Relay process started ----
+[Relay 9999] [Relay] Loaded persistent RSA keypair from relay9999_key.pem
+[Relay 9999] [Relay] Public key fingerprint: 90d293ef1d789a8c281cf246dab970c066808657e447f06246c7c1e7f04541c3
+[Relay 9999] [Relay] [KEY] Public key fingerprint: 90d293ef1d789a8c281cf246dab970c066808657e447f06246c7c1e7f04541c3
+[Relay 9999] Relay 9999 starting on 10.250.120.196:9999 (RELAY PORT 9999)
+[Relay 9999] Registering with CDS at 127.0.0.1:9000
+[Relay] ---- Relay process started ----
+[Relay 9999] [Relay] Loaded persistent RSA keypair from relay9999_key.pem
+[Relay 9999] [Relay] Public key fingerprint: 90d293ef1d789a8c281cf246dab970c066808657e447f06246c7c1e7f04541c3
+[Relay 9999] [Relay] [KEY] Public key fingerprint: 90d293ef1d789a8c281cf246dab970c066808657e447f06246c7c1e7f04541c3
+[Relay 9999] Relay 9999 starting on 10.250.120.196:9999 (RELAY PORT 9999)
+[Relay 9999] Registering with CDS at 127.0.0.1:9000
+[Relay 9999] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9999, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsy5/WTyMC3dEc1EqPmiu\nUqrRty+ihoN0GnwZfv1+dSKfsL1zIZmsaOkDBL5YZtDF2MQNEmIZv9C11Hrf0t03\na/YLSJ5eBqXrOw76WGrNgGW19h9H46PEFJpS4U1e1pdVJv8BN3APhu/fD+OwJzwV\n2wglV3FXBcyWRdZDgON6i0a1lSUzY4rabm4W0Wrx3NuB3jwN35kpzt7ClDxBOc3H\nDzzcMoCGZnqZpIGM1l+lXuByPQ81R0NzDN3E21vlXcGobebziwA25Zjw8+GJVTxZ\nUe0jMGyd0Kc8YN1D/FtPS8u7yp7dXgeeYnUrQ82d3kllot+kXKILA1knOYTZHnAk\n9QIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 9999] [Relay] Listening for incoming messages on port 9999 (RELAY PORT 9999)
+[Relay 9999] [Relay] Deregistering from CDS and shutting down...

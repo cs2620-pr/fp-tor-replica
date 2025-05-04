@@ -97,6 +97,20 @@ export default function MonitorPage() {
     fetchNetwork();
   };
 
+  // --- CDS status (use backend field for accuracy) ---
+  const cdsRunning = network.cds_running;
+
+  const startCDS = async () => {
+    const res = await fetch('/api/cds/start', { method: 'POST' });
+    await res.json();
+    fetchNetwork();
+  };
+  const stopCDS = async () => {
+    const res = await fetch('/api/cds/stop', { method: 'POST' });
+    await res.json();
+    fetchNetwork();
+  };
+
   // --- Helper to refresh network state ---
   const fetchNetwork = () => {
     const url = relayCount == null ? '/api/monitor' : `/api/monitor?relayCount=${relayCount}`;
@@ -114,6 +128,14 @@ export default function MonitorPage() {
   return (
     <div className="monitor-page">
       <h2>Server Monitor</h2>
+      <div style={{ marginBottom: 24 }}>
+        <b>Central Directory Server (CDS):</b> {' '}
+        <button onClick={startCDS} disabled={cdsRunning}>Start</button>
+        <button onClick={stopCDS} disabled={!cdsRunning}>Stop</button>
+        <span style={{ marginLeft: 10, color: cdsRunning ? 'green' : 'red' }}>
+          {cdsRunning ? 'Running' : 'Stopped'}
+        </span>
+      </div>
       <div style={{ marginBottom: 24 }}>
         <b>Destination Server:</b> {' '}
         <button onClick={startDestination} disabled={destinationRunning}>Start</button>

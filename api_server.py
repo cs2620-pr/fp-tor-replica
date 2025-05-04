@@ -214,6 +214,17 @@ def find_destination_server_process():
             continue
     return None
 
+def find_cds_process():
+    """Find PID of cds.py process."""
+    for proc in psutil.process_iter(['pid', 'cmdline']):
+        try:
+            cmd = proc.info['cmdline']
+            if cmd and 'cds.py' in cmd:
+                return proc.pid
+        except Exception:
+            continue
+    return None
+
 @app.route('/api/relay/start', methods=['POST'])
 def start_relay():
     data = request.json
@@ -262,6 +273,29 @@ def stop_destination():
     pid = find_destination_server_process()
     if not pid:
         return jsonify({'success': False, 'error': 'Destination server not running'}), 404
+    try:
+        os.kill(pid, SIGTERM)
+        return jsonify({'success': True})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/cds/start', methods=['POST'])
+def start_cds():
+    if find_cds_process():
+        return jsonify({'success': False, 'error': 'CDS already running'}), 400
+    try:
+        proc = subprocess.Popen([
+            'python3', 'cds.py'
+        ], cwd=os.path.dirname(__file__))
+        return jsonify({'success': True, 'pid': proc.pid})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/cds/stop', methods=['POST'])
+def stop_cds():
+    pid = find_cds_process()
+    if not pid:
+        return jsonify({'success': False, 'error': 'CDS not running'}), 404
     try:
         os.kill(pid, SIGTERM)
         return jsonify({'success': True})
@@ -391,6 +425,7 @@ def monitor():
             filtered_relays.append(relay)
     # Destination server status
     destination_running = bool(find_destination_server_process())
+    cds_running = bool(find_cds_process())
     relayCount_arg = request.args.get('relayCount', None)
     if relayCount_arg is not None:
         try:
@@ -423,7 +458,8 @@ def monitor():
         'relays': shown_relays,
         'clients': users,
         'messages': paths,
-        'destination_server_running': destination_running
+        'destination_server_running': destination_running,
+        'cds_running': cds_running
     })
 
 @app.route('/api/send', methods=['POST'])
