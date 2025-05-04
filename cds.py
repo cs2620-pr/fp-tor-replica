@@ -22,9 +22,9 @@ class CentralDirectoryServer:
     def relay_registration_server(self):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            s.bind(("0.0.0.0", RELAY_REG_PORT))
+            s.bind(("0.0.0.0", RELAY_REG_PORT))  # Accept connections from any interface
             s.listen()
-            print(f"[CDS] Listening for relay registrations on port {RELAY_REG_PORT}")
+            print(f"[CDS] Listening for relay registrations on 0.0.0.0:{RELAY_REG_PORT}")
             while True:
                 conn, addr = s.accept()
                 threading.Thread(target=self.handle_relay_registration, args=(conn, addr), daemon=True).start()
@@ -65,9 +65,9 @@ class CentralDirectoryServer:
     def client_request_server(self):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            s.bind(("0.0.0.0", CLIENT_REQ_PORT))
+            s.bind(("0.0.0.0", CLIENT_REQ_PORT))  # Accept connections from any interface
             s.listen()
-            print(f"[CDS] Listening for client relay requests on port {CLIENT_REQ_PORT}")
+            print(f"[CDS] Listening for client requests on 0.0.0.0:{CLIENT_REQ_PORT}")
             while True:
                 conn, addr = s.accept()
                 threading.Thread(target=self.handle_client_request, args=(conn, addr), daemon=True).start()
@@ -77,6 +77,11 @@ class CentralDirectoryServer:
             data = conn.recv(1024)
             req = data.decode().strip()
             n = 3
+            if req == 'LIST_RELAYS':
+                with self.lock:
+                    conn.sendall(json.dumps(self.relays).encode())
+                print(f"[CDS] Provided LIST_RELAYS to {addr}: {self.relays}")
+                return
             if req.startswith('REQUEST_RELAYS:'):
                 try:
                     n = int(req.split(':')[1])

@@ -1,0 +1,62 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.chat-imessage-layout {
+  display: flex;
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  min-width: 0;
+  background: #f5f7fa;
+  overflow: hidden;
+}
+.sidebar {
+  width: 270px;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  min-width: 270px;
+  max-width: 270px;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+  overflow-y: auto;
+}
+.sidebar-header {
+  padding: 22px 18px 10px 18px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #f8fafd;
+}
+.sidebar-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2562c7;
+  margin-bottom: 6px;
+}
+.sidebar-user {
+  font-size: 1.05rem;
+  color: #888;
+}
+.sidebar-user-label {
+  font-weight: 500;
+  margin-right: 5px;
+}
+.sidebar-user-name {
+  font-weight: bold;
+  color: #222;
+}
+.main-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fa;
+  min-width: 0;
+  height: 100vh;
+  overflow: hidden;
+}

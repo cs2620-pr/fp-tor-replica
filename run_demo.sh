@@ -1,54 +1,68 @@
 #!/bin/bash
-# Demo runner for Tor-inspired relay network
+# Debug Demo runner for Tor-inspired relay network
 # Usage: ./run_demo.sh [path_length]
 
-# Kill any process using demo ports (CDS:9000, Dest:9100, Relay1:9101, Relay2:9102, Relay3:9103)
-for port in 9000 9100 9101 9102 9103; do
+# set -e   # DISABLED for debugging
+
+# Number of relays (default 3)
+PATH_LENGTH=${1:-3}
+
+# Ports
+CDS_PORT=9000
+DEST_PORT=9100
+RELAY_BASE_PORT=9101
+
+# Kill any process using demo ports (CDS, Dest, Relays)
+echo "[DEBUG] Killing old processes..."
+PORTS=($CDS_PORT $DEST_PORT)
+for ((i=0;i<$PATH_LENGTH;i++)); do
+    PORTS+=("$((RELAY_BASE_PORT + i))")
+done
+for port in "${PORTS[@]}"; do
     PIDS=$(lsof -ti tcp:$port)
     if [ ! -z "$PIDS" ]; then
         echo "Killing processes on port $port: $PIDS"
         kill -9 $PIDS
     fi
+    sleep 0.1
 done
 
-set -e
-
-# Determine Python executable
+echo "[DEBUG] Determining Python executable..."
 PYTHON=$(command -v python3 || command -v python || echo "python3")
+echo "[DEBUG] Using Python: $PYTHON"
 
-
-# Start CDS
-$PYTHON cds.py > cds.log 2>&1 &
+echo "[DEBUG] Starting CDS..."
+"$PYTHON" cds.py &
 CDS_PID=$!
-echo "Started CDS (PID $CDS_PID)"
+echo "[DEBUG] Started CDS (PID $CDS_PID, port $CDS_PORT)"
 sleep 1
 
-# Start 3 relays
-$PYTHON relay.py 1 9101 > relay1.log 2>&1 &
-R1_PID=$!
-echo "Started Relay 1 (PID $R1_PID, port 9101)"
-sleep 0.5
-$PYTHON relay.py 2 9102 > relay2.log 2>&1 &
-R2_PID=$!
-echo "Started Relay 2 (PID $R2_PID, port 9102)"
-sleep 0.5
-$PYTHON relay.py 3 9103 > relay3.log 2>&1 &
-R3_PID=$!
-echo "Started Relay 3 (PID $R3_PID, port 9103)"
-sleep 1
+echo "[DEBUG] Starting relays..."
+RELAY_PIDS=()
+for ((i=1;i<=$PATH_LENGTH;i++)); do
+    PORT=$((RELAY_BASE_PORT + i - 1))
+    echo "[DEBUG] Starting Relay $i on port $PORT..."
+    "$PYTHON" relay.py $i $PORT &
+    PID=$!
+    RELAY_PIDS+=("$PID")
+    echo "[DEBUG] Started Relay $i (PID $PID, port $PORT)"
+    sleep 0.5
+done
 
-# Wait for all relays to register with CDS
-sleep 3
+echo "[DEBUG] Waiting for relays to register with CDS..."
+sleep 5
 
-# Start destination server
-$PYTHON dest_server.py > dest.log 2>&1 &
+echo "[DEBUG] Starting destination server..."
+"$PYTHON" dest_server.py &
 DEST_PID=$!
-echo "Started Destination Server (PID $DEST_PID, port 9100)"
-sleep 1
+echo "[DEBUG] Started Destination Server (PID $DEST_PID, port $DEST_PORT)"
+sleep 2
 
-# Run client
-PATH_LENGTH=${1:-3}
-$PYTHON client.py 127.0.0.1 9100 '{"msg": "Hello, world!"}' $PATH_LENGTH | tee client.log
+echo "[DEBUG] Running client..."
+"$PYTHON" client.py 127.0.0.1 $DEST_PORT '{"msg": "Hello, world!"}' $PATH_LENGTH
 
 # Cleanup
-kill $CDS_PID $R1_PID $R2_PID $R3_PID $DEST_PID
+
+echo "[DEBUG] Cleaning up processes..."
+kill $CDS_PID $DEST_PID ${RELAY_PIDS[@]}
+echo "[DEBUG] Demo complete."

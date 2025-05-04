@@ -120,8 +120,7 @@ class RelayNode:
     def listen(self):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            # Bind to all interfaces for compatibility
-            s.bind(("0.0.0.0", self.listen_port))
+            s.bind(("0.0.0.0", self.listen_port))  # Accept connections from any interface
             s.listen()
             while True:
                 conn, addr = s.accept()

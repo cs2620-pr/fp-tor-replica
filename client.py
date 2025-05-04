@@ -3,12 +3,13 @@ import json
 import base64
 from crypto_utils import generate_aes_key, aes_encrypt, aes_decrypt, deserialize_public_key, rsa_encrypt, public_key_fingerprint
 import hashlib
+import argparse
 
-CDS_IP = '127.0.0.1'
+CDS_DEFAULT_IP = '127.0.0.1'
 CDS_CLIENT_PORT = 9001
 
 class Client:
-    def __init__(self, dest_ip, dest_port, message):
+    def __init__(self, dest_ip, dest_port, message, cds_ip=CDS_DEFAULT_IP):
         # Ensure message is valid JSON
         import json
         try:
@@ -19,10 +20,11 @@ class Client:
         self.dest_ip = dest_ip
         self.dest_port = dest_port
         self.message = message.encode()
+        self.cds_ip = cds_ip
 
     def get_relays_from_cds(self, n=3):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.connect((CDS_IP, CDS_CLIENT_PORT))
+            s.connect((self.cds_ip, CDS_CLIENT_PORT))
             req = f'REQUEST_RELAYS:{n}'.encode()
             s.sendall(req)
             data = s.recv(65536)
@@ -142,13 +144,13 @@ class Client:
         self.send_onion(onion_bytes, first_ip, first_port, keys)
 
 if __name__ == "__main__":
-    import sys
-    if len(sys.argv) < 4 or len(sys.argv) > 5:
-        print("Usage: python client.py <dest_ip> <dest_port> <message> [path_length]")
-        sys.exit(1)
-    dest_ip = sys.argv[1]
-    dest_port = int(sys.argv[2])
-    message = sys.argv[3]
-    path_length = int(sys.argv[4]) if len(sys.argv) == 5 else 3
-    client = Client(dest_ip, dest_port, message)
-    client.run(path_length)
+    parser = argparse.ArgumentParser(description="Tor-inspired relay client")
+    parser.add_argument("dest_ip", help="Destination server IP address")
+    parser.add_argument("dest_port", type=int, help="Destination server port")
+    parser.add_argument("message", help="Message to send (must be valid JSON string)")
+    parser.add_argument("--cds_ip", default=CDS_DEFAULT_IP, help="CDS server IP address (default: 127.0.0.1)")
+    parser.add_argument("--path_length", type=int, default=3, help="Number of relays (default: 3)")
+    args = parser.parse_args()
+
+    client = Client(args.dest_ip, args.dest_port, args.message, cds_ip=args.cds_ip)
+    client.run(args.path_length)
