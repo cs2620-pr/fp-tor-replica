@@ -1,2 +1,5 @@
 cryptography
+Flask
 Flask-SocketIO
+psutil
+sqlite3

@@ -1,77 +1,98 @@
-# Centralized Tor-Inspired Relay Network
+# Tor-Inspired Relay Chat System
 
-**Mohamed Zidan Cassim, Giovanni D'Antonio, Anaïs Killian, Pranav Ramesh**
+## Overview
+This project demonstrates a Tor-inspired relay chat system with onion routing, secure messaging, and a user-friendly frontend for relay and message visualization.
 
-## 📌 Overview
+---
 
-This project is a simplified version of Tor (“The Onion Router”), designed to demonstrate core principles of anonymous communication using layered encryption and relay routing. A client sends a message through three intermediary relay servers before reaching a destination, ensuring that no single relay knows both the source and destination.
+## Quick Start Guide
 
-Instead of a decentralized network like Tor, this system uses a Central Directory Server (CDS) to maintain a list of active relays. Each message is encrypted in layers (“onion-style”) such that each relay decrypts one layer and forwards the message to the next.
+### 1. Clone the Repository
+```bash
+git clone <repo-url>
+cd fp-tor-replica
+```
 
-The system is intended for educational demonstration and not real-world anonymity.
+### 2. Set Up Python Virtual Environment
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-## 🎯 Goals
+### 3. Install Python Requirements
+```bash
+pip install -r requirements.txt
+```
 
-- Implement a working anonymous message circuit using layered encryption
-- Demonstrate correct relay behavior and IP-masking via logging
-- Show end-to-end message delivery through three relays
-- Submit working code, a design fair poster, and a final written report
+### 4. Set Up and Start the Frontend
+```bash
+cd chat-frontend
+npm install
+npm start
+```
+- The frontend will run on [http://localhost:3000](http://localhost:3000) by default. If using a different port, adjust accordingly, but note that for connecting to the flask server, we are using a proxy anyways (5050).
+- To access the relay/server monitor, visit [http://localhost:3000/monitor](http://localhost:3000/monitor)
 
-## 🧩 System Components
+### 5. Start the Backend API Server
+In a new terminal (with the virtual environment activated):
+```bash
+cd fp-tor-replica
+python3 api_server.py
+```
+- The backend runs on [http://localhost:5050](http://localhost:5050)
 
-1.  **Central Directory Server (CDS)**
+### 6. Workflow: Using the Monitor
+1. **Start the CDS (Central Directory Server):**
+   - Use the Start button in the Monitor UI to launch the CDS.
+2. **Start the Destination Server:**
+   - Use the Start button in the Monitor UI for the destination server.
+3. **Add Relays:**
+   - Use the Add Relay form in the Monitor to spin up as many relays as you want (specify port and optional ID). Note that relays will be automatically registered with the CDS.
+4. **Register and Login:**
+   - Create a user account and log in via the frontend. You will probably want to start a new frontend in a different terminal to see both the monitor and the chat pages of different clients at the same time.
+5. **Send Messages:**
+   - Select how many relays to use for each message (dropdown in chat UI).
+   - Messages will traverse the selected number of relays with layered encryption, and this can be seen from the Monitor UI.
 
-    - Maintains a list of active relays
-    - Accepts relay registration (ip, port, public_key)
-    - Provides clients with 3 random relays on request
+### 7. Stopping Components
+- You can stop the CDS and destination server from the Monitor UI.
+- Relays can be stopped individually.
 
-2.  **Relay Node**
+### 8. Resetting the Database
+To clear all users and messages (but keep the structure):
+```bash
+sqlite3 chat.db "DELETE FROM users; DELETE FROM messages;"
+```
 
-    - Generates an RSA keypair on startup
-    - Registers with the CDS
-    - Listens for incoming TCP messages
-    - Decrypts one encryption layer using session key
-    - Forwards the remaining payload to the next node
+---
 
-3.  **Client**
+## Requirements
+- Python 3.8+
+- Node.js & npm (for frontend)
 
-    - Queries the CDS for 3 relays
-    - Generates 3 symmetric keys (K1, K2, K3)
-    - Wraps the payload in 3 encryption layers
-    - Sends message to the first relay
-    - Receives response and decrypts it layer-by-layer
+### Python dependencies (see requirements.txt):
+- Flask
+- Flask-SocketIO
+- cryptography
+- psutil
+- sqlite3 (Python built-in)
 
-4.  **Destination Server (for testing)**
+### Frontend dependencies (see chat-frontend/package.json):
+- react
+- react-dom
+- react-router-dom
+- react-scripts
+- socket.io-client
 
-    - Simple TCP echo server
-    - Accepts final payload, returns a response to verify full round-trip
+---
 
-5.  **Crypto Utilities (shared)**
-    - RSA keypair generation
-    - RSA encrypt/decrypt for session key exchange
-    - AES encrypt/decrypt for message layers
+## Notes
+- For multi-machine demos, ensure all servers are bound to `0.0.0.0` and firewall allows the relevant ports.
+- If you change ports, update the proxy in `chat-frontend/package.json` and backend settings as needed.
 
-## 🔗 Message Structure
+---
 
-Each message includes:
-
-- Next relay's IP and port
-- Encrypted inner payload using AES
-- All encrypted layers are base64-encoded and nested
-
-## ✅ Success Criteria
-
-- Relays register with the CDS
-- Client sends a message that passes through 3 relays
-- Each relay sees only the previous and next hop
-- Destination server receives the original message
-- Client receives correct response
-- Logs verify anonymized routing
-
-## 📎 Deliverables
-
-- Source code for CDS, relays, client, destination server
-- Crypto library (RSA, AES)
-- CLI demo runner and trace logs
-- Poster for SEAS Design Fair
-- 6–10 page final report
+## Troubleshooting
+- If you see 404 errors for API endpoints, make sure the backend has been restarted after any code changes.
+- If relays or servers fail to start, check for port conflicts or already-running processes.
+- For further help, see the engineering notebook or contact the project maintainers.
