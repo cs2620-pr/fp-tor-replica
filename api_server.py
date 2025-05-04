@@ -14,6 +14,8 @@ import threading
 import sqlite3
 from flask_socketio import SocketIO, emit
 import socket
+from signal import SIGTERM
+import psutil
 
 app = Flask(__name__)
 CORS(app)
@@ -52,40 +54,40 @@ def relay_steps(sender, recipient, message):
         'steps': steps
     }
 
-def call_tor_client_backend(sender, recipient, message):
+def call_tor_client_backend(sender, recipient, message, relay_count=3):
     import re
+    # Ensure relay_count is an int
+    try:
+        relay_count = int(relay_count)
+    except Exception:
+        relay_count = 3
     msg_json = json.dumps({"from": sender, "to": recipient, "text": message})
     dest_ip = "127.0.0.1"
     dest_port = 9100
     try:
         proc = subprocess.Popen([
-            "python3", "client.py", dest_ip, str(dest_port), msg_json
+            "python3", "client.py", dest_ip, str(dest_port), msg_json, "--path_length", str(relay_count)
         ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=os.path.dirname(__file__))
         out, err = proc.communicate(timeout=10)
         logs = out.decode(errors="ignore") + err.decode(errors="ignore")
         print("[API DEBUG] --- FULL CLIENT LOGS START ---")
         print(logs)
         print("[API DEBUG] --- FULL CLIENT LOGS END ---")
-        # Parse relay order from logs: [Client] Relay <ip>:<port> public key fingerprint:
         relay_pattern = re.compile(r"Relay ([\d\.]+):(\d+) public key fingerprint")
         full_hops = []
         for match in relay_pattern.finditer(logs):
             ip, port = match.groups()
             full_hops.append(f"{ip}:{port}")
-        # Debug logging for relay path
         print(f"[API DEBUG] Parsed relay path: {full_hops}")
-        # Only use fallback if NO relays were found
         if not full_hops:
             print("[API WARNING] No relays parsed from logs, using fallback placeholder relays.")
-            # Try to use relays from CDS if possible
             try:
                 from cds import get_all_relays
                 relays = get_all_relays()
-                full_hops = [f"{r['ip']}:{r['port']}" for r in relays][:3]
+                full_hops = [f"{r['ip']}:{r['port']}" for r in relays][:relay_count]
             except Exception as e:
                 print(f"[API ERROR] Could not get relays from CDS: {e}")
-                full_hops = ["Relay 1", "Relay 2", "Relay 3"]
-        # Optionally, parse layers and steps as before
+                full_hops = ["Relay 1", "Relay 2", "Relay 3"][:relay_count]
         layers = []
         steps = []
         for line in logs.splitlines():
@@ -98,7 +100,7 @@ def call_tor_client_backend(sender, recipient, message):
         if not steps:
             steps = ["Message sent through relays."]
         return {
-            'hops': full_hops,  # only the relay chain, no sender/recipient
+            'hops': full_hops,
             'layers': layers,
             'steps': steps,
             'logs': logs
@@ -106,7 +108,7 @@ def call_tor_client_backend(sender, recipient, message):
     except Exception as e:
         print(f"[API ERROR] Exception in call_tor_client_backend: {e}")
         return {
-            'hops': ["Relay 1", "Relay 2", "Relay 3"],
+            'hops': [f"Relay {i+1}" for i in range(relay_count)],
             'layers': ["Layer 3", "Layer 2", "Layer 1", "Destination", ""],
             'steps': [f"Error: {str(e)}"],
             'logs': str(e)
@@ -188,6 +190,83 @@ def mark_messages_read(sender, recipient):
         c = conn.cursor()
         c.execute('UPDATE messages SET read=1 WHERE sender=? AND recipient=?', (sender, recipient))
         conn.commit()
+
+# --- Relay and Server Management Endpoints ---
+destination_server_pid = None
+
+def find_relay_process_by_port(port):
+    """Find PID of relay.py process with the given port as argument."""
+    for proc in psutil.process_iter(['pid', 'cmdline']):
+        try:
+            cmd = proc.info['cmdline']
+            if cmd and 'relay.py' in cmd and str(port) in cmd:
+                return proc.pid
+        except Exception:
+            continue
+    return None
+
+@app.route('/api/relay/start', methods=['POST'])
+def start_relay():
+    data = request.json
+    relay_id = data.get('relay_id')  # e.g. port or unique identifier
+    port = data.get('port')
+    if not port:
+        return jsonify({'success': False, 'error': 'Missing relay port'}), 400
+    # Check if relay already running
+    if find_relay_process_by_port(port):
+        return jsonify({'success': False, 'error': f'Relay already running on port {port}'}), 400
+    try:
+        proc = subprocess.Popen([
+            'python3', 'relay.py', str(relay_id), str(port)
+        ], cwd=os.path.dirname(__file__))
+        return jsonify({'success': True, 'pid': proc.pid})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/relay/stop', methods=['POST'])
+def stop_relay():
+    data = request.json
+    port = data.get('port')
+    pid = find_relay_process_by_port(port)
+    if not pid:
+        return jsonify({'success': False, 'error': 'Relay not running or unknown port'}), 404
+    try:
+        os.kill(pid, SIGTERM)
+        return jsonify({'success': True})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/destination/start', methods=['POST'])
+def start_destination():
+    global destination_server_pid
+    if destination_server_pid:
+        return jsonify({'success': False, 'error': 'Destination server already running'}), 400
+    try:
+        proc = subprocess.Popen([
+            'python3', 'destination_server.py'
+        ], cwd=os.path.dirname(__file__))
+        destination_server_pid = proc.pid
+        return jsonify({'success': True, 'pid': proc.pid})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/destination/stop', methods=['POST'])
+def stop_destination():
+    global destination_server_pid
+    if not destination_server_pid:
+        return jsonify({'success': False, 'error': 'Destination server not running'}), 404
+    try:
+        os.kill(destination_server_pid, SIGTERM)
+        destination_server_pid = None
+        return jsonify({'success': True})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+# Optional: API server stop (will terminate itself)
+@app.route('/api/api_server/stop', methods=['POST'])
+def stop_api_server():
+    os._exit(0)
+    return jsonify({'success': True})
 
 # --- Replace in-memory endpoints with DB-backed versions ---
 @app.route('/api/register', methods=['POST'])
@@ -281,7 +360,6 @@ def user_offline(data):
 def monitor():
     import random
     relays = []
-    relayCount = int(request.args.get('relayCount', 3))
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.settimeout(1.5)
@@ -297,10 +375,23 @@ def monitor():
             relays = json.loads(data.decode()) if data else []
     except Exception as e:
         relays = []
-    for idx, relay in enumerate(relays):
-        relay['id'] = relay.get('id') or relay.get('port') or f"{relay.get('ip')}:{relay.get('port')}"
-        relay['status'] = 'online'
-    shown_relays = relays[:relayCount]
+    # Only keep relays that have a running process
+    filtered_relays = []
+    for relay in relays:
+        port = relay.get('port')
+        if port and find_relay_process_by_port(port):
+            relay['id'] = relay.get('id') or relay.get('port') or f"{relay.get('ip')}:{relay.get('port')}"
+            relay['status'] = 'online'
+            filtered_relays.append(relay)
+    relayCount_arg = request.args.get('relayCount', None)
+    if relayCount_arg is not None:
+        try:
+            relayCount = int(relayCount_arg)
+            shown_relays = filtered_relays[:relayCount]
+        except Exception:
+            shown_relays = filtered_relays
+    else:
+        shown_relays = filtered_relays
     users = get_all_users()
     with sqlite3.connect(DB_PATH) as conn:
         c = conn.cursor()
@@ -333,10 +424,11 @@ def send():
     sender = data.get('sender') or data.get('from')
     recipient = data.get('recipient') or data.get('to')
     message = data.get('message') or data.get('text')
+    relay_count = data.get('relay_count', 3)
     if not sender or not recipient or not message:
         return jsonify({'success': False, 'error': 'Missing sender, recipient, or message'})
     try:
-        relay_data = call_tor_client_backend(sender, recipient, message)
+        relay_data = call_tor_client_backend(sender, recipient, message, relay_count)
         relay_path = relay_data.get('hops') if relay_data else None
         # Always return the relay path as a list of ip:port strings in the API response
         add_message(sender, recipient, message, relay_path)

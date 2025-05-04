@@ -12,6 +12,10 @@ export default function ChatPage() {
   const [unread, setUnread] = useState({});
   const [loading, setLoading] = useState(true);
   const [currentUser, setCurrentUser] = useState(null);
+  const [messageRelayCount, setMessageRelayCount] = useState(() => {
+    const stored = localStorage.getItem('messageRelayCount');
+    return stored ? Number(stored) : 3;
+  });
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -73,6 +77,20 @@ export default function ChatPage() {
       socket.disconnect();
     };
   }, [currentUser, selectedUser]);
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.key === 'messageRelayCount') {
+        setMessageRelayCount(Number(e.newValue));
+      }
+    };
+    window.addEventListener('storage', handler);
+    return () => window.removeEventListener('storage', handler);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('messageRelayCount', messageRelayCount);
+  }, [messageRelayCount]);
 
   if (!currentUser) return null;
 

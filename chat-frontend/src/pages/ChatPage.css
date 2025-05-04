@@ -2,7 +2,7 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* Remove overflow: hidden to allow scroll in children */
 }
 
 .chat-imessage-layout {
@@ -12,7 +12,7 @@ html, body, #root {
   width: 100vw;
   min-width: 0;
   background: #f5f7fa;
-  overflow: hidden;
+  /* Remove overflow: hidden to allow scroll in children */
 }
 .sidebar {
   width: 270px;
@@ -58,5 +58,5 @@ html, body, #root {
   background: #f5f7fa;
   min-width: 0;
   height: 100vh;
-  overflow: hidden;
+  /* Remove overflow: hidden to allow scroll in children */
 }

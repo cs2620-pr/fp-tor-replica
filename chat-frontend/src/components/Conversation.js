@@ -6,6 +6,37 @@ export default function Conversation({ currentUser, peerUser, conversations, set
   const [input, setInput] = useState('');
   const messagesEndRef = useRef();
 
+  // --- Synchronized relay count state for dropdowns ---
+  const [messageRelayCount, setMessageRelayCount] = useState(() => {
+    const stored = localStorage.getItem('messageRelayCount');
+    return stored ? Number(stored) : 3;
+  });
+  const [maxRelays, setMaxRelays] = useState(10);
+
+  // Fetch number of active relays from /api/monitor
+  useEffect(() => {
+    fetch('/api/monitor')
+      .then(r => r.json())
+      .then(data => {
+        if (data.relays && Array.isArray(data.relays)) {
+          setMaxRelays(data.relays.length > 0 ? data.relays.length : 1);
+        }
+      });
+  }, []);
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.key === 'messageRelayCount') {
+        setMessageRelayCount(Number(e.newValue));
+      }
+    };
+    window.addEventListener('storage', handler);
+    return () => window.removeEventListener('storage', handler);
+  }, []);
+  useEffect(() => {
+    localStorage.setItem('messageRelayCount', messageRelayCount);
+  }, [messageRelayCount]);
+
   useEffect(() => {
     if (messagesEndRef.current) {
       messagesEndRef.current.scrollIntoView({ behavior: peerUser ? 'auto' : 'smooth' });
@@ -25,7 +56,7 @@ export default function Conversation({ currentUser, peerUser, conversations, set
     const res = await fetch('/api/send', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ sender: currentUser.username, recipient: peerUser.username, message: input })
+      body: JSON.stringify({ sender: currentUser.username, recipient: peerUser.username, message: input, relay_count: messageRelayCount })
     });
     const data = await res.json();
     if (data.success) {
@@ -71,15 +102,23 @@ export default function Conversation({ currentUser, peerUser, conversations, set
         <div ref={messagesEndRef} />
       </div>
       {peerUser && (
-        <form className="input-bar" onSubmit={handleSend}>
-          <input
-            type="text"
-            value={input}
-            placeholder={"Type a message..."}
-            onChange={e => setInput(e.target.value)}
-          />
-          <button type="submit">Send</button>
-        </form>
+        <div>
+          <div style={{marginBottom:16}}>
+            <label htmlFor="conv-messageRelayCount">Number of relays to use for messages: </label>
+            <select id="conv-messageRelayCount" value={messageRelayCount} onChange={e => setMessageRelayCount(Number(e.target.value))}>
+              {Array.from({length: maxRelays}, (_, i) => i + 1).map(n => <option key={n} value={n}>{n}</option>)}
+            </select>
+          </div>
+          <form className="input-bar" onSubmit={handleSend}>
+            <input
+              type="text"
+              value={input}
+              placeholder={"Type a message..."}
+              onChange={e => setInput(e.target.value)}
+            />
+            <button type="submit">Send</button>
+          </form>
+        </div>
       )}
       {!peerUser && <div className="no-peer">Select a user to start chatting.</div>}
     </div>

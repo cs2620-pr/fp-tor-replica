@@ -127,9 +127,8 @@ class RelayNode:
                 threading.Thread(target=self.handle_message, args=(conn, addr), daemon=True).start()
 
     def handle_message(self, conn, addr):
+        thread_id = threading.get_ident()
         try:
-            thread_id = threading.get_ident()
-            self.log(f"[Relay] [handle_message ENTERED] addr={addr}, thread={thread_id}, relay_port={self.listen_port}")
             data = conn.recv(65536)
             self.log(f"[Relay] [DEBUG] Raw data received: {data!r}")
             if not data:
@@ -142,104 +141,61 @@ class RelayNode:
                     payload_str = data.decode('utf-8')
                     payload_json = json.loads(payload_str)
                 except Exception:
-                    # Not JSON, last hop
-                    self.log(f"[Relay] [DEBUG] Data is not JSON, treating as last hop (will try to decrypt and forward to dest)")
-                    # Try to parse as JSON envelope to extract session_key and payload
-                    payload_str_env = data.decode('utf-8', errors='ignore')
-                    session_key = None
-                    decrypted = None
-                    try:
-                        payload_json_env = json.loads(payload_str_env)
-                        session_key_enc = payload_json_env.get('session_key')
-                        payload_b64 = payload_json_env.get('payload')
-                        if session_key_enc and payload_b64:
-                            session_key_bytes = base64.b64decode(session_key_enc)
-                            session_key = rsa_decrypt(self.private_key, session_key_bytes)
-                            decrypted = aes_decrypt(session_key, base64.b64decode(payload_b64))
-                            self.log(f"[Relay] [DEBUG] Decrypted last hop payload, forwarding to dest.")
-                            self.forward_to_dest(decrypted, session_key, addr, conn)
-                            self.log(f"[Relay] [handle_message END] addr={addr}, thread={thread_id}")
-                            conn.close()
-                            return
-                        else:
-                            self.log(f"[Relay] [ERROR] No session_key or payload found in envelope for last hop")
-                            # Fallback: treat as already-decrypted raw data (should not happen in normal flow)
-                            self.log(f"[Relay] [ERROR] Could not decrypt last hop payload, forwarding raw to dest (no encryption on return)")
-                            self.forward_to_dest(data, None, addr, conn)
-                            self.log(f"[Relay] [handle_message END] addr={addr}, thread={thread_id}")
-                            conn.close()
-                            return
-                    except Exception as e:
-                        self.log(f"[Relay] [ERROR] Could not parse envelope as JSON for last hop or decrypt: {e}")
-                        # Fallback: treat as already-decrypted raw data (should not happen in normal flow)
-                        self.log(f"[Relay] [ERROR] Could not decrypt last hop payload, forwarding raw to dest (no encryption on return)")
-                        self.forward_to_dest(data, None, addr, conn)
-                        self.log(f"[Relay] [handle_message END] addr={addr}, thread={thread_id}")
-                        conn.close()
-                        return
-                self.log(f"[Relay] [DEBUG] Data after JSON parse: type={type(payload_json)}, keys={list(payload_json.keys())}")
-                session_key_enc = payload_json['session_key']
-                self.log(f"[Relay] Received session_key (base64): {session_key_enc}")
-                session_key_bytes = base64.b64decode(session_key_enc)
-                self.log(f"[Relay] Decoded session_key_enc (hex): {session_key_bytes.hex()}")
-                self.log(f"[Relay] Decrypting session key with fingerprint: {public_key_fingerprint(self.private_key.public_key())}")
-                session_key = rsa_decrypt(self.private_key, session_key_bytes)
-                self.log(f"[Relay] Decrypted session_key (hex): {session_key.hex()}")
-                payload_b64 = payload_json['payload']
-                self.log(f"[Relay] [DEBUG] About to AES-decrypt payload (passing base64 string directly)")
-                decrypted = aes_decrypt(session_key, base64.b64decode(payload_b64))
-                self.log(f"[Relay] [DEBUG] Payload base64-decoded: type={type(base64.b64decode(payload_b64))}, len={len(base64.b64decode(payload_b64))}, preview={base64.b64decode(payload_b64)[:60]!r}")
+                    # Not JSON, treat as last hop
+                    self.log(f"[Relay] [DEBUG] Data is not JSON, treating as last hop.")
+                    self.forward_to_dest(data, None, addr, conn)
+                    return
+                # If here, data is JSON, process as normal
+                session_key_enc = payload_json.get('session_key')
+                payload_b64 = payload_json.get('payload')
+                if not session_key_enc or not payload_b64:
+                    self.log(f"[Relay] [DEBUG] Missing session_key or payload, treating as last hop.")
+                    self.forward_to_dest(data, None, addr, conn)
+                    return
+                session_key = rsa_decrypt(self.private_key, base64.b64decode(session_key_enc))
+                payload_bytes = base64.b64decode(payload_b64)
+                decrypted = aes_decrypt(session_key, payload_bytes)
                 self.log(f"[Relay] [DEBUG] AES-decrypted payload: type={type(decrypted)}, len={len(decrypted)}, preview={decrypted[:60]!r}")
-                self.log(f"[Relay] [DEBUG] AES-decrypted payload (hex): {decrypted.hex()[:120]}")
+                # Try to parse as JSON for next hop
                 try:
-                    self.log(f"[Relay] [DEBUG] AES-decrypted payload as UTF-8: {decrypted.decode('utf-8')[:120]!r}")
-                except Exception as e:
-                    self.log(f"[Relay] [DEBUG] AES-decrypted payload not UTF-8: {e}")
-                sent_response = False
-                try:
-                    payload_json_inner = json.loads(decrypted.decode('utf-8'))
-                    self.log(f"[Relay] [DEBUG] Inner payload is JSON, forwarding to next relay.")
-                    next_ip = payload_json_inner['next_ip']
-                    next_port = payload_json_inner['next_port']
-                    next_session_key = base64.b64decode(payload_json_inner['session_key'])
-                    next_payload = base64.b64decode(payload_json_inner['payload'])
-                    self.log(f"[Relay] [DEBUG] Forwarding to next relay {next_ip}:{next_port}")
+                    next_layer = json.loads(decrypted.decode('utf-8'))
+                    # Forward to next relay
+                    next_ip = next_layer.get('next_ip')
+                    next_port = next_layer.get('next_port')
+                    next_session_key_enc = next_layer.get('session_key')
+                    next_payload_b64 = next_layer.get('payload')
+                    if not next_ip or not next_port or not next_session_key_enc or not next_payload_b64:
+                        raise Exception("Missing fields for next hop")
+                    # Prepare next layer
+                    next_payload = json.dumps({
+                        'session_key': next_session_key_enc,
+                        'payload': next_payload_b64
+                    }).encode('utf-8')
                     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-                        s.connect((next_ip, next_port))
-                        onion = json.dumps({
-                            'session_key': base64.b64encode(next_session_key).decode('utf-8'),
-                            'payload': base64.b64encode(next_payload).decode('utf-8')
-                        }).encode('utf-8')
-                        s.sendall(onion)
+                        s.connect((next_ip, int(next_port)))
+                        s.sendall(next_payload)
                         response = s.recv(65536)
                     self.log(f"[Relay] [DEBUG] Received response from next relay: type={type(response)}, len={len(response)}, preview={response[:60]!r}")
-                    if isinstance(response, str):
-                        response_bytes = response.encode('utf-8')
-                    else:
-                        response_bytes = response
-                    enc_response = aes_encrypt(session_key, response_bytes)
-                    self.log(f"[Relay] [RETURN] AES-encrypted response (hex): {enc_response.hex()[:120]}")
+                    # Wrap response in AES for this layer
+                    enc_response = aes_encrypt(session_key, response)
                     response_payload = base64.b64encode(enc_response)
-                    self.log(f"[Relay] [RETURN] Base64-encoded AES-encrypted response: type={type(response_payload)}, len={len(response_payload)}, preview={response_payload[:60]!r}")
                     conn.sendall(response_payload)
-                    sent_response = True
+                    self.log(f"[Relay] [DEBUG] Sent wrapped response to previous hop.")
                 except Exception as e:
-                    self.log(f"[Relay] [DEBUG] Payload is not JSON, assuming last hop. Error: {e}")
+                    self.log(f"[Relay] [DEBUG] Could not parse decrypted payload as JSON, treating as last hop. Error: {e}")
                     self.forward_to_dest(decrypted, session_key, addr, conn)
-                    sent_response = True
             except Exception as e:
-                self.log(f"[Relay] ERROR in message processing: {e}\n{traceback.format_exc()}")
+                self.log(f"[Relay] ERROR in message processing: {e}")
                 try:
                     dummy = base64.b64encode(b'ERROR')
                     conn.sendall(dummy)
-                    sent_response = True
                 except Exception as e2:
-                    self.log(f"[Relay] ERROR sending error response: {e2}\n{traceback.format_exc()}")
+                    self.log(f"[Relay] ERROR sending error response: {e2}")
             finally:
                 self.log(f"[Relay] [handle_message END] addr={addr}, thread={thread_id}")
                 conn.close()
         except Exception as e:
-            self.log(f"[Relay] ERROR in handle_message: {e}\n{traceback.format_exc()}")
+            self.log(f"[Relay] ERROR in handle_message: {e}")
 
     def forward_to_dest(self, payload, session_key, addr, conn):
         try:

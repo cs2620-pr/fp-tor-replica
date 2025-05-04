@@ -31,58 +31,66 @@ export default function NetworkGraph({ network }) {
   };
   const relayPath = getRelayPath(latestMsg);
 
+  const msgExplanation = latestMsg && (
+    <div>
+      <strong>Message:</strong> <span style={{color:'#2562c7'}}>{latestMsg.from}</span> → <span style={{color:'#2562c7'}}>{latestMsg.to}</span><br/>
+      <strong>Relay Path:</strong> {relayPath.length > 0 ? relayPath.join(' → ') : '(not available)'}<br/>
+      <strong>Relays Used:</strong> {relayPath.length}
+    </div>
+  );
+
   return (
     <div className="network-graph">
-      <svg width="100%" height="400" viewBox="0 0 800 400">
-        {/* Draw relays as static circles in a zigzag layout */}
+      <svg width="100vw" height="88vh" viewBox="0 0 1800 900" style={{display:'block'}}>
+        {/* --- RELAY ZONE: Draw relays in a central band, never overlapping clients --- */}
         {network.relays.map((relay, idx) => {
-          // Zigzag layout: alternate y positions
-          const baseX = 150 + idx * 150;
-          const baseY = idx % 2 === 0 ? 150 : 250;
+          // Relays in a central ellipse (no overlap with client bands)
+          const relayZone = { cx: 900, cy: 450, rx: 400, ry: 170 };
+          const angle = (idx / network.relays.length) * 2 * Math.PI;
+          const baseX = relayZone.cx + relayZone.rx * Math.cos(angle);
+          const baseY = relayZone.cy + relayZone.ry * Math.sin(angle);
           return (
             <g key={getRelayId(relay, idx)}>
               <circle
                 cx={baseX}
                 cy={baseY}
-                r={35}
+                r={55}
                 fill={relay.status === 'online' ? '#4e8cff' : '#ccc'}
                 stroke="#222"
-                strokeWidth="3"
+                strokeWidth="4"
               />
-              <text x={baseX} y={baseY} textAnchor="middle" dy=".3em" fontSize="20" fill="#fff">
+              <text x={baseX} y={baseY} textAnchor="middle" dy=".3em" fontSize="32" fill="#fff">
                 {getRelayId(relay, idx)}
               </text>
             </g>
           );
         })}
-        {/* Draw clients as rectangles, spaced evenly along the left and right sides */}
+        {/* --- CLIENT ZONE: Draw clients in a larger ellipse around relays --- */}
         {network.clients.map((client, idx) => {
-          const side = idx % 2 === 0 ? 'left' : 'right';
-          const verticalSpacing = 70;
-          const leftX = 30;
-          const rightX = 700;
-          const y = 60 + Math.floor(idx / 2) * verticalSpacing;
-          const rectX = side === 'left' ? leftX : rightX;
-          const textX = side === 'left' ? leftX + 30 : rightX + 30;
+          // Clients in a larger ellipse (never overlapping relays)
+          const clientZone = { cx: 900, cy: 450, rx: 700, ry: 340 };
+          const angle = (idx / network.clients.length) * 2 * Math.PI - Math.PI/2;
+          const baseX = clientZone.cx + clientZone.rx * Math.cos(angle);
+          const baseY = clientZone.cy + clientZone.ry * Math.sin(angle);
           return (
             <g key={client.username}>
               <rect
-                x={rectX}
-                y={y}
-                width={60}
-                height={60}
+                x={baseX-60}
+                y={baseY-60}
+                width={120}
+                height={120}
                 fill={client.online ? '#6fe27a' : '#aaa'}
                 stroke="#222"
-                strokeWidth="3"
-                rx={16}
+                strokeWidth="4"
+                rx={28}
               />
-              <text x={textX} y={y + 35} textAnchor="middle" fontSize="16" fill="#222">
+              <text x={baseX} y={baseY+12} textAnchor="middle" fontSize="32" fill="#222">
                 {client.username}
               </text>
             </g>
           );
         })}
-        {/* Draw relay path as a highlighted polyline over static relays and clients */}
+        {/* --- Draw relay path as a highlighted polyline over static relays and clients --- */}
         {relayPath.length > 0 && (() => {
           // Compose a full path including sender and recipient if available
           const msg = latestMsg;
@@ -95,19 +103,19 @@ export default function NetworkGraph({ network }) {
             // Is it a client?
             const clientIdx = network.clients.findIndex(u => u.username === node);
             if (clientIdx !== -1) {
-              const side = clientIdx % 2 === 0 ? 'left' : 'right';
-              const verticalSpacing = 70;
-              const leftX = 60;
-              const rightX = 730;
-              const y = 60 + Math.floor(clientIdx / 2) * verticalSpacing + 30;
-              const x = side === 'left' ? leftX : rightX;
+              const clientZone = { cx: 900, cy: 450, rx: 700, ry: 340 };
+              const angle = (clientIdx / network.clients.length) * 2 * Math.PI - Math.PI/2;
+              const x = clientZone.cx + clientZone.rx * Math.cos(angle);
+              const y = clientZone.cy + clientZone.ry * Math.sin(angle);
               return { x, y };
             }
             // Is it a relay?
             const idx = network.relays.findIndex(r => String(r.id) === String(node) || `${r.ip}:${r.port}` === node);
             if (idx !== -1) {
-              const x = 150 + idx * 150;
-              const y = idx % 2 === 0 ? 150 : 250;
+              const relayZone = { cx: 900, cy: 450, rx: 400, ry: 170 };
+              const angle = (idx / network.relays.length) * 2 * Math.PI;
+              const x = relayZone.cx + relayZone.rx * Math.cos(angle);
+              const y = relayZone.cy + relayZone.ry * Math.sin(angle);
               return { x, y };
             }
             return null;
@@ -123,7 +131,7 @@ export default function NetworkGraph({ network }) {
                   x2={nodePositions[i+1].x}
                   y2={nodePositions[i+1].y}
                   stroke="#ffb347"
-                  strokeWidth="8"
+                  strokeWidth="16"
                   opacity={0.7}
                 />
               );
@@ -131,63 +139,16 @@ export default function NetworkGraph({ network }) {
             return null;
           });
         })()}
-        {/* Draw lines for the latest message path only */}
-        {network.messages && network.messages.length > 0 && (() => {
-          const msg = network.messages[0];
-          if (!msg) return null;
-          const path = relayPath;
-          const nodePositions = path.map((node, i) => {
-            // Is it a client?
-            const clientIdx = network.clients.findIndex(u => u.username === node);
-            if (clientIdx !== -1) {
-              const side = clientIdx % 2 === 0 ? 'left' : 'right';
-              const verticalSpacing = 70;
-              const leftX = 60;
-              const rightX = 730;
-              const y = 60 + Math.floor(clientIdx / 2) * verticalSpacing + 30;
-              const x = side === 'left' ? leftX : rightX;
-              return { x, y };
-            }
-            // Is it a relay?
-            const relayIdx = network.relays.findIndex(r => String(r.id) === String(node));
-            if (relayIdx !== -1) {
-              const x = 150 + relayIdx * 150;
-              const y = relayIdx % 2 === 0 ? 150 : 250;
-              return { x, y };
-            }
-            return null;
-          });
-          if (nodePositions.some(pos => !pos)) return null;
-          return path.map((node, i) => {
-            if (i < path.length - 1) {
-              return (
-                <line
-                  key={msg.from + '-' + msg.to + '-' + i}
-                  x1={nodePositions[i].x}
-                  y1={nodePositions[i].y}
-                  x2={nodePositions[i+1].x}
-                  y2={nodePositions[i+1].y}
-                  stroke="#ffb347"
-                  strokeWidth="6"
-                  opacity={0.5}
-                />
-              );
-            }
-            return null;
-          });
-        })()}
       </svg>
-      <div className="legend">
+      <div className="legend" style={{ position: 'absolute', left: 24, bottom: 24, zIndex: 10, background: 'rgba(255,255,255,0.9)', borderRadius: 8, padding: '8px 18px', boxShadow: '0 2px 8px #0002' }}>
         <span className="relay-dot" /> Relay
         <span className="client-dot" /> Client
         <span className="msg-line" /> Message Path
       </div>
       {/* Live message explanation */}
-      {latestMsg && (
-        <div className="msg-explanation" style={{marginTop:24, background:'#f0f4fa', borderRadius:8, padding:'16px 18px'}}>
-          <strong>Message:</strong> <span style={{color:'#2562c7'}}>{latestMsg.from}</span> → <span style={{color:'#2562c7'}}>{latestMsg.to}</span><br/>
-          <strong>Relay Path:</strong> {relayPath.length > 0 ? relayPath.join(' → ') : '(not available)'}<br/>
-          <strong>Relays Used:</strong> {relayPath.length}
+      {msgExplanation && (
+        <div style={{ position: 'absolute', right: 24, top: 24, zIndex: 20, background: 'rgba(255,255,255,0.97)', borderRadius: 8, padding: '16px', minWidth: 260, maxWidth: 350, boxShadow: '0 2px 8px #0002', pointerEvents: 'none' }}>
+          {msgExplanation}
         </div>
       )}
     </div>
