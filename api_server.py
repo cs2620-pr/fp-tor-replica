@@ -316,9 +316,9 @@ def register():
     password = data.get('password')
     avatar = data.get('avatar')
     if not username or not password:
-        return jsonify({'success': False, 'error': 'Missing username or password'})
+        return jsonify({'success': False, 'error': 'Missing username or password'}), 400
     if get_user(username):
-        return jsonify({'success': False, 'error': 'Username already exists'})
+        return jsonify({'success': False, 'error': 'Username already exists'}), 409
     add_user(username, password, avatar)
     return jsonify({'success': True, 'user': {'username': username, 'avatar': avatar}})
 
@@ -329,7 +329,7 @@ def login():
     password = data.get('password')
     user = get_user(username)
     if not user or user['password'] != password:
-        return jsonify({'success': False, 'error': 'Invalid credentials'})
+        return jsonify({'success': False, 'error': 'Invalid credentials'}), 401
     set_user_online(username, True)
     return jsonify({'success': True, 'user': {'username': username, 'avatar': user['avatar']}})
 
