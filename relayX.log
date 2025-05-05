@@ -6323,3 +6323,33 @@ ValueError: Decryption failed
 [Relay 8999] [Relay] [DEBUG] Received response from next relay: type=<class 'bytes'>, len=512, preview=b'{"result": "OK", "echo": {"session_key": "eTIAu7sAFD/comVR62'
 [Relay 8999] [Relay] [DEBUG] Sent wrapped response to previous hop.
 [Relay 8999] [Relay] [handle_message END] addr=('10.250.120.196', 59521), thread=6194360320
+[Relay] ---- Relay process started ----
+[Relay 1] [Relay] Loaded persistent RSA keypair from relay1_key.pem
+[Relay 1] [Relay] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] [Relay] [KEY] Public key fingerprint: 74019246e4745ea09badde25326501d85571359b8b49ebb8349bb13a86da1d92
+[Relay 1] Relay 1 starting on 10.250.120.196:9101 (RELAY PORT 9101)
+[Relay 1] Registering with CDS at 127.0.0.1:9000
+[Relay 1] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9101, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5MM7/HBECV26fZqjUJkt\nQ4+dx297cL0hf1+rf08Qir5tL/lArfQsiplTqcsIsZiN7vJ8K2XzvK5JAEv8tVE4\nEKU4W1hbEVBd1eLCX+Oc5XauTbWhW8xlc2wdNlNwDhin2Mw84doKJWPyfjtIwnIi\n3nWHqxLyAqkj6qDoByA8D7YVmJxvzwL0mrYE8G8b4Q4Wjnx2SXeTwc9LRzqwrsyb\nlM5B4BSVPBignOMhD2AfuIFw6uULQThbkL9L5AnQA08B4Gqzo731LLJN/Y6qo+VJ\nki2t6m1aJTG0LBjijpH7CtnN1MHIQ5UueS1sJVYZooYxkxEYYZTqIUXxuI5ICKPC\nCQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 1] [Relay] Listening for incoming messages on port 9101 (RELAY PORT 9101)
+[Relay] ---- Relay process started ----
+[Relay 2] [Relay] Loaded persistent RSA keypair from relay2_key.pem
+[Relay 2] [Relay] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] [Relay] [KEY] Public key fingerprint: 30c6ba45aeff3f8543ce1edb4f46f412e6bcb0300acbf2a008df3bf75d6a137d
+[Relay 2] Relay 2 starting on 10.250.120.196:9102 (RELAY PORT 9102)
+[Relay 2] Registering with CDS at 127.0.0.1:9000
+[Relay 2] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9102, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58J3pSrOQd4hYnuzQQ7q\nWrjjo+3BJp+ik23brR2yl0kjtfH+wjD9LYWHS7dBxsDRzSozJ/7EWKKNCaTsgvaF\nN6vpyBPqDM/uQfOWfirteL50RgDZw95Vml4Fuay7bTBEb1J8ydvFqawo8rnLE2I3\nU4BjBT+CD38bY3je8wrrCX9fo1uYaLDlfteGshadZ2gnTxrAzkZZ/CTFdyb8JrmN\nIuxjBVjwSA/uIv+KHWQhXRA5jJPXcNV88LYXyEzpid1Cr9gnrqA88K0HSleiwZjU\nJF3LhBvS2Ga2HHfFsk5D/yz/pTHwDvRA98VMT/90wahwmSJsck4XWDFhmNhy3oDR\nBQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 2] [Relay] Listening for incoming messages on port 9102 (RELAY PORT 9102)
+[Relay] ---- Relay process started ----
+[Relay 3] [Relay] Loaded persistent RSA keypair from relay3_key.pem
+[Relay 3] [Relay] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] [Relay] [KEY] Public key fingerprint: 7a46893f440bcfb43ce49eb8d8156323dab3b8a3de869d2faebb649692ef6c1c
+[Relay 3] Relay 3 starting on 10.250.120.196:9103 (RELAY PORT 9103)
+[Relay 3] Registering with CDS at 127.0.0.1:9000
+[Relay 3] [Relay] Registered with CDS: {'ip': '10.250.120.196', 'port': 9103, 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k9OJ8m3IdjmwR1skM1G\nwrKkwlYLK0Qs+I/BX5ww5wEakOsTy5NVFAwTYrCUnR012u2jCwI8wV1YpPaMa8RJ\ntnqNFy4pFfqBh5tmidHQ3QMRvINPrGtQM5+VgMXoA0y8izql52M1K/3Q6sHVlAXd\nmpQcBO+JSHY7uyVx1txZssyisia7Nn8Frh/XRpl0oUvGkSnbm/KgqDAP0xJ3lUZS\nEGiIWdf0bn7tHD3nYBMrWWi3jSQWf0Q80asIEYWipwkfMPf0ffzu4FX0elfvpyOX\nr50xk7sb8K5IhcilwxKxQpPOcq3f6ph0EERQR7pOdDqkzFdHoGiyssSX4MYM60kd\nmQIDAQAB\n-----END PUBLIC KEY-----\n'}
+[Relay 3] [Relay] Listening for incoming messages on port 9103 (RELAY PORT 9103)
+[Relay 3] [Relay] Deregistering from CDS and shutting down...
+[Relay 2] [Relay] Deregistering from CDS and shutting down...
+[Relay 1] [Relay] Deregistering from CDS and shutting down...
+[Relay 1] [Relay] ERROR during deregistration: [Errno 54] Connection reset by peer
+[Relay 2] [Relay] ERROR during deregistration: [Errno 54] Connection reset by peer
+[Relay 3] [Relay] ERROR during deregistration: [Errno 54] Connection reset by peer

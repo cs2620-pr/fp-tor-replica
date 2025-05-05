@@ -66,6 +66,28 @@ sqlite3 chat.db "DELETE FROM users; DELETE FROM messages;"
 
 ---
 
+## Running the Test Suite
+
+This project uses [pytest](https://docs.pytest.org/) for automated testing of backend and relay logic.
+
+### To run all tests:
+
+```bash
+pytest tests
+```
+
+- Ensure you have installed all dependencies from `requirements.txt`.
+- The test suite covers backend API endpoints, relay logic, onion routing, and integration between components.
+- All tests are located in the `tests/` directory.
+
+If you do not have pytest installed, run:
+
+```bash
+pip install pytest
+```
+
+---
+
 ## Requirements
 - Python 3.8+
 - Node.js & npm (for frontend)

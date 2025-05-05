@@ -486,28 +486,36 @@ For a more scalable system, we would consider:
 
 ## 8. Testing Strategy
 
-Our testing approach encompassed:
+Our testing approach encompasses several layers to ensure reliability and correctness:
 
-### 8.1 Component Testing
+### 8.1 Automated Test Suite (pytest)
+
+We use the `pytest` framework to provide automated testing for the backend and relay logic. The test suite can be run with:
+
+```bash
+pytest tests
+```
+
+#### What the test suite covers:
+- **Backend API endpoints:** Registration, login, error handling, and user management are tested for correct behavior and edge cases.
+- **Relay and Onion Routing Logic:** Tests verify correct relay registration, circuit construction, and multi-hop message encryption/decryption.
+- **Integration:** End-to-end tests ensure that relays, the CDS, the destination server, and the client interact as expected.
+- **Failure Cases:** Tests include invalid registration/login attempts, duplicate user handling, and malformed messages.
+
+The suite is located in the `tests/` directory and is designed to be run after all dependencies are installed. All recent changes are verified to pass before merging.
+
+### 8.2 Component Testing
 
 Individual testing of:
 - Cryptographic operations
 - Message construction/parsing
 - Relay handling logic
 
-### 8.2 Integration Testing
+### 8.3 Integration Testing
 
 - Relay registration with CDS
 - Client circuit establishment
 - Multi-hop message routing
-
-### 8.3 End-to-End Testing
-
-The run_demo.sh script provides an automated end-to-end test of the entire system:
-1. Starts the CDS
-2. Launches three relay nodes
-3. Starts the destination server
-4. Runs a client to send a message through the network
 
 ### 8.4 Logging and Verification
 
